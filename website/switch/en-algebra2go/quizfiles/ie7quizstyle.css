@@ -1,0 +1,10 @@
+
+/*	styles applied for Internet Explorer 7.	*/table.fraction 
+	{
+	display:inline;
+	}
+
+table.fraction tr td.bigrad
+	{
+	font-size:4em;
+	}

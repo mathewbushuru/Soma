@@ -1,0 +1,53 @@
+
+/*	styles applied for Internet Explorer 6.	*/
+#innerwrapper
+	{
+	/* For IE: simulate max-width with IE-proprietary expression() function: */
+	width: expression(document.body.clientWidth > 1000 ? "900px": "auto");
+	}
+	
+#topspacer
+	{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='../../quizfiles/goldspacer.png');
+	padding-top: 5px;
+	}
+
+#basespacer
+	{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='../../quizfiles/goldspacer.png');
+	padding-top: 5px;
+	}
+
+img.charlietalk
+	{	right:-21px;	}
+	div.cbubble img.brc
+	{	right:-3px;	}
+	div.cbubble img.trc
+	{	right:-3px;	}
+
+div.lbubble img.brc
+	{	right:-2px;	}
+	div.lbubble img.trc
+	{	right:-2px;	}
+
+table.fraction 
+	{
+	display:inline;
+	}
+
+table.fraction tr td.bigrad
+	{
+	font-size:4em;
+	position:relative;
+	top:-3px;
+	right:-3px;
+	}
+
+table.fraction tr td.smallrad
+	{
+	font-size:2em;
+	position:relative;
+	top:-2px;
+	right:-1px;
+	}
+

@@ -1,0 +1,1473 @@
+<!--
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the BODY of the page.                       */
+/* -------------------------------------------------------------- */
+/*                                                                */
+body
+{
+	margin:0px;
+	padding:0px;
+	min-width:780px;
+	background:#ffffff;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the OUTERWRAPPER.                           */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#outerwrapper
+{
+	margin:0px;
+	padding:0px 50px 0px 50px;
+	background:#c0c0c0;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the INNERWRAPPER.                           */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#innerwrapper
+{
+	margin:0px auto 0px auto;
+	padding:0px;
+	max-width:1500px;
+	border-left:1px solid #808080;
+	border-right:1px solid #808080;
+	background:#ffffff;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the TOP BARS.                               */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#pagetop{	margin: 0px;	padding:0px;	height:40px;	background:#990000 url(maroon.png) top left repeat-x;}
+/*                                                                */
+#pagetop a.sclink
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+	background:url(saddlebackBlack.png) top left no-repeat;
+}
+/*                                                                */
+#pagetop a.sclink:hover
+{
+	background:url(saddlebackWhite.png) top left no-repeat;
+}
+/*                                                                */
+#pagetop a.sclink img
+{
+	margin:0px;
+	padding:0px;
+	height:40px;
+	width:336px;
+	border-width:0px;
+}
+/*                                                                */
+#pagetop a.a2glink
+{
+	float:right;
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+	background:url(a2gBlack.png) top left no-repeat;
+}
+/*                                                                */
+#pagetop a.a2glink:hover
+{
+	background:url(a2gWhite.png) top left no-repeat;
+}
+/*                                                                */
+#pagetop a.a2glink img
+{
+	margin:0px;
+	padding:0px;
+	height:40px;
+	width:220px;
+	border-width:0px;
+}
+/*                                                                */
+#goldtop
+{
+	margin:0px;
+	padding:0px;
+	height:5px;
+	border-bottom:1px solid #808080;
+	background:#ffcc33;
+}
+/*                                                                */
+#goldtop img
+{
+	margin:0px;
+	padding:0px;
+	height:5px;
+	width:5px;
+	border-width:0px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the PICTURES.                               */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#mountains
+{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	height:200px;
+	border-bottom:1px solid #808080;
+	background:url(mountains.png) top center no-repeat;
+}
+/*                                                                */
+#charlie
+{
+	float:right;
+	position:absolute;
+	right:-50px;
+	bottom:-25px;
+	margin:0px;
+	padding:0px;
+}
+/*                                                                */
+#larry
+{
+	float:left;
+	position:absolute;
+	bottom:0px;
+	left:-50px;
+	margin:0px;
+	padding:0px;
+}
+/*                                                                */
+#shadow
+{
+	position:absolute;
+	bottom:0px;
+	margin:0px;
+	padding:0px 0px 0px 2px;
+	width:100%;
+	color:#000000;
+	text-align:center;
+	font-size:4.5em;
+	font-style:italic;
+}
+/*                                                                */
+#titlebar
+{
+	position:absolute;
+	bottom:0px;
+	margin:0px;
+	padding:0px 0px 2px 0px;
+	width:100%;
+	color:#ffffff;
+	text-align:center;
+	font-size:4.5em;
+	font-style:italic;
+}
+/*                                                                */
+span.twostyle
+{
+	padding-left:7px;
+	color:#ffec8f;
+}
+/*                                                                */
+span.twoshadow
+{
+	padding-left:7px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the NAVIGATION BAR.                         */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#navigation
+{
+	float:left;
+	position:relative;
+	top:35px;
+	left:40px;
+	margin:0px;
+	padding:0px 0px 0px 0px;
+	width:197px;
+	background:#cce5ff url(shadow_r.png) top right repeat-y;
+	text-align:left;
+	font-size:x-small;
+	font-weight:bold;
+}
+/*                                                                */
+#navtop
+{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	height:28px;
+	background:#99ccff;
+}
+/*                                                                */
+#navhome
+{
+	margin:0px 7px 0px 0px;
+	padding:0px 0px 20px 0px;
+	border-left:1px solid #f8f8f8;
+	background:#99ccff;
+}
+/*                                                                */
+#navigation a.home
+{
+	display:block;
+	margin:0px;
+	padding:5px 0px 5px 0px;
+	width:190px;
+	border:none;
+	color:#990000;
+	text-align:center;
+	text-decoration:none;
+	font-family:"arial","helvetica",sans-serif;
+	font-size:large;
+}
+/*                                                                */
+#navigation a.home span.two
+{
+	color:#000000;
+}
+/*                                                                */
+#navigation a.home:hover span.blackstyle
+{
+	color:#ffffff;
+}
+/*                                                                */
+#navmenu
+{
+	margin:0px 7px 0px 0px;
+	border-left:1px solid #f8f8f8;
+	background:#cce5ff;
+}
+/*                                                                */
+#navigation a.topic
+{
+	display:block;
+	margin:0px;
+	padding:5px 0px 5px 20px;
+	width:170px;
+	border:none;
+	color:#990000;
+	text-align:left;
+	text-decoration:none;
+	font-family:"arial","helvetica",sans-serif;
+	font-size:small;
+}
+/*                                                                */
+#navigation a:hover
+{
+	background:#990000;
+	color:#ffcc33;
+}
+/*                                                                */
+#navigation a.subtopic
+{
+	display:block;
+	margin-left:0px;
+	padding:5px 0px 5px 33px;
+	border:none;
+	background:url(outline_full.png) center left no-repeat;
+	color:#000000;
+	text-decoration:none;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+#navigation a.lastsub
+{
+	display:block;
+	margin-left:0px;
+	padding:5px 0px 5px 33px;
+	border:none;
+	background:url(outline_last.png) center left no-repeat;
+	color:#000000;
+	text-decoration:none;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+#navigation a.subtopic:hover, #navigation a.lastsub:hover
+{
+	background:#990000;
+	color:#ffffff;
+}
+/*                                                                */
+p.category
+{
+	display:block;
+	margin:0px;
+	padding:25px 0px 5px 20px;
+	width:170px;
+	color:#000000;
+	text-decoration:underline;
+	font-family:"arial","helvetica",sans-serif;
+	font-size:small;
+}
+/*                                                                */
+#navbase
+{
+	margin:0px 7px 0px 0px;
+	padding:0px 0px 0px 0px;
+	height:200px;
+	background:#cce5ff url(nav_b.png) bottom left repeat-x;
+}
+/*                                                                */
+#s00Larry
+{
+	position:absolute;
+	right:30px;
+	bottom:15px;
+}
+/*                                                                */
+#s00Charlie
+{
+	position:absolute;
+ 	bottom:-108px;
+	left:35px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the TOOL DESCRIPTIONS.                      */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#uppercontent
+{
+	margin:0px 33px 0px 270px;
+	padding:25px 0px 0px 0px;
+	font-size:medium;
+}
+/*                                                                */
+#uppercontent h1
+{
+	margin:0px 0px 10px 0px;
+	padding:0px;
+	color:#505050;
+	font-size:2em;
+	font-weight:400;
+}
+/*                                                                */
+#uppercontent h2
+{
+	margin:0px;
+	padding:30px 0px 10px 0px;
+	clear:right;
+	color:#000000;
+	font-size:1.5em;
+	font-weight:400;
+}
+/*                                                                */
+#uppercontent h2 img
+{
+	vertical-align:top;
+}
+/*                                                                */
+#uppercontent a
+{
+	border-bottom:1px solid #990000;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+#uppercontent a.big
+{
+	clear:right;
+	margin:30px 0px 10px 0px;
+	padding:0px;
+	color:#000000;
+	text-decoration:underline;
+	font-size:1.5em;
+	font-weight:400;
+}
+/*                                                                */
+#uppercontent a:hover
+{
+	border-top:1px solid #990000;
+}
+/*                                                                */
+#uppercontent a:visited
+{
+}
+/*                                                                */
+#uppercontent p
+{
+	margin:0px;
+	padding:0px 0px 0px 20px;
+	line-height:150%;
+	text-align:left;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+#uppercontent p.intro
+{
+	padding:0px;
+}
+/*                                                                */
+#uppercontent p.funnyquote
+{
+	float:right;
+	margin:0px;
+	padding:0px;
+	line-height:150%;
+	text-align:right;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+span.maroonstyle
+{
+	color:#990000;
+}
+/*                                                                */
+span.blackstyle
+{
+	color:#000000;
+}
+/*                                                                */
+span.togo
+{
+	font-style:italic;
+	font-weight:bold;
+}
+/*                                                                */
+span.tm
+{
+	vertical-align:super;
+	font-style:normal;
+	font-weight:normal;
+	font-size:x-small;
+}
+/*                                                                */
+#uppercontent img.toolimage
+{
+	float:right;
+	border-width:0px;
+	margin:0px 0px 20px 50px;
+	padding:0px;
+}
+/*                                                                */
+#extender
+{
+	clear:both;
+	padding:0px;
+	margin:0px;
+	line-height:0%;
+	font-size:xx-small;
+}
+/*                                                                */
+div.upperbase
+{
+	margin:0px;
+	padding:0px;
+	height:30px;
+	border-left:1px solid #808080;
+	background:url(middle.png) bottom left repeat-x;
+}
+/*                                                                */
+#charliestudy
+{
+	float:right;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the BLUE SCENES.                            */
+/* -------------------------------------------------------------- */
+/*                                                                */
+div.scene
+{
+	position:relative;
+	margin:0px 33px 0px 40px;
+	padding:0px 0px 0px 0px;
+	height:200px;
+	background:#99ccff url(blue_scene.png) bottom left repeat-x;
+}
+/*                                                                */
+div.scene img
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the GREEN SCENES.                           */
+/* -------------------------------------------------------------- */
+/*                                                                */
+div.greenscene
+{
+	position:relative;
+	margin:0px 33px 0px 40px;
+	padding:0px 0px 0px 0px;
+	height:200px;
+	background:#99cc99 url(green_scene.png) bottom left repeat-x;
+}
+/*                                                                */
+div.greenscene img
+{
+	margin:0px;
+	padding:0px;
+	border:0px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to TINY PICTURES.                              */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#s01Larry
+{
+	position:absolute;
+	bottom:0px;
+	left:50px;
+}
+/*                                                                */
+#s01Charlie
+{
+	position:absolute;
+	bottom:0px;
+	left:150px;
+}
+/*                                                                */
+#s01Summer
+{
+	position:absolute;
+	right:150px;
+	bottom:0px;
+}
+/*                                                                */
+#s02Larry
+{
+	position:absolute;
+	right:50px;
+	bottom:0px;
+}
+/*                                                                */
+#s02Charlie
+{
+	position:absolute;
+	right:350px;
+	bottom:0px;
+}
+/*                                                                */
+#s02Bob
+{
+	position:absolute;
+	bottom:0px;
+	left:50px;
+}
+/*                                                                */
+#s03Martha
+{
+	position:absolute;
+	right:100px;
+	bottom:0px;
+}
+/*                                                                */
+#s03Larry
+{
+	position:absolute;
+	bottom:0px;
+	left:150px;
+}
+/*                                                                */
+#s03Charlie
+{
+	position:absolute;
+	bottom:0px;
+	left:250px;
+}
+/*                                                                */
+#s04Charlie
+{
+	position:absolute;
+	right:150px;
+	bottom:0px;
+}
+/*                                                                */
+#s04John
+{
+	position:absolute;
+	right:450px;
+	bottom:0px;
+}
+/*                                                                */
+#s04Larry
+{
+	position:absolute;
+	right:50px;
+	bottom:0px;
+}
+/*                                                                */
+#s06Larry
+{
+	position:absolute;
+	bottom:0px;
+	left:150px;
+}
+/*                                                                */
+#s06Charlie
+{
+	position:absolute;
+	bottom:0px;
+	left:50px;
+}
+/*                                                                */
+#s06Carol
+{
+	position:absolute;
+	right:100px;
+	bottom:0px;
+}
+/*                                                                */
+#s07Charlie
+{
+	position:absolute;
+	right:300px;
+	bottom:0px;
+}
+/*                                                                */
+#s07Larry
+{
+	position:absolute;
+	right:100px;
+	bottom:0px;
+}
+/*                                                                */
+#s08Charlie
+{
+	position:absolute;
+	right:250px;
+	bottom:0px;
+}
+/*                                                                */
+#s08Larry
+{
+	position:absolute;
+	right:450px;
+	bottom:0px;
+}
+/*                                                                */
+#s08Lisa
+{
+	position:absolute;
+	right:50px;
+	bottom:0px;
+}
+/*                                                                */
+#s09Larry
+{
+	position:absolute;
+	bottom:0px;
+	left:250px;
+}
+/*                                                                */
+#s09Sue
+{
+	position:absolute;
+	bottom:0px;
+	left:100px;
+}
+/*                                                                */
+#s09Charlie
+{
+	position:absolute;
+	bottom:0px;
+	left:450px;
+}
+/*                                                                */
+#s10Charlie
+{
+	position:absolute;
+	bottom:0px;
+	left:50px;
+}
+/*                                                                */
+#s10Candice
+{
+	position:absolute;
+	right:250px;
+	bottom:0px;
+}
+/*                                                                */
+#s10Patrick
+{
+	position:absolute;
+	right:150px;
+	bottom:0px;
+}
+/*                                                                */
+#s10Larry
+{
+	position:absolute;
+	right:50px;
+	bottom:0px;
+}
+/*                                                                */
+#s10aLarry
+{
+	position:absolute;
+	right:100px;
+	bottom:0px;
+}
+/*                                                                */
+#s10aCharlie
+{
+	position:absolute;
+	right:250px;
+	bottom:0px;
+}
+/*                                                                */
+#s11aLarry
+{
+	position:absolute;
+	bottom:0px;
+	left:300px;
+}
+/*                                                                */
+#s11aCharlie
+{
+	position:absolute;
+	bottom:0px;
+	left:200px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the tables which head each section.         */
+/* -------------------------------------------------------------- */
+/*                                                                */
+div.opening
+{
+	margin:0px 33px 0px 40px;
+	padding:0px;
+	border-left:1px solid #f8f8f8;
+	background:#cce5ff url(shadow_dbr.png) top right repeat-y;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+table.header
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+}
+/*                                                                */
+table.header td
+{
+	color:#000000;
+	vertical-align:middle;
+	text-indent:25px;
+	text-align:left;
+	font-family:"times",serif;
+	font-weight:400;
+	font-size:2em;
+}
+/*                                                                */
+table.header td.console
+{
+	width:65px;
+}
+/*                                                                */
+table.header a.arrow img
+{
+	margin:0px 0px 0px 0px;
+	padding:0px;
+	border:0px;
+	height:30px;
+	width:65px;
+	background:url(topArrow_1.png) top left no-repeat;
+}
+/*                                                                */
+table.header a.arrow:hover img
+{
+	background:url(topArrow_2.png) top left no-repeat;
+}
+/*                                                                */
+table.header a.virtual img
+{
+	margin:0px 0px 0px 10px;
+	padding:0px;
+	border:0px;
+	height:30px;
+	width:30px;
+	background:url(deskMaroon.png) top left no-repeat;
+}
+/*                                                                */
+table.header a.virtual:hover img
+{
+	background:url(deskGold.png) top left no-repeat;
+}
+/*                                                                */
+table.header a.framer img
+{
+	margin:0px 0px 0px 10px;
+	padding:0px;
+	border:0px;
+	height:30px;
+	width:30px;
+	background:url(framesMaroon.png) top left no-repeat;
+}
+/*                                                                */
+table.header a.framer:hover img
+{
+	background:url(framesGold.png) top left no-repeat;
+}
+/*                                                                */
+table.header tr td
+{
+	padding:0px 0px 30px 0px;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  styles applied to the tables of resources.                    */
+/* -------------------------------------------------------------- */
+/*                                                                */
+div.materials
+{
+	margin:0px 33px 0px 40px;
+	padding:15px 30px 2px 23px;
+	border-left:1px solid #f8f8f8;
+	background:#cce5ff url(shadow_lbr.png) top right repeat-y;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+table.resources
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	color:#000000;
+	text-align:center;
+	font-size:small;
+}
+/*                                                                */
+table.resources a
+{
+	display:block;
+	padding:5px 0px 5px 0px;
+	width:100%;
+	color:#990000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr td
+{
+	padding:0px;
+	width:6%;
+	text-align:center;
+	vertical-align:middle;
+}
+/*                                                                */
+table.resources tr.labels td
+{
+	padding:5px;
+	border-bottom:1px solid #003366;
+	color:#000000;
+	vertical-align:bottom;
+	font-weight:bold;
+	font-size:xx-small;
+}
+/*                                                                */
+table.resources tr.labels td.spanner
+{
+	background:transparent url(spanner.png) bottom left no-repeat;
+	border:1px solid transparent;
+	border-left:1px solid transparent;
+	color:#000000;
+}
+/*                                                                */
+table.resources tr.labels td.topic
+{
+	padding-left:3px;
+	width:28%;
+	border-bottom:0px;
+	text-align:left;
+	font-weight:bold;
+	font-size:small;
+}
+/*                                                                */
+table.resources tr.labels td.blanktopic
+{
+	width:28%;
+	border-bottom:0px;
+	text-align:left;
+	font-weight:bold;
+}
+/*                                                                */
+td.subtopic a.syllabusAnchor, td.topic a.syllabusAnchor, td.subtopic a.syllabusAnchor:hover, td.topic a.syllabusAnchor:hover
+{
+	display:inline;
+	margin:0px;
+	padding:0px 2px 0px 2px;
+	border:0px;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+td.subtopic a.syllabusWhite, td.topic a.syllabusWhite
+{
+	display:inline;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	color:#ffffff;
+	text-decoration:none;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the BLUE TOOL ARRAYS.                       */
+/* -------------------------------------------------------------- */
+/*                                                                */
+table.resources tr.array td.topic
+{
+	padding-left:3px;
+	text-align:left;
+	font-weight:bold;
+	font-size:small;
+}
+/*                                                                */
+table.resources tr.array td.subtopic
+{
+	padding-left:13px;
+	text-align:left;
+}
+/*                                                                */
+table.resources tr.array td.english
+{
+	border-right:1px solid transparent;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#fff791;
+}
+/*                                                                */
+table.resources tr.array td.spanish
+{
+	border-left:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#fff791;
+}
+/*                                                                */
+table.resources tr.array td.english a:hover, table.resources tr.array td.spanish a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.english a:visited, table.resources tr.array td.spanish a:visited
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:underline;
+}
+/*                                                                */
+table.resources tr.array td.wma
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffec94;
+}
+/*                                                                */
+table.resources tr.array td.mp3
+{
+	border-bottom:1px solid #333333;
+	background:#ffec94;
+}
+/*                                                                */
+table.resources tr.array td.wma a:hover, table.resources tr.array td.mp3 a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.form
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffdf98;
+}
+/*                                                                */
+table.resources tr.array td.tool
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffcd9c;
+}
+/*                                                                */
+table.resources tr.array td.sheet
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffbba2;
+}
+/*                                                                */
+table.resources tr.array td.sheet a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.wmv
+{
+	border-right:1px solid transparent;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffa9a6;
+}
+/*                                                                */
+table.resources tr.array td.teachertube
+{
+	border-right:1px solid transparent;
+	border-left:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#ffa9a6;
+}
+/*                                                                */
+table.resources tr.array td.youtube
+{
+	border-left:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#ffa9a6;
+}
+/*                                                                */
+table.resources tr.array td.wmv a:hover, table.resources tr.array td.teachertube a:hover, table.resources tr.array td.youtube a:hover
+{
+	background:#ffffff;
+	color:#990000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.problems
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ff9cab;
+}
+/*                                                                */
+table.resources tr.array td.problems a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.quizzes
+{
+	border-right:1px solid #333333;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ff91ad; 
+}
+/*                                                                */
+table.resources tr.array td.quizzes a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.array td.quizzes a:visited
+{
+	background:#ffffff;
+	color:#990000;
+	text-decoration:none;
+}
+/*                                                                */
+table.resources tr.breaker td
+{
+	height:5px;
+}
+/*                                                                */
+table.resources tr.array td.tools a.img1, table.resources tr.array td.tools a.img2
+{
+	float:right;
+	display:inline;
+	margin:5px 5px 5px 0px;
+	padding:0px;
+}
+
+table.resources img
+{
+	border:0px;
+}
+/*                                                                */
+div.tablebottom
+{
+	position:relative;
+	margin:0px 33px 0px 40px;
+	padding:0px;
+	height:28px;
+	background:transparent url(shadow_bb.png) bottom left repeat-x;
+}
+/*                                                                */
+div.whitespace
+{
+	margin:0px 33px 0px 40px;
+	padding:0px;
+	height:32px;
+	background:#ffffff;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the GREEN TOOL ARRAYS.                      */
+/* -------------------------------------------------------------- */
+/*                                                                */
+div.starting
+{
+	margin:0px 33px 0px 40px;
+	padding:0px;
+	border-left:1px solid #f8f8f8;
+	background:#99cc99 url(shadow_dgr.png) top right repeat-y;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+div.cumulative
+{
+	margin:0px 33px 0px 40px;
+	padding:15px 30px 2px 23px;
+	border-left:1px solid #f8f8f8;
+	background:#ccffe5 url(shadow_lgr.png) top right repeat-y;
+	font-family:"arial","helvetica",sans-serif;
+}
+/*                                                                */
+table.review
+{
+	margin:0px;
+	padding:0px;
+	width:100%;
+	color:#000000;
+	font-size:small;
+	text-align:center;
+}
+/*                                                                */
+table.review a
+{
+	display:block;
+	padding:5px 0px 5px 0px;
+	width:100%;
+	color:#990000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr td
+{
+	padding:0px;
+	width:12%;
+	text-align:center;
+	vertical-align:middle;
+}
+/*                                                                */
+table.review tr.labels td
+{
+	padding:5px;
+	border-bottom:1px solid #003366;
+	color:#000000;
+	vertical-align:bottom;
+	font-weight:bold;
+	font-size:xx-small;
+}
+/*                                                                */
+table.review tr.labels td.spanner
+{
+	background:transparent url(spanner.png) bottom left no-repeat;
+	border:1px solid transparent;
+	color:#000000;
+}
+/*                                                                */
+table.review tr.labels td.topic
+{
+	padding-left:3px;
+	width:28%;
+	border-bottom:0px;
+	text-align:left;
+	font-weight:bold;
+	font-size:100%;
+}
+/*                                                                */
+table.review tr.labels td.blanktopic
+{
+	width:28%;
+	border-bottom:0px;
+	text-align:left;
+	font-weight:bold;
+}
+/*                                                                */
+table.review tr.array td.topic
+{
+	padding-left:3px;
+	text-align:left;
+	font-weight:bold;
+}
+/*                                                                */
+table.review tr.array td.subtopic
+{
+	padding-left:13px;
+	text-align:left;
+}
+/*                                                                */
+table.review tr.array td.english
+{
+	background:#fff791;
+	border-right:1px solid transparent;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+}
+/*                                                                */
+table.review tr.array td.spanish
+{
+	border-left:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#fff791;
+}
+/*                                                                */
+table.review tr.array td.english a:hover, table.review tr.array td.spanish a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.array td.wma
+{
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffec94;
+}
+/*                                                                */
+table.review tr.array td.mp3
+{
+	border-bottom:1px solid #333333;
+	background:#ffec94;
+}
+/*                                                                */
+table.review tr.array td.wma a:hover, table.review tr.array td.mp3 a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.array td.form
+	{
+	background:#ffdf98;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	}
+/*                                                                */
+table.review tr.array td.tool
+	{
+	background:#ffcd9c;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	}
+/*                                                                */
+table.review tr.array td.sheet
+{
+	background:#fff791;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+}
+/*                                                                */
+table.review tr.array td.sheet a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.array td.wmv
+{
+	border-right:1px solid transparent;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ffdf98;
+}
+/*                                                                */
+table.review tr.array td.teachertube
+{
+	border-left:1px solid transparent;
+	border-right:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#ffdf98;
+}
+/*                                                                */
+table.review tr.array td.youtube
+{
+	border-left:1px solid transparent;
+	border-bottom:1px solid #333333;
+	background:#ffdf98;
+}
+/*                                                                */
+table.review tr.array td.wmv a:hover, table.review tr.array td.teachertube a:hover, table.review tr.array td.youtube a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.array td.problems
+{
+	background:#ffa9a6;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+}
+/*                                                                */
+table.review tr.array td.problems a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.array td.quizzes
+{
+	border-right:1px solid #333333;
+	border-bottom:1px solid #333333;
+	border-left:1px solid #333333;
+	background:#ff91ad;
+}
+/*                                                                */
+table.review tr.array td.quizzes a:hover
+{
+	background:#ffffff;
+	color:#000000;
+	text-decoration:none;
+}
+/*                                                                */
+table.review tr.breaker td
+{
+	height:5px;
+}
+/*                                                                */
+table.review tr.array td.tools a.img1, table.review tr.array td.tools a.img2
+{
+	float:right;
+	display:inline;
+	margin:5px 5px 5px 0px;
+	padding:0px;
+}
+/*                                                                */
+table.resources img
+{
+	border:0px;
+}
+/*                                                                */
+div.reviewbottom
+{
+	position:relative;
+	margin:0px 33px 0px 40px;
+	padding:0px;
+	height:28px;
+	background:#ccffe5 url(shadow_gb.png) bottom left repeat-x;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to the PAGE BASE.                              */
+/* -------------------------------------------------------------- */
+/*                                                                */
+#goldbottom
+{
+	background:#ffcc33;
+	margin:0px;
+	padding:0px;
+	height:5px;
+	border-top:1px solid #808080;
+}
+/*                                                                */
+#goldbottom img
+{
+	margin:0px;
+	padding:0px;
+	height:5px;
+	width:5px;
+	border:0px;
+}
+/*                                                                */
+#pagebase
+{
+	position:relative;
+	margin:0px;
+	padding:0px;
+	height:40px;
+	background:#990000 url(maroon.png) top left repeat-x;	color:#ffffff;
+	font-size:small;
+	font-weight:bold;
+}
+/*                                                                */
+#leftcredits
+{
+	float:left;
+	display:block;
+	margin:5px 0px 0px 5px;
+	font-weight:bold;
+	text-align:left;
+}
+/*                                                                */
+#headshot
+{
+	float:right;
+	display:block;
+	margin:0px;
+}
+/*                                                                */
+#rightcredits
+{
+	float:right;
+	display:block;
+	margin:8px 10px 0px 0px;
+	font-weight:bold;
+	text-align:right;
+}
+/*                                                                */
+#pagebase a
+{
+	color:#ffffff;
+	text-decoration:none;
+	font-weight:bold;
+	font-size:small;
+}
+/*                                                                */
+#pagebase a:hover
+{
+	background-color:transparent;
+	color:#ffffff;
+	text-decoration:underline;
+}
+/*                                                                */
+#team
+{
+	position:absolute;
+	right:10px;
+	bottom:0px;
+	margin:0px;
+	padding:0px;
+	height:40px;
+	width:200px;
+	border:0px;
+	background:url(team.png) top left no-repeat;
+}
+/*                                                                */
+/* -------------------------------------------------------------- */
+/*  Styles applied to VARIOUS parts.                              */
+/* -------------------------------------------------------------- */
+/*                                                                */
+img.leftimg
+{
+	position:absolute;
+	bottom:0px;
+	left:0px;
+	margin:0px;
+	padding:0px;
+}
+/*                                                                */
+img.rightimg
+{
+	position:absolute;
+	right:0px;
+	bottom:0px;
+	margin:0px;
+	padding:0px;
+}
+/*                                                                */
+-->

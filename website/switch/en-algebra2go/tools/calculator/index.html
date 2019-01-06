@@ -1,0 +1,669 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head><title>Calculator Tool</title>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A collection of free resources for learning algebra." />
+<meta name="keywords" content="prealgebra,algebra,videos,notes,worksheets,quizzes,math" />
+<meta name="author" content="Patrick Quigley" />
+
+<link rel="shortcut icon" href="../../pagefiles/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../../pagefiles/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../../pagefiles/smiles.png" />
+
+<style type="text/css">
+<!--
+
+body{	background:url(desk.png);	margin:0px;	padding:0px;}
+
+#calculator tr td
+{
+	border:0px solid #00ff00;
+}
+
+#topleft3
+{
+	width:21px;
+	height:30px;
+	background:url(topleft.png) top left no-repeat;
+}
+
+#top3
+{
+	background:url(top.png) top left repeat-x;
+}
+
+#topright3
+{
+	width:27px;
+	height:30px;
+	background:url(topright.png) top right no-repeat;
+}
+
+#right3
+{
+	background:url(right.png) top right repeat-y;
+}
+
+#bottomright3
+{
+	width:27px;
+	height:21px;
+	background:url(bottomright.png) top right no-repeat;
+}
+
+#bottom3
+{
+ 	vertical-align:top;
+ 	background:url(bottom.png) top left repeat-x;
+}
+
+#bottomleft3
+{
+	width:21px;
+	height:21px;
+	background:url(bottomleft.png) top left no-repeat;
+}
+
+#left3
+{
+	background:url(left.png) top left repeat-y;
+}
+
+-->
+</style>
+
+<!--[if lt IE 7]>
+<style type="text/css">
+
+#topleft3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='topleft.png');
+}
+
+#topright3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='topright.png');
+}
+
+#right3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='right.png');
+}
+
+#bottomright3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='bottomright.png');
+}
+
+#bottom3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='bottom.png');
+}
+
+#bottomleft3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='bottomleft.png');
+}
+
+#left3
+{
+	background:none;
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', sizingMethod='scale', src='left.png');
+}
+
+</style>
+<![endif]-->
+
+
+<script type="text/javascript" language="JavaScript" src="../js/dojotoolkit/dojo/dojo.js"></script>
+
+<script type="text/javascript">
+<!--
+
+if (document.images)
+{
+	pic100= new Image(44,44);
+	pic100.src="down0.png";
+
+	pic101= new Image(44,44); 
+	pic101.src="down1.png"; 
+
+	pic102= new Image(44,44); 
+	pic102.src="down2.png"; 
+
+	pic103= new Image(44,44); 
+	pic103.src="down3.png"; 
+
+	pic104= new Image(44,44); 
+	pic104.src="down4.png"; 
+
+	pic105= new Image(44,44); 
+	pic105.src="down5.png";
+  
+	pic106= new Image(44,44); 
+	pic106.src="down6.png"; 
+
+	pic107= new Image(44,44); 
+	pic107.src="down7.png"; 
+
+	pic108= new Image(44,44); 
+	pic108.src="down8.png"; 
+
+	pic109= new Image(44,44); 
+	pic109.src="down9.png"; 
+
+	pic110= new Image(44,44); 
+	pic110.src="down10.png"; 
+
+	pic111= new Image(44,44); 
+	pic111.src="down11.png"; 
+
+	pic112= new Image(44,72); 
+	pic112.src="down12.png"; 
+
+	pic113= new Image(44,44); 
+	pic113.src="down13.png"; 
+
+	pic114= new Image(44,44); 
+	pic114.src="down14.png"; 
+
+	pic115= new Image(44,44); 
+	pic115.src="down15.png"; 
+
+	pic116= new Image(44,44); 
+	pic116.src="down16.png"; 
+
+	pic117= new Image(44,72); 
+	pic117.src="down17.png"; 
+
+	pic118= new Image(44,72); 
+	pic118.src="down18.png"; 
+
+	pic119= new Image(44,72); 
+	pic119.src="down19.png"; 
+
+	pic120= new Image(44,72); 
+	pic120.src="down20.png"; 
+
+	pic121= new Image(44,44); 
+	pic121.src="down21.png"; 
+
+	pic122= new Image(44,44); 
+	pic122.src="down22.png"; 
+
+	pic123= new Image(44,44); 
+	pic123.src="down23.png"; 
+
+	pic200= new Image(44,44); 
+	pic200.src="redbutton13.png"; 
+
+	pic201= new Image(44,44); 
+	pic201.src="redbutton14.png"; 
+
+	pic202= new Image(44,44); 
+	pic202.src="redbutton15.png"; 
+
+	pic203= new Image(44,44); 
+	pic203.src="redbutton16.png"; 
+
+	pic204= new Image(44,44); 
+	pic204.src="redbutton23.png"; 
+
+	pic300= new Image(18,37); 
+	pic300.src="leftm.png"; 
+}
+
+dojo.require("dojo.dnd.Mover");
+dojo.require("dojo.dnd.Moveable");
+dojo.require("dojo.dnd.move");
+var m3;
+var initDND3 = function(){
+	m3 = new dojo.dnd.Moveable("calculator", {handle: "calchandle"});
+	dojo.subscribe("/dnd/move/start", function(mover){
+	console.debug("Start move", mover);
+	});
+	dojo.subscribe("/dnd/move/stop", function(mover){
+	console.debug("Stop move", mover);
+	});
+	dojo.connect(m3, "onMoveStart", function(mover){
+	console.debug("Start moving m1", mover);
+	});
+	dojo.connect(m3, "onMoveStop", function(mover){
+	console.debug("Stop moving m1", mover);
+	});
+};
+dojo.addOnLoad(initDND3);
+
+var x='0';
+var y=0;
+var m=0;
+var opFlag='';
+var enterMode=true;
+var memFlag=false;
+var decimalFlag=true;
+var the_timeout;
+
+function enterDigit(valueDigit)
+{
+	document.getElementById('calcButton'+valueDigit).style.background="url(down"+valueDigit+".png)";
+	the_timeout = setTimeout('raiseButton('+valueDigit+');',200);
+	
+	if (!enterMode)
+	{
+		x='0';
+		enterMode=true;
+		decimalFlag=true;
+	}
+	
+	if (x=='0')
+	{
+		x='';
+	}
+	x+=valueDigit;		
+	updateDisplay();
+	return true;
+}
+
+function enterDecimal()
+{
+	document.getElementById('calcButton10').style.background="url(down10.png)";
+	the_timeout = setTimeout('raiseButton(10);',200);
+	
+	if (!enterMode)
+	{
+		x='0';
+		enterMode=true;
+		decimalFlag=true;
+	}
+	if (decimalFlag)
+	{
+		x+='.';		
+		decimalFlag=false;
+		updateDisplay();
+	}
+	return true;
+}
+
+function squareRoot()
+{
+	document.getElementById('calcButton22').style.background="url(down22.png)";
+	the_timeout = setTimeout('raiseButton(22);',200);
+	
+	if (x>=0)
+	{
+		x=Math.sqrt(parseFloat(x));
+		x+='';
+	}
+	else
+	{
+		x='NOT REAL';
+	}
+	updateDisplay();
+	enterMode=false;
+		
+	return true;
+}
+
+function changeSign()
+{
+	document.getElementById('calcButton21').style.background="url(down21.png)";
+	the_timeout = setTimeout('raiseButton(21);',200);
+	
+	if (x.charAt(0)=='-')
+	{
+		x=x.slice(1);
+	}
+	else
+	{
+		x='-'+x;
+	}
+	updateDisplay();
+	
+	return true;
+}
+
+function clearDisplay()
+{
+	document.getElementById('calcButton12').style.background="url(down12.png)";
+	the_timeout = setTimeout('raiseButton(12);',200);
+	
+	if (opFlag!='')
+	{
+		raiseButton(opFlag);
+	}
+	opFlag='';
+	
+	x='0';
+	y='0';
+	enterMode=true;
+	decimalFlag=true;
+	updateDisplay();
+
+	return true;
+}
+
+function setAdd()
+{
+	if (opFlag=='')
+	{
+		document.getElementById('calcButton13').style.background="url(down13.png)";
+		the_timeout = setTimeout('redButton(13);',200);
+	
+		y=parseFloat(x);
+		opFlag='13';
+		enterMode=false;
+	}
+	return true;
+}
+
+function setSubtract()
+{
+	if (opFlag=='')
+	{
+		document.getElementById('calcButton14').style.background="url(down14.png)";
+		the_timeout = setTimeout('redButton(14);',200);
+	
+		y=parseFloat(x);
+		opFlag='14';
+		enterMode=false;
+	}
+	return true;
+}
+
+function setMultiply()
+{
+	if (opFlag=='')
+	{
+		document.getElementById('calcButton15').style.background="url(down15.png)";
+		the_timeout = setTimeout('redButton(15);',200);
+	
+		y=parseFloat(x);
+		opFlag='15';
+		enterMode=false;
+	}
+	return true;
+}
+
+function setDivide()
+{
+	if (opFlag=='')
+	{
+		document.getElementById('calcButton16').style.background="url(down16.png)";
+		the_timeout = setTimeout('redButton(16);',200);
+	
+		y=parseFloat(x);
+		opFlag='16';
+		enterMode=false;
+	}
+	return true;
+}
+
+function power()
+{
+	if (opFlag=='')
+	{
+		document.getElementById('calcButton23').style.background="url(down23.png)";
+		the_timeout = setTimeout('redButton(23);',200);
+	
+		y=parseFloat(x);
+		opFlag='23';
+		enterMode=false;
+	}	
+	return true;
+}
+
+function performOp()
+{
+	document.getElementById('calcButton11').style.background="url(down11.png)";
+	the_timeout = setTimeout('raiseButton(11);',200);
+	
+	if (opFlag!='')
+	{
+		x=parseFloat(x);
+	
+		switch (opFlag)
+		{
+		case '23':
+			y=Math.pow(y,parseFloat(x));
+			break;
+		case '13':
+			y+=x;
+			break;
+		case '14':
+			y-=x;
+			break;
+		case '15':
+			y*=x;
+			break;
+		case '16':
+			if (x==0)
+			{
+				y='UNDEFINED';
+			}
+			else
+			{
+				y/=x;
+			}
+			break;
+		}
+		raiseButton(opFlag);
+		enterMode=false;
+		opFlag='';
+		x=y+'';
+		updateDisplay();
+	}
+	return true;
+}
+
+function increaseMem()
+{
+	document.getElementById('calcButton17').style.background="url(down17.png)";
+	the_timeout = setTimeout('raiseButton(17);',200);
+	
+	m=parseFloat(m)+parseFloat(x);
+	memFlag=true;
+	document.getElementById('leftdigit').style.background="url(leftm.png)";
+	enterMode=false;
+	
+	return true;
+}
+
+function decreaseMem()
+{
+	document.getElementById('calcButton18').style.background="url(down18.png)";
+	the_timeout = setTimeout('raiseButton(18);',200);
+	
+	m=parseFloat(m)-parseFloat(x);
+	memFlag=true;
+	document.getElementById('leftdigit').style.background="url(leftm.png)";
+	enterMode=false;
+
+	return true;
+}
+
+function recallMem()
+{
+	document.getElementById('calcButton19').style.background="url(down19.png)";
+	the_timeout = setTimeout('raiseButton(19);',200);
+	
+	if (memFlag)
+	{
+		x=parseFloat(m);
+		x+='';
+		updateDisplay();
+		enterMode=false;
+	}
+	return true;
+}
+
+function clearMem()
+{
+	document.getElementById('calcButton20').style.background="url(down20.png)";
+	the_timeout = setTimeout('raiseButton(20);',200);
+
+	m=0;
+	memFlag=false;
+	document.getElementById('leftdigit').style.background="url(leftdigit.png)";
+
+	return true;
+}
+
+function raiseButton(valueDigit)
+{
+	document.getElementById('calcButton'+valueDigit).style.background="url(button"+valueDigit+".png)";
+	return true;
+}
+
+function redButton(valueDigit)
+{
+	document.getElementById('calcButton'+valueDigit).style.background="url(redbutton"+valueDigit+".png)";
+	return true;
+}
+
+function updateDisplay()
+{
+	document.getElementById('display').value=x;
+	return true;
+}
+
+-->
+</script>
+
+</head>
+
+<body onload="updateDisplay()" >
+
+
+<!-- The CALCULATOR begins here. -->
+
+
+<table cellpadding="0" cellspacing="0" id="calculator" style="position:absolute;left:10px;top:10px;">
+
+<!-- The FIRST ROW begins here. -->
+
+<tr id="calchandle">
+<td id ="topleft3" style=""></td>
+<td id="top3">
+<img src="sc.png" style="float:left;position:relative;top:1px;left:-11px;" alt="" />
+<img src="a2g.png" style="float:right;position:relative;top:1px;right:-11px;" alt="" />
+</td>
+
+<td id="topright3" style=""></td></tr>
+
+<!-- The SECOND ROW begins here. -->
+
+<tr>
+<td id="left3" rowspan="2"></td>
+
+<td style="background:url(blue.png);padding-top:10px;padding-bottom:10px;">
+
+<div id="controlswrapper" style="position:relative;height:37px;right:0px;">
+
+<div style="position:absolute;top:0px;right:3px;height:37px;width:11px;background:url(rightdigit.png) top left no-repeat;"></div>
+
+<input type="text" id="display" style="position:absolute;top:0px;right:14px;height:37px;width:247px;border:0px;background:url(display.png) top left repeat-x;text-align:right;color:#ffffff;font-size:28px;font-family:times,serif;" />
+
+<div id="leftdigit" style="position:absolute;top:0px;right:262px;height:37px;width:19px;background:url(leftdigit.png) top left no-repeat;"></div>
+
+</div>
+
+</td>
+
+<td id="right3" rowspan="2" style=""></td></tr>
+
+<!-- The THIRD ROW begins here. -->
+
+<tr>
+
+<td style="background:url(blue.png);">
+
+<div id="upbuttonwrapper" style="position:relative;height:244px;width:284px;">
+
+<input type="button" id="calcButton17" class="upButton" onclick="increaseMem()" style="border:0px;padding:0px;width:72px;height:44px;background:url(button17.png);display:block;position:absolute;left:0px;top:0px;"></input>
+
+<input type="button" id="calcButton1" class="upButton" onclick="enterDigit(1)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button1.png);display:block;position:absolute;left:81px;top:0px;"></input>
+
+<input type="button" id="calcButton2" class="upButton" onclick="enterDigit(2)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button2.png);display:block;position:absolute;left:134px;top:0px;"></input>
+
+<input type="button" id="calcButton3" class="upButton" onclick="enterDigit(3)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button3.png);display:block;position:absolute;left:187px;top:0px;"></input>
+
+<input type="button" id="calcButton13" class="upButton" onclick="setAdd()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button13.png);display:block;position:absolute;left:240px;top:0px;"></input>
+
+
+
+<input type="button" id="calcButton18" class="upButton" onclick="decreaseMem()" style="border:0px;padding:0px;width:72px;height:44px;background:url(button18.png);display:block;position:absolute;left:0px;top:50px;"></input>
+
+<input type="button" id="calcButton4" class="upButton" onclick="enterDigit(4)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button4.png);display:block;position:absolute;left:81px;top:50px;"></input>
+
+<input type="button" id="calcButton5" class="upButton" onclick="enterDigit(5)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button5.png);display:block;position:absolute;left:134px;top:50px;"></input>
+
+<input type="button" id="calcButton6" class="upButton" onclick="enterDigit(6)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button6.png);display:block;position:absolute;left:187px;top:50px;"></input>
+
+<input type="button" id="calcButton14" class="upButton" onclick="setSubtract()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button14.png);display:block;position:absolute;left:240px;top:50px;"></input>
+
+
+
+<input type="button" id="calcButton19" class="upButton" onclick="recallMem()" style="border:0px;padding:0px;width:72px;height:44px;background:url(button19.png);display:block;position:absolute;left:0px;top:100px;"></input>
+
+<input type="button" id="calcButton7" class="upButton" onclick="enterDigit(7)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button7.png);display:block;position:absolute;left:81px;top:100px;"></input>
+
+<input type="button" id="calcButton8" class="upButton" onclick="enterDigit(8)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button8.png);display:block;position:absolute;left:134px;top:100px;"></input>
+
+<input type="button" id="calcButton9" class="upButton" onclick="enterDigit(9)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button9.png);display:block;position:absolute;left:187px;top:100px;"></input>
+
+<input type="button" id="calcButton15" class="upButton" onclick="setMultiply()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button15.png);display:block;position:absolute;left:240px;top:100px;"></input>
+
+
+
+<input type="button" id="calcButton20" class="upButton" onclick="clearMem()" style="border:0px;padding:0px;width:72px;height:44px;background:url(button20.png);display:block;position:absolute;left:0px;top:150px;"></input>
+
+<input type="button" id="calcButton21" class="upButton" onclick="changeSign()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button21.png);display:block;position:absolute;left:81px;top:150px;"></input>
+
+<input type="button" id="calcButton0" class="upButton" onclick="enterDigit(0)" style="border:0px;padding:0px;width:44px;height:44px;background:url(button0.png);display:block;position:absolute;left:134px;top:150px;"></input>
+
+<input type="button" id="calcButton10" class="upButton" onclick="enterDecimal()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button10.png);display:block;position:absolute;left:187px;top:150px;"></input>
+
+<input type="button" id="calcButton16" class="upButton" onclick="setDivide()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button16.png);display:block;position:absolute;left:240px;top:150px;"></input>
+
+
+
+<input type="button" id="calcButton12" class="upButton" onclick="clearDisplay()" style="border:0px;padding:0px;width:72px;height:44px;background:url(button12.png);display:block;position:absolute;left:0px;top:200px;"></input>
+
+<input type="button" id="calcButton22" class="upButton" onclick="squareRoot()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button22.png);display:block;position:absolute;left:81px;top:200px;"></input>
+
+<input type="button" id="calcButton23" class="upButton" onclick="power()" style="border:0px;padding:0px;width:44px;height:44px;background:url(button23.png);display:block;position:absolute;left:134px;top:200px;"></input>
+
+<input type="button" id="calcButton11" class="upButton" onclick="performOp()" style="border:0px;padding:0px;width:97px;height:44px;background:url(button11.png);display:block;position:absolute;left:187px;top:200px;"></input>
+
+</div>
+
+</td>
+
+</tr>
+
+<!-- The FOURTH ROW begins here. -->
+
+<tr>
+<td id="bottomleft3" style=""></td>
+<td id="bottom3" style=""></td>
+<td id="bottomright3" style=""></td></tr>
+
+</table>
+
+
+<!-- The CALCULATOR ends here. -->
+
+
+</body>
+
+</html>

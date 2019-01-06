@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+
+<!-- The HEAD begins here. -->
+
+
+<head>
+
+<title>Algebra2Go</title>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A collection of free resources for learning algebra." />
+<meta name="keywords" content="prealgebra,algebra,videos,notes,worksheets,quizzes,math" />
+<meta name="author" content="Patrick Quigley" />
+
+<link rel="shortcut icon" href="../../framefiles/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../../framefiles/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="../../framefiles/smiles.png" />
+<link rel="stylesheet" type="text/css" href="../../framefiles/framestyle.css" />
+
+<script type="text/javascript">
+
+<!--
+
+var tools = new Array(7)
+	for (i = 0; i < tools.length; ++ i) {
+		tools [i] = new Array(6);
+	}
+
+tools [0] [0] = "p030.pdf";
+tools [0] [1] = "p030s.pdf";
+tools [0] [2] = "introDeci1WS.pdf";
+tools [0] [3] = "introDeci1YT.html";
+tools [0] [4] = "introDeciHW.pdf";
+tools [0] [5] = "introDeci1.html";
+
+tools [1] [0] = "p030.pdf";
+tools [1] [1] = "p030s.pdf";
+tools [1] [2] = "introDeci2WS.pdf";
+tools [1] [3] = "introDeci2YT.html";
+tools [1] [4] = "introDeciHW.pdf";
+tools [1] [5] = "introDeci2.html";
+
+tools [2] [0] = "p031.pdf";
+tools [2] [1] = "p031s.pdf";
+tools [2] [2] = "operDeciWS.pdf";
+tools [2] [3] = "operDeciYT.html";
+tools [2] [4] = "operDeciHW.pdf";
+tools [2] [5] = "operDeci.html";
+
+tools [3] [0] = "p032.pdf";
+tools [3] [1] = "p032s.pdf";
+tools [3] [2] = "moreDeciWS.pdf";
+tools [3] [3] = "moreDeciYT.html";
+tools [3] [4] = "moreDeciHW.pdf";
+tools [3] [5] = "moreDeci.html";
+
+tools [4] [0] = "p033.pdf";
+tools [4] [1] = "p033s.pdf";
+tools [4] [2] = "circlesWS.pdf";
+tools [4] [3] = "circlesYT.html";
+tools [4] [4] = "circlesHW.pdf";
+tools [4] [5] = "circlesHW.html";
+
+tools [5] [0] = "p034.pdf";
+tools [5] [1] = "p034s.pdf";
+tools [5] [2] = "eqDeciWS.pdf";
+tools [5] [3] = "eqDeciYT.html";
+tools [5] [4] = "eqDeciHW.pdf";
+tools [5] [5] = "eqDeci.html";
+
+tools [6] [0] = "p035.pdf";
+tools [6] [1] = "p035s.pdf";
+tools [6] [2] = "sqRootsWS.pdf";
+tools [6] [3] = "sqRootsYT.html";
+tools [6] [4] = "sqRootsHW.pdf";
+tools [6] [5] = "sqRoots.html";
+
+function chooseTopic()
+{
+	var topicNumber = document.getElementById('topicList').value;
+	var leftNumber = document.getElementById('leftList').value;
+	var rightNumber = document.getElementById('rightList').value;
+
+	parent.leftside.location=tools[topicNumber][leftNumber];
+	parent.rightside.location=tools[topicNumber][rightNumber];
+
+	return true;
+}
+
+function chooseLeft()
+{
+	var topicNumber = document.getElementById('topicList').value;
+	var leftNumber = document.getElementById('leftList').value;
+
+	parent.leftside.location=tools[topicNumber][leftNumber];
+
+	return true;
+}
+
+function chooseRight()
+{
+	var topicNumber = document.getElementById('topicList').value;
+	var rightNumber = document.getElementById('rightList').value;
+
+	parent.rightside.location=tools[topicNumber][rightNumber];
+
+	return true;
+}
+
+-->
+
+</script>
+
+</head>
+
+
+<!-- The BODY begins here. -->
+
+
+<body style="background:url(../../quizfiles/blue.png);margin:5px">
+
+<table style="width:100%">
+<tr>
+<td style="width:33%;text-align:left">
+<select name="leftChoice" id="leftList" onchange="chooseLeft()">
+	<option value="0" selected="selected">Notes: English</option>
+	<option value="1">Notes: Spanish</option>
+	<option value="2">Video Worksheet</option>
+	<option value="3">YouTube Video</option>
+	<option value="4">Homework</option>
+</select>
+</td>
+
+<td style="width:34%;text-align:center">
+<select name="topicList" id="topicList" onchange="chooseTopic()">
+	<option value="0" selected="selected">Introduction to Decimals: Part 1</option>
+	<option value="1">Introduction to Decimals: Part 2</option>
+	<option value="2">Operations with Decimals</option>
+	<option value="3">More Decimals</option>
+	<option value="4">Circles, Cylinders and Spheres</option>
+	<option value="5">Equations with Decimals</option>
+	<option value="6">Square Roots</option>
+</select>
+</td>
+
+<td style="width:33%;text-align:right">
+<select name="rightChoice" id="rightList" onchange="chooseRight()">
+	<option value="0">Notes: English</option>
+	<option value="1">Notes: Spanish</option>
+	<option value="2">Video Worksheet</option>
+	<option value="3" selected="selected">YouTube Video</option>
+	<option value="4">Homework</option>
+</select>
+</span>
+</td>
+</tr>
+</table>
+
+<!--
+<div id="pagetop">
+
+<a href="http://www.saddleback.edu">
+<img alt="" id="sclink" src="../../framefiles/sclink2.png" /></a>
+<a href="../index.html">
+<img alt="" id="algebra2go" src="../../framefiles/algebra2go.png" /></a>
+
+</div>
+
+<div id="goldtop"><img id="topspacer" src="../../framefiles/goldspacer.png" alt="" /></div>
+-->
+
+</body>
+
+</html>
