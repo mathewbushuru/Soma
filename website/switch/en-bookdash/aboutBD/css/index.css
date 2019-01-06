@@ -1,0 +1,503 @@
+*
+Theme Name: Book Dash
+Theme URI: http://bookdash.org/
+Author: Arthur Attwell
+Author URI: http://arthurattwell.com/
+Description: The theme for bookdash.org
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: book dash
+Text Domain: bookdash
+*/
+
+/* -------------- BODY */
+
+body {
+	font-family: "Crimson Text", serif;
+	font-size: 1.3em;
+	margin: 0;
+	padding: 0;
+	background: #D0CFB3; /* Best to use the same colour as #footer */
+	color: #333;
+	line-height: 130%;
+}
+
+/* -------------- STRUCTURE */
+
+#debug p {
+	display: none;
+	width: 100%;
+	font-size: small;
+	background-color: pink;
+	position: fixed;
+	bottom: 0;
+	margin: 0;
+}
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+}
+#header {
+	margin: 1em;
+}
+#go-to {
+	position: fixed;
+	right: 1em;
+	bottom: 1em;
+}
+.content {
+	padding: 0.3em 1em 1em 1em;
+	background: #FFFFFF;
+	border-radius: 1em;
+	min-height: 30em;
+}
+.post {
+	max-width: 600px;
+}
+#after-content {
+	clear: both;
+}
+#footer {
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	padding: 1em;
+	border-top: 1px solid silver;
+	background: #D0CFB3;
+}
+#footer p {
+	color: #333333;
+	font-size: 0.7em;
+	line-height: initial;
+}
+#footer a {
+	color: #0089bc;
+}
+
+/* -------------- SIDEBAR */
+
+.sidebar {
+	float: right;
+	font-family: "Source Sans Pro", sans-serif;
+	font-weight: 300;
+	font-size: 80%;
+	color: grey;
+	width: 280px;
+	padding: 2em 1em 2em 3em;
+}
+.sidebar .logo a {
+	background: url(images/book-dash-logo.png) no-repeat 0 0;
+	display: block;
+	margin: 0 0 3.5em 0;
+	width: 270px;
+	height: 135px;
+}
+.sidebar .widget {}
+.sidebar form p {
+	text-align: initial;
+	margin: 0;
+}
+.sidebar h2 {
+	border: none;
+	padding: 0;
+	margin: 1.5em 0 1em 0;
+	border: none;
+	padding: 0;
+	margin: 2em 0 1em 0;
+	font-family: "Source Sans Pro", Helvetica, Arial;
+	font-style: normal;
+	font-size: initial;
+	text-align: initial;
+	text-transform: uppercase;
+	letter-spacing: 0.04em;
+}
+.sidebar ul {
+	list-style-type: none;
+	margin: 2em 0 0 0;	
+	padding: 0 0 0 0.25em;
+}
+.join-mail-list {
+	margin: 1em 0 0 0;
+}
+.sidebar .logo img {
+	width: 100%;
+}
+.social-media-buttons {
+	clear: both;
+	padding-top: 1em;
+}
+.social-media-buttons a, .social-media-buttons a:link, .social-media-buttons a:visited {
+	margin: 0 0.3em 0 0.3em;
+	color: grey;
+}
+.social-media-buttons a:hover {
+	color: #0089bc;
+}
+.sidebar .textwidget:empty {
+	display: none;
+}
+.sidebar .textwidget img {
+	width: 100px;
+}
+
+/* Tag lists in sidebar created with [tags] shortcode */
+.sidebar span.tag-list-before:before {
+    content: "See more about";
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 2em 0 0.5em 0;
+}
+
+/* Category lists in sidebar created with [languages] shortcode */
+.sidebar ul.language-list:before {
+    content: "See all books in";
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+    margin: 2em 0 0.5em 0;
+}
+
+/* Not currently in use 
+.sidebar .supporters-sidebar {
+	font-family: "Crimson Text", serif;
+	font-style: italic;
+	color: grey;
+	line-height: 120%;
+	margin: 3em 0 1em 0;
+}
+.sidebar .supporters img {
+	margin: 0.5em;
+}
+*/
+
+/* -------------- TEXT ELEMENTS */
+
+h1, h2, h3, h3, h4, h5, h6 {
+	font-weight: 300;
+	margin: 2em 0 0 0;
+	line-height: 100%;
+}
+h1 {
+	font-family: "Crimson Text", sans-serif;
+	font-size: 2.5em;
+	color: #666;
+	margin-bottom: 1em;
+}
+h1.post-title, h1.page-title {
+	margin-top: 0.3em;
+}
+h2 {
+	border-top: 1px solid #D0CFB3;
+	padding-top: 1em;
+	max-width: 540px;
+}
+.post h2 {
+	border-top: none; /* No border if the heading's inside a post... */
+}
+h2.post-title-archive {
+	border-top: 1px solid #D0CFB3; /* ... unless it's a post title on an archive page */
+}
+p, ol, ul {
+	max-width: 560px;
+}
+p.shout {
+	font-size: 250%;
+	line-height: 100%;
+	margin-top: 0.1em;
+}
+p.quote {
+	font-size: 150%;
+	line-height: 100%;
+	margin: 1em 0 1em 0.5em;
+	font-style: italic;
+}
+blockquote p {
+	color: #7F7E6B;
+	font-style: italic;
+}
+li {
+	margin: 0;
+}
+strong {
+	font-weight: 600;
+	line-height: inherit;
+}
+em {
+	line-height: inherit;
+}
+a img { 
+	border: none;
+}
+a:link, a:visited {
+	color: #0089bc;
+	text-decoration: none;
+}
+.menu a:hover, .menu a:active, .menu a:focus, .current-menu-item a {
+	border: 1px solid gainsboro;
+	padding: 0.05em 0.2em 0.05em 0.2em;
+	margin: -0.25em;
+	border-radius: 0.2em;
+}
+a h1.post-title, a h2.post-title-archive {
+	color: #333;
+}
+a.go-top-button {
+	display: inline-block; 
+	font-size: 80%;
+	font-family: "Source Sans Pro", sans-serif;
+	color: white; 
+	opacity: 0.75;
+	text-align: center; 
+	text-decoration: none; 
+	background-color: silver;
+	border: 1px solid gainsboro; 
+	border-radius: 0.25em; 
+	width: 3em; 
+	padding: 0.5em; 
+}
+a.body-button, a.sidebar-button, .mc4wp-form button, input[type=button], input[type=submit] {
+	display: inline-block; 
+	font-family: "Source Sans Pro", sans-serif;	
+	font-weight: 300;
+	font-size: initial;
+	color: white; 
+	text-align: center; 
+	text-decoration: none; 
+	background-color: #0089bc;
+	border: 1px solid gainsboro; 
+	border-radius: 0.25em; 
+	max-width: 9em;
+	min-width: 4em;
+	padding: 0.5em; 	
+}
+a.body-button {
+	font-size: 80%;
+}
+.sidebar .body-button {
+	font-size: inherit;
+}
+a.sidebar-button:hover, a.body-button:hover {
+	opacity: 0.8;
+}
+a.go-top-button:hover {
+	opacity: 1;
+}
+
+/* -------------- SPECIAL DIVS */
+
+.box {
+	border: 1px solid #D0CfB3;
+	border-radius: 0.2em;
+	margin: 0 2em 0 0;
+	padding: 0 0.5em;
+}
+
+.post-tags {
+    border-top: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1;
+    margin: 1em 2em 2em 0;
+    padding: 0.2em 0;
+    font-size: 0.7em;
+    font-family: "Source Sans Pro", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+.post-tags:empty {
+	display: none;
+}
+
+/* -------------- TABLES */
+
+table {
+	border-collapse: collapse;
+	width: 100%;
+	max-width: 560px;
+}
+td {
+	padding: 0.3em;
+	border: 1px solid gainsboro;
+}
+
+/* -------------- IMAGES */
+
+figure {
+	margin: 1em 0;
+}
+figcaption {
+	font-size: smaller;
+	font-style: italic;
+	margin: 0.5em 0 0 0.2em;
+	line-height: 110%;
+}
+.post img {
+	margin: 0 0.5em 0 0;
+	padding: 0.2em;
+	border: 1px solid gainsboro;
+	background-color: #f2f2f2;
+	max-width: 600px;
+}
+.post img .alignleft, .post a img.alignleft, .post-thumbnail, .archive-thumbnail {
+	float: left;
+}
+.archive-thumbnail {
+	margin: 1.3em 0.5em 0 0;
+}
+.sidebar p img {
+	border: none;
+}
+
+/* --------------- GALLERY FORMAT */
+
+.format-gallery figure {
+	text-align: center;
+	float: left;
+	margin-right: -10px;
+}
+.format-gallery figcaption {
+	min-height: 70px;
+}
+.format-gallery img {
+	background-color: transparent;
+	border: 0;
+	max-width: 100px;
+	max-height: 100px;
+	margin: 0;
+	border-radius: 3em;
+}
+.format-gallery h2.post-title-archive {
+	margin: 0 0 1em 0;
+}
+
+/* --------------- FORMS */
+
+input, textarea {
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: initial;
+	color: #555555;
+}
+
+/* Mailchimp */
+
+input.search-field, input#mc4wp_email {
+	padding: 0.05em 0.2em 0.05em 0.2em;
+	margin: 0.2em 0 0 -0.03em;
+	font-weight: 300;
+	width: 10em;
+	border: 1px solid white;
+	float: left;
+}
+input.search-field:focus, input.search-field:hover, 
+input#mc4wp_email:focus, input#mc4wp_email:hover {
+	border: 1px solid gainsboro;
+	border-radius: 0.2em;
+}
+#mc4wp-form-1:focus:after, #mc4wp-form-1:hover:after {
+	content: "To subscribe, type your email and hit subscribe";
+	font-family: "Source Sans Pro", Helvetica, Arial;
+	font-size: initial;
+	font-style: initial;
+	margin-top: -1em;
+	line-height: 110%;
+	max-width: 10em;
+}
+.mc4wp-form input[type=submit] {
+    float: right;
+    padding: 0.2em;
+    background-color: silver;
+}
+
+
+/* Mailchimp subscribe form */
+
+div#mc_embed_signup_scroll ul {
+    list-style-type: none;
+    padding: 0;
+}
+label[for="mce-EMAIL"], label[for="mce-FNAME"], label[for="mce-LNAME"] {
+    width: 25%;
+    display: inline-block;
+}
+input#mce-EMAIL, input#mce-FNAME, input#mce-LNAME {
+    width: 60%;
+}
+
+
+/* PayPal */
+form.paypal {
+	line-height: 0;
+}
+form.paypal img {
+	display: none; /* Hides PayPal's 1px gif */
+}
+
+/* ADMIN */
+
+a.post-edit-link {
+	font-family: "Source Sans Pro";
+	font-weight: 300;
+	text-transform: uppercase;
+	font-size: 80%;
+	letter-spacing: 0.05em;
+	display: inline-block;
+	padding: 0.1em 0.2em;
+	margin: 1em 0 0 0;
+	background-color: #D0CFB3;
+	border-radius: 0.2em;
+	color: white;
+	clear: both;
+	float: left;
+}
+a.post-edit-link:hover {
+	background-color: #a6a58f;
+}
+
+/* Staff Directory plugin styles */
+
+.staff .post-thumbnail img, .single-staff .photo img {
+	border-radius: 4em;
+	width: 4em;
+	height: 4em;
+}
+.single-staff {
+	min-height: 10em;
+	width: 8em !important;
+	font-family: "Source Sans Pro", sans-serif;
+	font-size: 0.8em;
+	font-weight: 300;
+	text-align: center;
+	float: left;
+	line-height: 120%;
+	margin-bottom: 2em;
+	margin-right: 0.5em;
+}
+/* No space after last entry in directory */
+.single-staff:last-child {
+	margin-bottom: 0;
+}
+.single-staff img {
+	height: 4em;
+	width: 4em;
+	border-radius: 4em;
+	margin: 0 0 0.5em 0;
+}
+/* Make these images greyscale */
+.single-staff img {
+	-webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
+	filter: gray;
+	/*filter: url("data:image/svg+xml;utf8,<svg version='1.1' xmlns='http://www.w3.org/2000/svg' height='0'><filter id='greyscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0' /></filter></svg>#greyscale"); not working */
+}
+/* Clear floats after directory */
+.staff-directory:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Audio playback */
+
+/* mejs adds a clear:both here that messes up layout. Let's disable it. */
+.mejs-container {
+    clear: none!important;
+}

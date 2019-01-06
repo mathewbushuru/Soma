@@ -1,0 +1,68 @@
+body, div, table {
+   font: 10pt verdana,arial,sans-serif }
+body {
+   margin-left: 25; margin-right: 25;
+   background: white }
+h1 {
+   font: bold 17pt arial,verdana,helvetica; color: #ffc;
+   text-align: right; margin-right: 10pt;
+   margin-bottom: .25em }
+h2 {
+   font: bold 16pt verdana; color: sienna }
+h3 {
+   font: bold 13pt verdana; color: steelblue }
+h4 {
+   font: bold 12pt arial; color: #46a }
+h5 {
+   font: bold 10pt verdana; color: #555 }
+
+h2, h3, h4, h5, h6 {
+   margin-bottom: 5 }
+
+a:link, a:visited {
+   color: navy }
+a:active {
+   background-color: #eec; color: maroon }
+a:hover {
+   color: maroon }
+
+b {
+   color: maroon }
+i {
+   font-weight: bold; color: maroon }
+sup {
+   font-size: 8pt }
+li {
+   padding-bottom: 5pt }
+hr { color: blue }
+
+.back {
+   margin-left: 30; margin-right: 30; margin-bottom: 20;
+   text-align: center; padding: 5px; border: none }
+.code {
+   color: #600; font: bold 10pt "courier new" }
+.copy {
+   font: 8pt; text-align: center; color: maroon }
+div.code {
+   padding-left: 25px }
+.header {
+   width: 100%; color: #033;
+   filter: shadow( color=#cccccc ); padding-left: 5 }
+.hilite {
+   color: maroon; }
+#message, #lblMessage {
+   font: bold 10pt; color: #600 }
+.shad {
+   width: 100%; filter: shadow( color=#cccccc ) }
+.small {
+   font-size: 8pt; text-align: center }
+table.data th {
+   background-color: lightsteelblue; padding: 5 }
+table.data td {
+   background-color: whitesmoke; vertical-align: top; padding: 5 }
+#msg {
+   font: bold 13pt arial; color: navy; cursor: hand }
+.note {
+   font:bold 11pt arial; background:slategray; color:#def;
+   padding:10px; margin-left:20px; margin-right:20; margin-top:20 }
+.note b {  color:#cd8 }

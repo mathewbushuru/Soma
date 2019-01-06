@@ -1,0 +1,627 @@
+bplist00ÓN_WebMainResource_WebSubresources_WebSubframeArchivesÕ	
+^WebResourceURL_WebResourceTextEncodingName_WebResourceMIMEType_WebResourceData_WebResourceFrameName_6http://www.dynamicdrive.com/dynamicindex4/flyimage.htmUUTF-8Ytext/htmlOTf<html><!--Dynamic Drive DHTML Scripts, examples, and tutorials. Copyrighted Â© 1998--><head>
+<meta name="description" content="Click here for a DHTML script that uses the shadow filter of DHTML to create a pop up image!">
+<meta name="keywords" content="filters, DHTML, shadow filter, drop shadow filter">
+<script type="text/javascript" src="moveobj.js"> </script>
+<script type="text/javascript">
+
+/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script>
+<title>Dynamic Drive DHTML Scripts- Floating images script</title>
+<style>.footlinks{text-decoration: none;  color: black;}</style><style>
+<!--
+
+.tablinks a, .tablinks a:visited{
+color:blue
+}
+
+.tablinks a:hover{
+color:brown
+}
+-->
+</style></head><body bgcolor="#FFFFFF" background="../dynamicback2.gif" leftmargin="0" marginwidth="0">
+
+<table border="0" width="619" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="144" valign="middle" align="left"><p align="center"><a href="http://dynamicdrive.com"><img src="../ddrivelogo.gif" width="133" height="50" alt="Dynamic Drive DHTML code library!" border="0"></a><br>
+    <a href="http://dynamicdrive.com"><font face="Verdana" color="#000000"><strong><small><small>Dynamicdrive.com</small></small></strong></font></a></p></td>
+    <td width="5" valign="middle" align="left"></td>
+    <td width="470"><p align="center"><script type="text/javascript" src="http://www.dynamicdrive.com/adbanner.js"></script><script language="javascript" src="http://a.tribalfusion.com/j.ad?site=DynamicDrive&amp;adSpace=ros&amp;size=468x60&amp;type=horiz&amp;noAd=1&amp;requestID=15374724990.047071466222405434"></script><script language="JavaScript">
+<!--
+google_ad_url = '';
+google_org_error_handler = window.onerror;
+
+function google_show_ad() {
+  var w = window;
+  w.onerror = w.google_org_error_handler;
+  
+  w.google_ad_url = 'http://pagead2.googlesyndication.com/pagead/ads?';
+  w.google_ad_url += 'client=ca-tribalfusion_3_728x90';
+  w.google_ad_url += '&format=728x90_new';
+  w.google_ad_url += '&url=' + escape(w.google_page_url);
+  w.google_ad_url += '&color_bg=FFFFFF';
+  w.google_ad_url += '&color_border=000000';
+  w.google_ad_url += '&color_line=000000';  
+  w.google_ad_url += '&output=html&color_border=ffffff&color_bg=ffffff&color_text=003366&color_link=990000&color_url=009933&adsafe=high&random=' + (new Date()).getTime();
+  w.google_ad_url += '&hl=en';
+  		    
+  w.google_ad_url = w.google_ad_url.substring(0, 1000);
+  w.google_ad_url = w.google_ad_url.replace(/%\w?$/, '');  
+
+  document.write('<ifr' + 'ame' +
+                 ' name=google_ads_frame width=728 height=90 frameborder=0' + 
+                 ' src=' + w.google_ad_url +
+                 ' marginwidth=0 marginheight=0 vspace=0 hspace=0 allowtransparency=true scrolling=no></ifr' + 'ame>');
+  w.google_page_url = null;
+}
+
+function google_error_handler(message, url, line) {
+  google_show_ad();
+  return true;
+}
+
+window.onerror = google_error_handler;
+
+if (window.google_page_url == null) {
+  google_page_url = document.referrer;
+  if (window.top.location == document.location) {
+    google_page_url = document.location;
+  }
+}
+
+google_show_ad();
+
+function  tfLogclick() {
+  window.focus();
+  if (window.status) {
+    TFClick = new Image();
+    TFClick.src = 'http://a.tribalfusion.com/h.click/aNmMQg2PYePABB3dvo0tBKmHEN5AvY4GU9TVJ6WsFePPrwWtQSUbfP3bZasUEMvVTQ9Qa3LQGZbZdRrmsPH3iWGQ54b6pntun0qaw4dYZaPcFZa4P3IodZapVWBd0rvbYFJ60qqmSUUDUFQ3VtF4nUQx2cfFNAeASW/';
+  }
+}
+
+if (document.getElementById("google_ads_frame")) {
+	document.getElementById("google_ads_frame").onfocus = tfLogclick
+}
+
+TFPlay317005906 = new Image();
+TFPlay317005906.src = "http://a.tribalfusion.com/play/aNmMQg2PYePABB3dvo0tBKmHEN5AvY4GU9TVJ6WsFePPrwWtQSUbfP3bZasUEMvVTQ9Qa3LQGZbZdRrmsPH3iWGQ54b6pntun0qaw4dYZaPcFZa4P3IodZapVWBd0rvbYFJ60qqmSUUDUFQ3VtF4nUQx2cfFNAeASW/";
+
+// -->
+</script><iframe name="google_ads_frame" width="728" height="90" frameborder="0" src="http://pagead2.googlesyndication.com/pagead/ads?client=ca-tribalfusion_3_728x90&amp;format=728x90_new&amp;url=http%3A//www.dynamicdrive.com/dynamicindex4/flyimage.htm&amp;color_bg=FFFFFF&amp;color_border=000000&amp;color_line=000000&amp;output=html&amp;color_border=ffffff&amp;color_bg=ffffff&amp;color_text=003366&amp;color_link=990000&amp;color_url=009933&amp;adsafe=high&amp;random=1238488053933&amp;hl=en" marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no"></iframe>
+
+
+</p></td>
+  </tr>
+  <tr>
+    <td width="144" valign="middle" align="left"></td>
+    <td width="5" valign="middle" align="left"></td>
+    <td width="470"><br>
+
+
+<table border="0" cellspacing="0" cellpadding="0" class="tablinks">
+  <tbody><tr>
+    <td rowspan="2"><img src="http://www.codearena.com/menuleft.gif" width="6" height="23"></td>
+    <td height="1" bgcolor="#400000" colspan="3"><img src="http://www.codearena.com/spacer.gif" width="1" height="1"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuright.gif" width="6" height="22"></td>
+    <td rowspan="2" width="7"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuleft.gif" width="6" height="23"></td>
+    <td bgcolor="#400000" height="1"><img src="http://www.codearena.com/spacer.gif" width="1" height="1"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuright.gif" width="6" height="22"></td>
+    <td rowspan="2" width="7"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuleft.gif" width="6" height="23"></td>
+    <td bgcolor="#400000"><img src="http://www.codearena.com/spacer.gif" width="1" height="1"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuright.gif" width="6" height="22"></td>
+    <td rowspan="2" width="7"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuleft.gif" width="6" height="23"></td>
+    <td bgcolor="#400000" height="1"><img src="http://www.codearena.com/spacer.gif" width="1" height="1"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuright.gif" width="6" height="22"></td>
+    <td rowspan="2" width="7"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuleft.gif" width="6" height="23"></td>
+    <td bgcolor="#400000"><img src="http://www.codearena.com/spacer.gif" width="1" height="1"></td>
+    <td rowspan="2"><img src="http://www.codearena.com/menuright.gif" width="6" height="22"></td>
+  </tr>
+  <tr>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/new.htm" style="text-decoration: none;"><strong><font face="Tahoma,Verdana">New</font></strong></a></td>
+    <td bgcolor="#EEEECC" width="11">
+      <p align="center"><strong><font face="Tahoma,Verdana">|</font></strong></p></td>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/revised.htm" style="text-decoration: none"><strong><font face="Tahoma,Verdana">Revised</font></strong></a></td>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/hot.htm" style="text-decoration: none;"><strong><font face="Tahoma,Verdana">Hot</font></strong></a></td>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/faqs.htm" style="text-decoration: none;"><strong><font face="Tahoma,Verdana">FAQ</font></strong></a></td>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/submitscript.htm" style="text-decoration: none;"><strong><font face="Tahoma,Verdana">Submit</font></strong></a></td>
+    <td bgcolor="#EEEECC"><a href="http://www.dynamicdrive.com/morezone/index.htm" style="text-decoration: none;"><strong><font face="Tahoma,Verdana">M Zone</font></strong></a></td>
+  </tr>
+</tbody></table>
+
+    </td>
+  </tr>
+  <tr>
+    <td width="144" valign="middle" align="left"></td>
+    <td width="5" valign="middle" align="left"></td>
+    <td width="470"><font color="#FFFFFF">.</font></td>
+  </tr>
+</tbody></table>
+
+<table border="0" width="98%" cellspacing="0" cellpadding="0">
+  <tbody><tr>
+    <td width="136" valign="top" align="left"><img src="../spacer.gif" width="135" height="1" alt="spacer.gif (807 bytes)"><br>
+    <img src="../spacer.gif" width="135" height="1" alt="spacer.gif (807 bytes)"><br>
+
+     <table class="leftmenuclass" border="0" width="134" cellspacing="0" cellpadding="0">
+        <tbody><tr>
+          <td width="5">
+          <font color="#FFFFFF">.</font>
+          </td>
+          <td width="129" bgcolor="#406284">
+            <p align="center"><b><font color="#FFFFFF" face="Tahoma" size="3">Menu</font></b></p></td>
+        </tr>
+        <tr>
+          <td>
+</td>
+          <td style="font:bold 10pt Verdana; line-height:21px;" bgcolor="#FFFFFF">
+<a href="http://www.dynamicdrive.com/search.htm">Search DD</a><br>
+<a href="http://www.dynamicdrive.com/recommendit/">Recommend DD</a><br>
+<a href="http://www.dynamicdrive.com/forums/">Help Forums</a>
+<span style="font-weight: 400"><font color="#FF0000">New</font></span><br>
+<a href="http://www.dynamicdrive.com/about/press.htm">DHTML books</a><br>
+<a href="http://www.dynamicdrive.com/mediakit/">Advertising</a><br>
+<a href="http://www.dynamicdrive.com/contact.htm">Contact</a></td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td bgcolor="#FFFFFF">
+ <strong><font face="Verdana"><small><br>
+ Featured Script<br>
+                          <a href="http://www.dynamicdrive.com/dynamicindex5/button3.htm">
+ Rollover buttons</a>Â </small></font></strong><br>
+                          <font face="Verdana" size="2">Turn regular form 
+ buttons into rollover menus with this script!<br>
+                          <font color="#FFFFFF">.</font></font>
+          </td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td bgcolor="#406284">
+            <p align="center"><b><font color="#FFFFFF" face="Tahoma" size="2">Partners</font></b></p></td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td style="font:bold 10pt Arial; line-height:18px;" bgcolor="#FFFFFF">
+<a href="http://www.javascriptkit.com">Free JavaScripts</a><br>
+<font color="#FFFFFF">.</font></td>
+        </tr>
+        <tr>
+          <td>
+          </td>
+          <td width="100%" bgcolor="#406284">
+            <p align="center"><b><font color="#FFFFFF" face="Tahoma" size="2">Link
+            to DD</font></b></p></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td bgcolor="#FFFFFF"><font face="Verdana"><small>Do
+      you use scripts from Dynamic Drive? Please give something back by <a href="http://www.dynamicdrive.com/link.htm"><b>linking
+      to us</b></a>...<br>
+            </small><font color="#FFFFFF"><small>.</small></font></font></td>
+        </tr>
+      </tbody></table>    </td>
+    <td width="19"><img src="../spacer.gif" width="19" height="1" alt="spacer.gif (807 bytes)"></td>
+    <td valign="top" align="left"><p align="left"><big><font face="Arial"><strong><a href="http://dynamicdrive.com" style="text-decoration:none">Home</a> </strong></font></big><img src="small4.gif" alt="Small4.gif (1046 bytes)" width="18" height="18"> <a href="http://dynamicdrive.com/dynamicindex4" style="text-decoration:none"><big><strong><font face="Arial">Image Effects</font></strong></big></a> <img src="small4.gif" alt="Small4.gif (1046 bytes)" width="18" height="18"> <big><strong><font face="Arial">Here</font></strong></big></p>
+    <p align="left"><strong><font face="Verdana">Floating images script <small>All</small></font></strong></p>
+    <p align="left"><font face="Verdana"><strong><small>Credits:</small></strong><br>
+    <small><strong>Name: </strong><a href="mailto:virtual_max@%20geocities.com">Virtual Max</a></small><br>
+    <small><strong>Homepage:</strong> <a href="http://www.geocities.com/SiliconValley/Lakes/8620/">Virtual Max Homepage</a></small></font><br>
+    <font face="Verdana" size="2"><b>Note:</b> Updated October 7th, 04 for 
+    NS6/Opera 7, doctype compatibility.</font></p>
+    <p align="left"><small><font face="Verdana"><strong>Description: </strong>One important
+    feature of DHTML is it's ability to move elements around the page freely, without having
+    to be tied down to one single spot on the page. "Virtual Max" took full
+    advantage of this feature and created his cool "floating images" script for our
+    Dynamic Drive surfers to use and enjoy. It's a cross-browser script that moves <strong>any</strong>
+    number of images around the page (by wrapping the images inside &lt;div>s, and
+    animating each &lt;div>), each following a randomly determined path. Furthermore, the
+    images are clickable, making this script not only insanely cool, but practical as well!</font></small></p>
+    <p align="left"><small><font face="Verdana"><strong>Demo: </strong>Look around you...</font></small></p>
+    <hr size="1">
+    <p align="left"><font face="Verdana"><strong><small>Directions: </small></strong></font><a href="flyimage_dev.htm" target="win2"><img src="../dview.gif" width="115" height="19" alt="Developer's View" border="0"></a></p>
+    <p align="left"><small><font face="Verdana"><strong>Step 1: </strong>Download the
+    following .js file and upload it into your webpage directory (either by clicking it, or
+    clicking it with the shift key depressed for NS users):</font></small></p>
+    <p align="left"><a href="moveobj.js"><strong><small><font face="Verdana">moveobj.js</font></small></strong></a></p>
+    <p align="left"><small><font face="Verdana"><strong>Step 2: </strong>Add the following
+    into the &lt;head> section of your page:</font></small></p>
+    <form method="POST" action="--WEBBOT-SELF--">
+      <!--webbot bot="SaveResults" startspan
+      U-File="C:\tutors2\dynamicindex4\\..\TUTORS2\dynamicindex1\_private\form_results.txt" S-Format="TEXT/CSV"
+      S-Label-Fields="TRUE" --><!--webbot bot="SaveResults" endspan --><p><!--webbot
+      bot="HTMLMarkup" startspan --><script>
+<!--
+function highlight(x){
+document.forms[x].elements[0].focus()
+document.forms[x].elements[0].select()
+}
+//-->
+</script>
+
+
+
+
+<a href="javascript:highlight(0)" onmouseover="window.status='';return true"><img src="../select.gif" border="0"></a><!--webbot bot="HTMLMarkup" endspan i-checksum="44802" --><br>
+      <textarea rows="8" name="S1" cols="45" wrap="virtual" style="width:98%"><script type="text/javascript" src="moveobj.js"> </script>
+<script type="text/javascript">
+
+/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+//Step 1: Define unique variable names depending on number of flying images (ie:3):
+var flyimage1, flyimage2, flyimage3
+
+function pagestart(){
+//Step 2: Using the same variable names as 1), add or delete more of the below lines (60=width, height=80 of image):
+ flyimage1=new Chip("flyimage1",47,68);
+ flyimage2=new Chip("flyimage2",47,68);
+ flyimage3=new Chip("flyimage3",47,68);
+
+
+//Step 3: Using the same variable names as 1), add or delete more of the below lines:
+movechip("flyimage1");
+movechip("flyimage2");
+movechip("flyimage3");
+
+}
+
+if (window.addEventListener)
+window.addEventListener("load", pagestart, false)
+else if (window.attachEvent)
+window.attachEvent("onload", pagestart)
+else if (document.getElementById)
+window.onload=pagestart
+
+</script></textarea></p>
+    </form>
+    <p align="left"><small><font face="Verdana"><strong>Step 3: </strong>Add the following
+    into the &lt;body> section of your page, <strong>outside</strong> any other tags. This
+    contains the actual HTML codes used to display the images themselves:</font></small></p>
+    <form method="POST" action="--WEBBOT-SELF--">
+      <!--webbot bot="SaveResults" startspan
+      U-File="C:\tutors2\dynamicindex4\\..\TUTORS2\dynamicindex1\_private\form_results.txt" S-Format="TEXT/CSV"
+      S-Label-Fields="TRUE" --><!--webbot bot="SaveResults" endspan --><p><!--webbot
+      bot="HTMLMarkup" startspan --><script>
+<!--
+function highlight(x){
+document.forms[x].elements[0].focus()
+document.forms[x].elements[0].select()
+}
+//-->
+</script>
+
+
+
+
+<a href="javascript:highlight(1)" onmouseover="window.status='';return true"><img src="../select.gif" border="0"></a><!--webbot bot="HTMLMarkup" endspan i-checksum="44866" --><br>
+      <textarea rows="8" name="S1" cols="45" wrap="virtual" style="width:98%"><!-- Step 4: Define your flying images. For each image's ID tag, use the same variable names as 1) above -->
+
+<DIV ID="flyimage1" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="http://dynamicdrive.com"><IMG SRC="test.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage2" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="http://dynamicdrive.com"><IMG SRC="test.gif" BORDER=0></a>
+</DIV>
+
+<DIV ID="flyimage3" STYLE="position:absolute; left: -500px; width:47; height:68;">
+<A HREF="http://dynamicdrive.com"><IMG SRC="test.gif" BORDER=0></a>
+</DIV></textarea></p>
+    </form>
+    <p align="left"><small><font face="Verdana">You now essentially have the script installed
+    and ready to run. Read on to see how to configure it to your liking.</font></small></p>
+    <h3 align="left"><strong>Configuring the script</strong></h3>
+    <p align="left"><small><font face="Verdana">As mentioned in the description, this script
+    can animate an unlimited number of images. The instructions above creates a situation
+    where three images are animated (like in the demo). Obviously, you'll want to know how to
+    configure it to handle any number of images. The process to this is simple 
+    but rather long. Each
+    image is identified throughout the entire script with the name "flyimagex". For
+    example, the first image is called "flyimage1", the second "flyimage2", and so
+    on. Look in the code of Steps 2 and 3. Here are the exact steps to modifying the script so it
+    animates any number of images:</font></small></p>
+    <p align="left"><font face="Verdana"><small>1) Inside the code of <em>Step 2</em>,
+    add/delete more "flyimagex" variables to it as specified in the documentation,
+    depending on the number of images you're using.</small></font></p>
+    <p align="left"><font face="Verdana"><small>2) Inside the code of <em>Step 3</em>, add/delete more of the &lt;div> tags to
+    your page accordingly as well. Make sure the "ID" attribute inside each of these
+    &lt;div> is defined with the unique variable name of the flying image (ie: 
+    flyimage1).</small></font></p>
+    <p align="left">
+</p><p><strong><font face="Arial"><small>Recommend Us!</small><br>
+<small>-<a href="http://www.dynamicdrive.com/recommendit/">If
+you like Dynamic Drive, please recommend us to a friend...</a></small></font></strong></p>
+
+<p align="left"><font face="Verdana"><strong>Legend</strong><br>
+</font><font face="Verdana"><small><strong>All-</strong> Script works with <em>Netscape 4</em> AND Internet Explorer
+4+</small><br>
+<small><strong>NS-</strong> Indicates script works with <em>Netscape 4</em> 
+(NOT NS 6 yet)</small><br>
+<small><strong>IE- </strong>Indicates script works with <em>Internet Explorer 4
+and above<br>
+</em></small></font><strong><font face="Verdana"><small><i><font color="#000099">NS6!</font></i></small></font></strong><font face="Verdana"><strong><small>- </small></strong><small>Temporary</small><small>
+index set up on <b>script category pages</b> to indicate script works in NS6</small></font></p>
+
+<div align="center" style="font:normal 11px Verdana"><br>
+Copyright Â© 1998-2004 <a href="http://www.dynamicdrive.com">Dynamic Drive.</a> Please read <a href="http://www.dynamicdrive.com/notice.htm">Terms Of Use here</a> before using any of the
+scripts.<br>
+Partners: <a href="http://www.javascriptkit.com" class="footlinks" target="_blank">JavaScript Tutorials</a> 
+| <a href="http://www.javascriptkit.com/jsref/" class="footlinks">JavaScript Reference</a></div>
+</td>
+  </tr>
+</tbody></table>
+
+<p><!--webbot bot="HTMLMarkup" startspan --></p><div id="flyimage1" style="position: absolute; width: 47px; height: 68px; left: 361.234px; top: 526.16px; ">
+<a href="http://dynamicdrive.com"><img src="../ballon3.gif" border="0"></a>
+</div>
+
+<div id="flyimage2" style="position: absolute; width: 47px; height: 68px; left: 613.972px; top: 487.391px; ">
+<a href="http://dynamicdrive.com"><img src="../ballon2.gif" border="0"></a>
+</div>
+
+<div id="flyimage3" style="position: absolute; width: 47px; height: 68px; left: 170.884px; top: 652.424px; ">
+<a href="http://dynamicdrive.com"><img src="../ballon4.gif" border="0"></a>
+</div><!--webbot bot="HTMLMarkup" endspan i-checksum="45740" --><p></p>
+
+</body></html>P¯#'+/36:>BFJÔ_WebResourceResponse_4http://www.dynamicdrive.com/dynamicindex4/moveobj.jsOŠbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_4http://www.dynamicdrive.com/dynamicindex4/moveobj.jsÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯åk?ÈÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6_application/x-javascript_Tue, 31 Mar 2009 08:23:14 GMTT2132_"988a9-854-43773a3c1dac0"_Sat, 11 Aug 2007 22:01:55 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryTÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+CHQ\_enwy€ˆ“•Ÿ¡£¥§©«­¯±»½¿ÁÃÅÇÉËÍØæíúÿ,AGÆá"BGKanqvz             g              œ_application/x-javascriptOT/***********************************************
+* Floating image script- By Virtual_Max (http://www.geocities.com/siliconvalley/lakes/8620)
+* Modified by Dynamic Drive for various improvements
+* Visit Dynamic Drive at http://www.dynamicdrive.com/ for full source code
+***********************************************/
+
+
+var vmin=2;
+var vmax=5;
+var vr=2;
+var timer1;
+
+function iecompattest(){
+return (document.compatMode && document.compatMode!="BackCompat")? document.documentElement : document.body
+}
+
+function Chip(chipname,width,height){
+ this.named=chipname;
+ this.vx=vmin+vmax*Math.random();
+ this.vy=vmin+vmax*Math.random();
+ this.w=width+20;
+ this.h=height;
+ this.xx=0;
+ this.yy=0;
+ this.timer1=null;
+}
+
+function movechip(chipname){
+if (document.getElementById){
+eval("chip="+chipname);
+   if (window.innerWidth || window.opera){
+		 pageX=window.pageXOffset;
+     pageW=window.innerWidth-40;
+     pageY=window.pageYOffset;
+     pageH=window.innerHeight-20;
+    }
+   else if (document.body){
+		 pageX=iecompattest().scrollLeft;
+     pageW=iecompattest().offsetWidth-40;
+     pageY=iecompattest().scrollTop;
+     pageH=iecompattest().offsetHeight-20;
+    } 
+
+   chip.xx=chip.xx+chip.vx;
+   chip.yy=chip.yy+chip.vy;
+   
+   chip.vx+=vr*(Math.random()-0.5);
+   chip.vy+=vr*(Math.random()-0.5);
+   if(chip.vx>(vmax+vmin))  chip.vx=(vmax+vmin)*2-chip.vx;
+   if(chip.vx<(-vmax-vmin)) chip.vx=(-vmax-vmin)*2-chip.vx;
+   if(chip.vy>(vmax+vmin))  chip.vy=(vmax+vmin)*2-chip.vy;
+   if(chip.vy<(-vmax-vmin)) chip.vy=(-vmax-vmin)*2-chip.vy;
+
+   if(chip.xx<=pageX){
+			chip.xx=pageX;
+      chip.vx=vmin+vmax*Math.random();
+     }
+   if(chip.xx>=pageX+pageW-chip.w){
+			chip.xx=pageX+pageW-chip.w;
+      chip.vx=-vmin-vmax*Math.random();
+     }
+   if(chip.yy<=pageY)
+     {chip.yy=pageY;
+      chip.vy=vmin+vmax*Math.random();
+     }
+   if(chip.yy>=pageY+pageH-chip.h)
+     {chip.yy=pageY+pageH-chip.h;
+      chip.vy=-vmin-vmax*Math.random();
+     }
+
+document.getElementById(chip.named).style.left=chip.xx+"px";
+document.getElementById(chip.named).style.top=chip.yy+"px";
+
+
+   chip.timer1=setTimeout("movechip('"+chip.named+"')",100);
+  }
+}
+Ô_,http://www.dynamicdrive.com/dynamicback2.gifOmbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_,http://www.dynamicdrive.com/dynamicback2.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯å½âÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:14 GMTS234_"98bed-ea-437743b91fd80"_Sat, 11 Aug 2007 22:44:22 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryêÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+;@ITW]foqx€‹—™›Ÿ¡£¥§©³µ·¹»½¿ÁÃÅĞŞåò÷$8>½Ççë&+/ERTY]q             g              Yimage/gifOêGIF89a3
+ ‘     ÎÎçÿÿÿ   !ù     ,    3
+  »Œ©Ëí£œ ²Ş¼û†âH–æ‰¦êÊ¶îÇòL×öçúÎ÷şÖ*Ä¢ñˆL^„Ì¦ó	J§ÔªõŠÍj·ÜNò‹'Ë®ùŒN«×ì¶ûwÇôºY–ë÷ü¾ÿ(8hvgxˆ¨GÈØèø)9I©“x‰I·XÉÙéù	*:Ú“izj´IºÊÚêú
+Ë†J[û *›«»ËÛëû«a+<l€|Œœ¬¼ÌœFüLkÜ<M]m}mR  ;Ô_*http://www.dynamicdrive.com/ddrivelogo.gifOnbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_*http://www.dynamicdrive.com/ddrivelogo.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯åÈ	³ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:14 GMTT1172_"98bcd-494-437743a518e40"_Sat, 11 Aug 2007 22:44:01 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionary”Ò./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+9>GRU[dmov~‰‹•—™›Ÿ¡£¥§±³µ·¹»½¿ÁÃÎÜãğõ	"6<»Ååê&+/ERUZ^r             g              €O”GIF89a… 2 ¢       ½JJJRRÎ„„Ö­­ŞÎÎŞÿÿÿ!ù   ,    … 2  ÿxºÜş0ÊI«½8ëÍ»ÿ`(`hšDQpìtmßø-rÏÀ ğE¡È¤ò`p`Mà«Z€,V”81¾à°xyÖôÈ(¸c s<ÌB€z¿`/ÜprBs1n‡m‡A
+~
+€}Dƒ!Š”xB_¢¢œ£C¦¨AŸBO©š"xnb ª«/w-†‡µ¾ÀX/Ä@µx¾PA°±BÕ}¥Üh_BªR ˆ$²ŒpæßëÄœöÖ¸ØkĞ:˜MP‡,®CòUf'Ğ¤NF’Ç¤\¿t¿å áĞÿ¾JCRŒ2Àb€c˜™G‘Ér%ó%D§ÀjMˆ A€D,
+ãQò”@•€ÅT`†§ÄIprÑÌ¨ `+Q<gè´ò8‚C·ÈÌ:M=¤)'µØâ[%)E¶ÁÖ´»=Åõ&_]ƒf%šYúpm>%GàVğ1§¿‹;|@r¨¡¢œFÈu²Úru¹u£¸Y:uæ>up—°}~ÃöíC¸Ó¤‚=.5ØT›ŒQ#6à"w	'Ô†ÅòìHµuw­šï^Âğ¼øıà¦ğÔG8uT°ÕAìÙq™·&ö…éÍª+9»«Â™(IŞs§<—ÿµRÎeAI ßY·Y'5ç\TSw§!¦ŸOQôçF€œÅÓs»y²™Pò&“IæS~Ièw@QÀöcÿ‰ÄJÈ¤bã8Öhã‰â¤DşÍãyŒ B#_¬’ã’£4£¤ a\cK¬¸“.SÊ³ÜmèYà„|Tò¥ğ(×p…À8U!ÊCĞ‘T…9ƒ”R©â„jB À´9É2YT(çf~‡˜ã Í“%áµŞ !ğH¥V¦Ó%ĞŒ²aBúA¡hÒ€Ú¥ŠÒI£qê%É ’~§ß{26	p<h“¢æ›)¤ú ª±¢v¢ÚJKª.ÿÈ„L³Èq^j´Š±Öj«6ˆ.e‰J„È)_ãR‹d2üš&Ú.£§ë|ëQ›&Õ+IaòE¬S!VŒm+/s5ÔîX­©™İuÑNø{)rİºcS›Ñk°S©¦ËğqLér­!Å1v¯ò!H·‘O‚îQZ<Ë–Ø0 µ^hñ%HöŸïuÃÌ÷ÔÀDF§Ô^Ñ	}[¾{e:ü»3t–ªDO¼¨Ó$}q5DÜi¸ïÄ´ôI³ì•¤qUˆ]5„gÒjcwep“7ÔÛj@7»+¦ŠwÖHå5NÏõMhÔ<Á/ÎWİñáYŠ?T‘ŠôšùÂèl$º¼Ğ„¹Ì¥øÓÀLS’ˆ (ó]£ë€ó•WCËÜ¢ä-‰)D<™+H æñº×ˆ.sIªµHzÃS‡
+–Ä+³1{ÚÍ˜‰Z‘  ;Ô !"_'http://www.dynamicdrive.com/adbanner.jsO}bplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_'http://www.dynamicdrive.com/adbanner.jsÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯åú‹±ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6_application/x-javascript_Tue, 31 Mar 2009 08:23:14 GMTT2404_"98b73-964-4377437475b80"_Sat, 11 Aug 2007 22:43:10 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionary	dÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+6;DORXajls{†ˆ’”–˜šœ ¢¤®°²´¶¸º¼¾ÀËÙàíò4:¹Ôôù5:>Tadim             g              O	dvar bnum=new Number(Math.floor(99999999 * Math.random())+1); //Hostway random num
+
+var randban=new Array()
+randban[0]='<scr'+'ipt language=javascript src="http://a.tribalfusion.com/j.ad?site=DynamicDrive&adSpace=ros&size=468x60&type=horiz&noAd=1&requestID='+((new Date()).getTime() % 2147483648) + Math.random()+'"></scr'+'ipt>'
+randban[1]='<a href="http://www.codearena.com/cgi-bin/serve/banners.pl?region=ddtop&mode=CLICK&name=openbanner"><img src="http://www.dynamicdrive.com/sponsors/opencube.gif" border="0" alt="OpenCube DHTML and CSS menus"></a>'
+randban[2]='<iframe src="http://media.fastclick.net/w/get.media?sid=6286&m=1&d=f&v=1.0c&t=s&pageid=1" width=468 height=60 hspace=0 vspace=0 frameborder=0 marginheight=0 marginwidth=0 scrolling=no><a href="http://media.fastclick.net/w/click.here?sid=6286&m=1&pageid=1" target="_top"><img width=468 height=60 src="http://media.fastclick.net/w/get.media?sid=6286&m=1&d=s&v=1.0c&pageid=1" border=0></a></iframe>'
+randban[3]='<a href="http://ad.doubleclick.net/jump/N3579.DynamicDrive/B1423445;sz=468x60;ord='+bnum+'?"><img src="http://ad.doubleclick.net/ad/N3579.DynamicDrive/B1423445;sz=468x60;ord='+bnum+'?" border=0 width=468 height=60><br>Hostway- Click here for FREE setup!</a>'
+randban[4]='<a href="http://www.dynamicdrive.com/partners.php?id=hs"><img src="http://www.codingforums.com/sponsors/hs.gif" border=0></a>'
+
+var bweight=new Array()
+
+bweight[0]=2
+bweight[1]=2
+bweight[2]=4
+bweight[3]=1
+bweight[4]=1 //hs
+
+var banner_num=0
+var stepbystep=totalweight=bweight[0]
+
+for (ct=1;ct<bweight.length;ct++)
+totalweight+=bweight[ct]
+
+var revised_ranban=new Array()
+var ran_num=Math.floor(Math.random()*totalweight)
+
+while (banner_num<randban.length){
+for (ct=0;ct<bweight[banner_num];ct++)
+revised_ranban[revised_ranban.length]=randban[banner_num]
+banner_num++
+}
+
+document.write(revised_ranban[ran_num])
+
+/////CSS stuff///////////
+
+document.write('<style>.footlinks{text-decoration: none;  color: black;}</style>')
+
+/*
+var addatedd=new Date()
+var adtodaydd=addatedd.getDate().toString()
+adtodaydd=adtodaydd.charAt(adtodaydd.length-1)
+var adindexdd=(adtodaydd>=1 && adtodaydd<=5)? 0 : 1
+if (adindexdd==0)
+document.write('<style>.leftnavtd{background-color:#FBFFCA}\n.leftnavtd a{color: blue}\n.vhtable{display:none}</style>')
+else
+document.write('<style>.leftnavtd{background-color:white}\n.leftnavtd a{color: blue}\n.vhtable2{display:none}</style>')
+*/Ô$%&_ƒhttp://a.tribalfusion.com/j.ad?site=DynamicDrive&adSpace=ros&size=468x60&type=horiz&noAd=1&requestID=15374724990.047071466222405434Oşbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\]^_cdU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_„http://a.tribalfusion.com/jr.ad?site=DynamicDrive&adSpace=ros&size=468x60&type=horiz&noAd=1&requestID=15374724990.047071466222405434Ò./01X$classesZ$classname¢12UNSURLXNSObject#A¯ëÜ…¡ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€SP3p]Cache-ControlVPragmaZX-Function_Content-Encoding\Content-Type^Content-LengthZSet-CookieTVary_CP="NOI DEVo TAIa OUR BUS"_no-cache, privateXno-cacheS101Tgzip_application/x-javascriptS958_½ANON_ID=aOmufrMUvBNqrpQtQ0gv9anSbMMGvOTrr7UUYjVxj8ZbvnhQcYd0sjr1pMl2tvg3UQG3EJZcWE7D0SvZdVF2kTcQuXDqBR9QS2Sbnw6nOXj; path=/; domain=.tribalfusion.com; expires=Wed, 31-Mar-2010 08:27:27 GMT;_Accept-EncodingÒ./`a£ab2_NSMutableDictionary\NSDictionary	©Ò./ef£fg2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+“˜¡¬¯µ¾ÇÉĞØãåïñóõ÷ùûıÿ!/6ATap{€±º¾ÃŞâ¢´¹½Óàãèì              h              O	©document.write('<script language="JavaScript">\r\n<!--\r\ngoogle_ad_url = \'\';\r\ngoogle_org_error_handler = window.onerror;\r\n\r\nfunction google_show_ad() {\r\n  var w = window;\r\n  w.onerror = w.google_org_error_handler;\r\n  \r\n  w.google_ad_url = \'http://pagead2.googlesyndication.com/pagead/ads?\';\r\n  w.google_ad_url += \'client=ca-tribalfusion_3_728x90\';\r\n  w.google_ad_url += \'&format=728x90_new\';\r\n  w.google_ad_url += \'&url=\' + escape(w.google_page_url);\r\n  w.google_ad_url += \'&color_bg=FFFFFF\';\r\n  w.google_ad_url += \'&color_border=000000\';\r\n  w.google_ad_url += \'&color_line=000000\';  \r\n  w.google_ad_url += \'&output=html&color_border=ffffff&color_bg=ffffff&color_text=003366&color_link=990000&color_url=009933&adsafe=high&random=\' + (new Date()).getTime();\r\n  w.google_ad_url += \'&hl=en\';\r\n  		    \r\n  w.google_ad_url = w.google_ad_url.substring(0, 1000);\r\n  w.google_ad_url = w.google_ad_url.replace(/%\\w?$/, \'\');  \r\n\r\n  document.write(\'<ifr\' + \'ame\' +\r\n                 \' name=google_ads_frame width=728 height=90 frameborder=0\' + \r\n                 \' src=\' + w.google_ad_url +\r\n                 \' marginwidth=0 marginheight=0 vspace=0 hspace=0 allowtransparency=true scrolling=no><\/ifr\' + \'ame>\');\r\n  w.google_page_url = null;\r\n}\r\n\r\nfunction google_error_handler(message, url, line) {\r\n  google_show_ad();\r\n  return true;\r\n}\r\n\r\nwindow.onerror = google_error_handler;\r\n\r\nif (window.google_page_url == null) {\r\n  google_page_url = document.referrer;\r\n  if (window.top.location == document.location) {\r\n    google_page_url = document.location;\r\n  }\r\n}\r\n\r\ngoogle_show_ad();\r\n\r\nfunction  tfLogclick() {\r\n  window.focus();\r\n  if (window.status) {\r\n    TFClick = new Image();\r\n    TFClick.src = \'http://a.tribalfusion.com/h.click/aNmMQg2PYePABB3dvo0tBKmHEN5AvY4GU9TVJ6WsFePPrwWtQSUbfP3bZasUEMvVTQ9Qa3LQGZbZdRrmsPH3iWGQ54b6pntun0qaw4dYZaPcFZa4P3IodZapVWBd0rvbYFJ60qqmSUUDUFQ3VtF4nUQx2cfFNAeASW/\';\r\n  }\r\n}\r\n\r\nif (document.getElementById("google_ads_frame")) {\r\n	document.getElementById("google_ads_frame").onfocus = tfLogclick\r\n}\r\n\r\nTFPlay317005906 = new Image();\r\nTFPlay317005906.src = "http://a.tribalfusion.com/play/aNmMQg2PYePABB3dvo0tBKmHEN5AvY4GU9TVJ6WsFePPrwWtQSUbfP3bZasUEMvVTQ9Qa3LQGZbZdRrmsPH3iWGQ54b6pntun0qaw4dYZaPcFZa4P3IodZapVWBd0rvbYFJ60qqmSUUDUFQ3VtF4nUQx2cfFNAeASW/";\r\n\r\n// -->\r\n<\/script>\r\n\r\n\r\n');
+Ô()*_%http://www.codearena.com/menuleft.gifOgbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_%http://www.codearena.com/menuleft.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯ç4›cÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTR72_"6bc03b-48-43e039b597dc0"_Sat, 03 Nov 2007 10:18:39 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryHÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+49BMPV_hjqy„†’”–˜šœ ¢¬®°²´¶¸º¼¾É×Şëğÿ28·Ááä  %)?LNSWk             g              yOHGIF89a  ‘  B  ïïÎÿÿÿ   !ù     ,       ”/ØkòU;q¾ûÜß&–ä9S ;Ô,-._#http://www.codearena.com/spacer.gifOebplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_#http://www.codearena.com/spacer.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯ç%>pÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTR44_"6bc045-2c-43e039b9686c0"_Sat, 03 Nov 2007 10:18:43 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionary,Ò./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+27@KNT]fhow‚„’”–˜šœ ª¬®°²´¶¸º¼ÇÕÜéîı06µ¿ßâş#'=JLQUi             g              wO,GIF89a  €  ÿÿÿ   !ù    ,      @„ ;Ô012_&http://www.codearena.com/menuright.gifOhbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_&http://www.codearena.com/menuright.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯çCsKÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTR72_"6bc03c-48-43e039b597dc0"_Sat, 03 Nov 2007 10:18:39 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryHÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+5:CNQW`ikrz…‡‘“•—™›Ÿ¡£­¯±³µ·¹»½¿ÊØßìñ 39¸Ââå!&*@MOTXl             g              zOHGIF89a  ‘  B  ïïÎÿÿÿ   !ù     ,       „~–¡íŒ‹bF«0ĞÜnßMŸ^àI¢Q ;Ô45._&http://www.dynamicdrive.com/spacer.gifOfbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_&http://www.dynamicdrive.com/spacer.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯f5•ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:26:27 GMTR44_"98c8a-2c-4377444ed9ec0"_Sat, 11 Aug 2007 22:46:59 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionary,Ò./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+5:CNQW`ikrz…‡‘“•—™›Ÿ¡£­¯±³µ·¹»½¿ÊØßìñ 28·Ááäÿ$(>KMRVj             g              xÔ789_4http://www.dynamicdrive.com/dynamicindex4/small4.gifOubplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_4http://www.dynamicdrive.com/dynamicindex4/small4.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æ¯%ÄÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=99Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTS212_"988d1-d4-43773a5c8a740"_Sat, 11 Aug 2007 22:02:29 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryÔÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+CHQ\_enwy€ˆ“•Ÿ¡£¥§©«­¯±»½¿ÁÃÅÇÉËÍØæíúÿ,@FÅÏïó.37MZ\aey             g              ‡OÔGIF89a  ³  şşş:¦Â¥‰«‰|Ÿ|ÑÚÑ/e.DuDMZ‚X$Z$*w')\Z !ù   ,      @Pğª½8„Ôâc“PX[[gÉ0¹Î²„)Ó0ÖÅáH$7—%¡0èÂâ0s$LNGA"ùÖa¡H5VÊA"L?Äì€lcÑwØìYePdZM7YP$"$?aL;^ACc!˜.q)hnXv£ ;Ô;<=_%http://www.dynamicdrive.com/dview.gifOibplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_%http://www.dynamicdrive.com/dview.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æ¬4ãÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=98Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTT1470_"98bd7-5be-437743a8e9740"_Sat, 11 Aug 2007 22:44:05 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionary¾Ò./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+49BMPV_hjqy„†’”–˜šœ ¢¬®°²´¶¸º¼¾É×Şëğÿ17¶Ààå!&*@MPUYm             g              {O¾GIF89as  ÷  ))1199!))!11!99!J)!Z)!c))99)BB1”)9BB9½)9Î)BJJBµ)BÎ)JRRJZ)Jç!J÷!Jÿ!RRRRZ)RZZRÿ!Rÿ1ZccZÖ)Zÿ!cccckkcÿJcÿRkkkkssk­ckµcssss{{sÿRsÿZ{{{{„„„„„„Œ)„ŒŒŒŒŒŒ”sŒ””Œï„Œ÷!Œÿ{Œÿ„””””œœ”ÿ!”ÿs”ÿŒœœœœ¥¥œÿŒœÿ”¥¥!¥¥¥¥­­¥½¥¥ÿœ­­­­µµµµµµ½½µÿ­µÿµ½½½½ÆÆ½ÿ!½ÿµÆÆÆÆÿ½ÎÎÎÎÖÖÖÖÖÖŞŞÖïÖÖÿÖŞŞŞŞççŞÿŞÿBŞÿÖŞÿŞççççïïçÿŞïïïïÿµïÿï÷÷÷÷ÿ!÷ÿï÷ÿ÷ÿ!1ÿ)1ÿc)ÿ”)ÿ¥)ÿµ)ÿ½)ÿÿÿÿ!ÿÿ)ÿÿJÿÿ½ÿÿÆÿÿÎÿÿ÷ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ,    s  @ş íH° Áƒ*\È°¡C†g"F\ó¦¢Å&),hĞXÃÊÃ‚8˜|dEÆÈ2–œL(NE .b°(R°,F™IÇM/ôx…Á@‚À•Hn’ cç…ƒ`Z €!‰…&A J;WHĞ´óCA‰pãÚ“dC’2+óêİû.‹1¨ Aƒƒ4€ğCL#v
+°S¤€¥O1GÎ`„e;>x¶ Ğ9#ç¼	¦õÀ¢-H¢@ëkp®-P‚e–£şY`ÜãgŠÃ·¹óçv§aC='!6ú`½»÷…pÕş ~#¸…’«pE¶kX¨
+l?P÷À+QÊÏO0
+•®QE÷E!ŸNK	„‚mXñ‡–|¾gP‘!XZp1U0Ü•\~LÄV}|fƒY‘™DÅ)tÓMõqF£A¨YÖÃÈøİ^`àâ‘L6éä“
+!'—VØ"”Xî%%\vlQƒ"p‘å˜yG`aø°‘8q%™pF)ã0Üp¦Ac+0@wBÔx²]Q v$0Y™ı˜`f@h dÃÙ[n Ø1Â¢qf4"¥™Ú…)~Fª¥ù!5ê”ªdá:ëp4 @®“)edx€YX 9èP%Ìp“Ã¹õé¨“êpCÙ÷£ª& kn=;ÜdÛ8î›JáPYÔ‚zYlDAÀN‹D`)Ş4\W‘yËÄ ©é;E,Q€J¸J€Á‹Jæƒ4Âğ/¹‚ÚÁBL'jO4Šli0ÁÃ¯ş¨ƒ
+•!ÇÊxaé˜¬q~  ;Ô?@A_&http://www.dynamicdrive.com/select.gifOjbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_&http://www.dynamicdrive.com/select.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æÕ•yÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=97Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTT1220_"98c84-4c4-4377444a15380"_Sat, 11 Aug 2007 22:46:54 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryÄÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+5:CNQW`ikrz…‡‘“•—™›Ÿ¡£­¯±³µ·¹»½¿ÊØßìñ 28·Ááæ"'+ANQVZn             g              |OÄGIF89a@  ÷  k1ÿsBÿsJÿ{Rÿ„Z÷„c÷Œc÷Œk÷Œsï”sï”{ïœ„ç¥Œç¥”Ş­œÖ­œŞµ¥Îµ¥Ö½­Î½µÆÆµÆÆ½½ÎÆ­ÎÆµÖÎ¥ÖÎ­ÖÖ¥ŞÖœŞÖ¥ŞŞ”çŞŒçç„ïç{ïïkïïs÷ïc÷÷R÷÷Z÷÷cÿ÷Jÿÿ ÿÿ!ÿÿ1ÿÿ9ÿÿBÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!ù   ,    @  @ş QH° Áƒ*LxÃ@ lp  Âˆ‹#T| € Å 0XñQBA  F´€e  
+PŒ@)¥Ê(7<1A`H bcG™‚:P‰4è8€p¢ Š  Ğ)“&Š—LŠK–l
+ x`!¡Ñ²+T`ƒmÎP3eÜˆ.{~´8b €8¢`r‚ X6H‚ÅÃ| À‚ˆˆD÷
+[ÙáˆB´p@‰bÀŠr€j†_¶ıhsàç U> ³_¸(T\DÎ<År™#(£€ @À‚/İ*†Ûû „Ú*ô¢zíÍâå	‚0â‚¢ŠO0á»+ X ¡@ê 4Ğ QmàGˆÇ—qa‰PÁ§yĞ@K€}ğ€b@]'GDX€[g]-˜YWLPÁ„`à |€Á°)Bu1bà€7
+`A´5@ €@×@UàÁVi]A*€ğj¥Â•Ò%‚ÊÄ%s ;ÔCDE_'http://www.dynamicdrive.com/ballon3.gifOlbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_'http://www.dynamicdrive.com/ballon3.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æñ½„ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=100Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTT2258_"98b8c-8d2-4377437ef3440"_Sat, 11 Aug 2007 22:43:21 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryÒÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+6;DORXajls{†ˆ’”–˜šœ ¢¤®°²´¶¸º¼¾ÀËÙàíò4:¹Ããè$)-CPSX\p             g              ~OÒGIF89a/ D ÷  ÿÿÿÆÆÆÿ÷ÿÎÆÎÖÎÖ½µ½­¥­Æ½Æœ”œ¥œ¥ÿïÿÖÆÖÆµÆÎ½Îµ¥µÿçÿŞÆŞ½¥½{k{ÿŞÿŞ½Şœ„œÿÖÿÆ¥ÆŒsŒç½çÿÎÿsZsçµçÿÆÿÿ½ÿ{Z{ÿµÿkJkï¥ïœkœÿ­ÿÿ¥ÿ÷œ÷kBkÿœÿ÷”÷ÿ”ÿc9cÿŒÿ÷„÷ÿ„ÿÿ{ÿÿsÿÿkÿÿcÿÿZÿÿRÿÿJÿÿBÿÿ9ÿÿ1ÿÿ)ÿÿ!ÿÿÿÿ)÷ÿ÷skÿ!ïŒ„ÿïsk{ss kç”Şÿkï¥BœŒ1„ÿRïÿJïkcZR½!­ÿç­œZR½­ÆµœŒR J­k¥œZ”ïkŞs1k½1­ÿ9çœ!Œÿ)ç­œÖ½”„ŞÆœŒçÎïÖÎµÖ½Œ{ÆŒ½{Bs½J­c!ZïJÖ”)„ç1Î{k„sÆ­ïÎ÷ÖÿŞµœ½¥Æ­scB 9Ö¥Îœk”÷œç÷”çJB{!k„sscŞ½œ„çÆ¥ŒÿÖ­”kZÖµŞ½œs”Œc„{RssJkR)Jc1ZkZŒsç½ïÆ÷ÎZJµ”½œcRÆ¥ŞµR BÆœ½¥{œŞ”Î”J„ÎZµÖBµZJÖ!­{c„kRB¥„÷ÆÿÎ­ŒÎ¥Ö­Ş½Ö½œµµ”­­Œ¥”sŒŒk„Z9Rµs¥œZŒ{9k­B”ïJÆ½9œZJcR÷1ÆRB{c½””sœ{çµï½ÿÆµŒ½”ÆœÖ¥Ş­sZçµ­„J 9¥„œk)Z­1ŒÎ1¥Œkïµ÷½kRç­„cZ Bc JŞ¥ÎÎsµÆk­Şk½œJ„c)R”9{Z!Jœ){”!sµ)ŒsZcJÆ”{ZÎµÆ­”¥­Z”kR¥{k Jœ„”{csÖ¥ÆÆ{­{JkZ)J„k{cJZ”k„kBZŒ{„ÖÆÎ½­µœ{ŒÆµ½   ÀÀÀ!ù    ,    / D  ş H° Á( 4È°¡Ã‡"ZÄaCFŒ"jÜ(8tì9R4bp\)PÄŒ%uèÈA³¦Ì‘7fddéPF3k
+µYsd<¶€t¨SšMEâp‘T` O³
+ÉuR4dæhª5+W‘4XÒ[¶-[®cÓnœñÖ©L±nÏÊœ¡ÆX²PsÔ˜A¸FÈ¶zsÀxøwèL/T ABÅ8´½»#‡ÃÃl¡Ú€Ab‚
+<è BFf»9ã`˜èæ±7\tP`P€t5ÿ½™Â`È³4q¼è  ¡€.nÀ†{wfA¶Cë˜¢¹Ã	%‚ş?Õ{³Áãuq°˜ Q w‹­~“AÛÔiàèAÅŒÓ'S|VulÅĞÁFX Ğ R'à]=(ÀÂƒñ6D‘w“N´²~óåğ‡MÀ@HHŸH:ôàDFÌølä (0·Íx“W$â|2àaC w’t±9 khae6°À"C Ãq)ÎGßH?ÌÑ=lC	x7ˆ	uVÚÄ`ÌñÃ’wá 
+Lğ€jôÃ2Ægä6F!AùWN. PÂ¦*xDf]rvå^âD›€ŠeÃ`3Ğ`£şx†Zm6Î!©øi¥¨¼Æ&ë™:á„¤pcj›»Ò÷k²@Aš¦^4K!º¦º¥ˆRøƒr€AF¸ëD¥4&kn=+´Q¤á‰0âşĞÃpnM7ci®ë]œ¡M2Ôäê„¼çLã?l;GŞFÆúD¯À7k0¯@õ®sHºo[ Š5S;0ª#Zk±m´*¼®·urÄ  t³Š0¨ä:GA \îÊ¼Š”1Ï¿LF]„Q…@ñ“Ì0Ä¤bò=—;#~k¼mÑï3ñ1š#õs,/ÊÍ²œ5¾[Ï!GƒrtÒlÄÍş9ÈõÙNŒ»¶Ïåj¬µ°s2÷ ^Á¯!oXAP<¿8íw*g§xÂ=NuÂsœøÜ`4† ñGØåRy2~ç\ˆÉAµí¸8Ú‰1Iİ×‘´H´3ç¬ÂJì˜ÏÎ;Ç¡C/zâ”Ğ]zğ]Ä#0DN1¿(¯‰$Ãä,õìÔòÎ;úÕ‹Q·éÂòÅ~4ÄÍ)Å$?
+ì’L‚
+*”8ú
+‘
+JTnu"à ‡Kdïo „’h´|Ç`+4!ŒşMÂaâğÁš.ñƒ °ğyœâ‚•SŞÇ'‰Â†5D ¼€ˆ¢uşò3ƒ– x#í`†%b‡Q°š„&¢(Å.(¼„!†/˜Á@ÃF8!`ƒà»Ä1V±
+8hğ‰¬p#±˜	: 1Áxƒ±‚Wp„ãF0N¡Šb,QÇÈ„"™‰K\‚–0!ºh†?ø jÀ KÖ!i˜ñ„´„(-q	RZ’‘$!ñ…`üaˆ`Â’ât\Ã“ƒ$¤*viUôR•«l¥Şà@@aø¨
+ Àá[J#f† qŠiN3fˆD$ÜPÌCPA+P¦@>á‹rØ²¥Ğ¦6¡Í?¼¡Ü$  Š^„À â´H- Qj(¤ğ:ÑéRBÀ„)ğĞ‡ä“ Î°;*asôUFB1A…M0tùxhA\qgìB¢H©E1‰zö¢€GDÊWÄbj‡)RZO]8"2¥©FÔ!‹Gèâ¨áÀG=ğ)T¼ƒôxD#*ĞT8@ôpFU“¢pl5)±ğêWY‚UYÀb¬	G,dÁ­¢Õ!°pF?Ğ ¼õ®xeI@  ;ÔGHI_'http://www.dynamicdrive.com/ballon2.gifOkbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_'http://www.dynamicdrive.com/ballon2.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æã¦­ÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=97Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTT1889_"98b8b-761-4377437ef3440"_Sat, 11 Aug 2007 22:43:21 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryaÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+6;DORXajls{†ˆ’”–˜šœ ¢¤®°²´¶¸º¼¾ÀËÙàíò39¸Ââç#(,BORW[o             g              }OaGIF89a/ D ÷  9B JR RZ Zc cc kk ss {{ „„ „Œ Œ” ”œ œ¥ ¥­ ­­ ­µ µµ ½½ ÆÆ ÆÎ ÎÖ ÖŞ Şç çç çï ïï ï÷ ÷÷ ÿÿ ÿÿÿÿÿÿÿÿ!ÿÿ)ÿÿ1ÿÿ9ÿÿBÿÿJÿÿRÿÿZÿÿcÿÿkÿÿsÿÿ{ÿÿ„ÿÿŒÿÿ”ÿÿœÿÿ¥ÿÿ­ÿÿµÿÿ½ÿÿÎÿÿÖÿÿŞÿÿçÿÿïÿÿ÷ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!ù  : ,    / D  ş uH° A.^ 4È°¡Ã‡.V¤@AEŠ.jÜ(P…‰"@ˆ	BÄ)8ªèâÄ’ BÈœIrÄ‰Œ+¢!r¦OŸ1eöD‘ÓàŠ—A*J³$‹¢Sô\J•&O ˆæ4Ñ3iUª1GšXiâê×³a¯‚»ñ„Z¥$Ï2%yB£
+¬pC”8Á·DH´XcªxˆhcÈˆÑ„ˆªAã:ük–'	1làÈÇ.P<ÎÛu¤†-FÎÁ‚ƒ9h¼p9°ÈC†*bc³AZ­ê‚.TG>!¸C0h/İMrAİoE´°¡1‡ªşÛ>>0nX18ÎhY¢8L¸up5"9j´Ñ>-u˜%èğ}‚İ§ÑkÍ`Õ0)ôŞU¾mdwÍàßx0Iô H*Ì°Ñ,È€ƒ*D†!L'ÌO(Ä€`C5Ìfqx½÷	H=HB2dC*èÖU6*Wd}0üV5 I™EÂ”A”"‰ Â4Øpƒg5¬—ÂKo™¥S)’M,¼ Ãš.x$ä['¾çÁTªFÂ^)â8diu´A}RYcœE’	h +"JåT@‚¢‰JåTpÁ£fjãŒJà
+$:•\†MÊh˜ÀÂhê*ş†JĞ@
+/lê«’Ùh B­â(§•J •PÁÁ
+%±HA ´xàì³ºFÁZÕŠ­¶ÛÂô;-@[.çŠ*
+d@ĞµØÆ;ï¹4zïà”ızĞì« [i´Ó*ÀnA$<@Ağ*üj½W ñàC¨^lÁñ.Üg½é
+,í °@C#<ÁÅÛªğ*ÄsÃ¶f¿Ì€ŒÌ@pó»'ëÜ0ÏTŸÛ°ÃW@Ñ
+ÀÀC;0Æ'£lëÙh}DoÍ+Ì
+$€ÀYĞ 6]ÁşĞ'|Úl­µÆBĞÀÑ0ñC(DÀ@yKp±Ç³±ÇZSÁÛ4€´¸Q CîôÍ’#¬ºê„o÷á
+,€@l°’?şÀ§o.­´›¿ıÀá, ÷PP”$°€î¼C ıôxïN¼q#@@ @¥ƒH;ÿ|çO¾ç' ·0³÷:T}Øœ»ıØ«Ÿ8ü?Àü@€p€æaï€ê;Ş
+   @ğ+ˆ ½`€È`-€ 8PJ‹ AN°®€¸ QH€8J„)"8°° xÀa¨d@BÄa.ğ?n@€ÄªeÄœœ €§ibQHp )BÅU´bN˜h‘#"›R¿èô¦-€×ÈF¨  ;ÔKLM_'http://www.dynamicdrive.com/ballon4.gifOkbplist00Ô	
+X$versionT$topY$archiverX$objects † Ñ_WebResourceResponse€_NSKeyedArchiver¯&,-345MNOPQRSTUVWXYZ[\M]^bcU$nullİ !"#$%V$classR$3R$8S$10S$11R$5R$6R$4R$7R$2R$9R$0R$1€€€ €€€€€ Ó'()$+WNS.base[NS.relative€€ €_'http://www.dynamicdrive.com/ballon4.gifÒ./01X$classesZ$classname¢12UNSURLXNSObject#A¯æ¡"ûÈÓ6789CWNS.keysZNS.objects€©:;<=>?@AB€	€
+€€€€€€€©DEFGHIJKL€€€€€€€€€ZKeep-Alive]Accept-RangesVServer\Content-TypeTDate^Content-LengthTEtagZConnection]Last-Modified_timeout=5, max=98Ubytes_|Apache/2.2.10 (Unix) mod_ssl/2.2.10 OpenSSL/0.9.7a mod_auth_passthrough/2.1 mod_bwlimited/1.4 FrontPage/5.0.2.2635 PHP/5.2.6Yimage/gif_Tue, 31 Mar 2009 08:23:15 GMTT2004_"98b8d-7d4-4377437ef3440"_Sat, 11 Aug 2007 22:43:21 GMTÒ./_`£`a2_NSMutableDictionary\NSDictionaryÔÒ./de£ef2_NSHTTPURLResponse]NSURLResponse     ) 2 7 : P R d … ‹ ¦ ­ ° ³ · » ¾ Á Ä Ç Ê Í Ğ Ó Õ × Ù Û İ ß á ã å ç é ë ò ú
+6;DORXajls{†ˆ’”–˜šœ ¢¤®°²´¶¸º¼¾ÀËÙàíò39¸Ââç#(,BORW[o             g              }OÔGIF89a/ D ÷  B  R  Z  c  k  s  {  „  Œ  ”  œ  ¥  ­  µ  ½  Æ  Î  Ö  Ş  ç  ï  ÷  ÿ  ÿÿÿÿ!!ÿ))ÿ11ÿ99ÿBBÿJJÿRRÿZZÿccÿkkÿssÿ{{ÿ„„ÿŒŒÿ””ÿœœÿ¥¥ÿ­­ÿµµÿ½½ÿÆÆÿÎÎÿÖÖÿŞŞÿççÿïïÿ÷÷ÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿÿ!ù  5 ,    / D  ş kH° A(R 4È°¡Ã‡(JŒáAÄˆ(jÜ(ˆ4d9R‡ Fp\)Eˆ%5hØ@³¦Ì‘BddéPÄ†3k
+µYsä<–€t¨SšMEr0‘Tà O³
+É5R dnhª5+W‘ X‚[¶-[®cÓnñÖ©L±nÏÊ¡‘ÄX²P7|AøCÈ¶z7xøwèLW°X­AïfØàğ0[¨H¬ˆ1ƒÆŒ2\ qÙncÍ šyl.f¤ñ"]Ìo0ò,M%\ĞhHÃ…‰®áŞYíÏB°Xî0†ŠßOõşŞ,A°x]'bh¤ÁBÄİÀb§ßä<¶t+8¶pù!zpá…5[#¸°0CÒı§Ù5¤0 \$¼°‘nµ@”x7‰¤}ñmP‚…Å @-4(ŸH"e ÑŠ‘ĞÂF-˜ÀÂ1PÛŠ7 Æ'Â
+6ƒo'A÷=vĞ“xp‰Å°	Å…Ÿ|%ä{#¨ğwÍ Ã•IÇ$m#U Ô—2q@B
+.Ä j0ì7Â“uM¸"I¸	ç_9™‚
+ˆ¢àQ–u9¨YP@‹<F9Ø<©¦£Ó±9’ÄÄd‡Ç!ofh¨“*§ş®²Ø¥H ›±Nk§f€APpkLpæ+I¾Ò
+Á$X0éfï¹å§ob@«€`<k¬±oB
+,Œ‚Îzî·¤¦
+hµ>à BTĞ­º.®²&;®dôÜ‹,¥¸®Ki‹-’dí¸0@%D@ÁÈ¦º0—½2ìp µBà€_k1Æ{Üo+7ŒÁ@Ì€åE0(gÜğÂvùñµØ:@Ul1Î·êóºI¿¯A+@rADpôëÜeÃI_ 3°@q4äAHp3ÖI·İöË1×ö(`Àa›öşàœµÛÈÂ7Ôb7°À
+4ÄA¤/ºXcğ·Ã/ÃsN÷	€7C&Hà@ã6ó¹×’§^¹×—ËAáœ°ÀCgnµÚ|÷îî¼W ï™¿.¯á	 p M03ã·K€9ßğRà;Àg.Áë";À çPöC"<° ÌC6ÔÕ¯6Ô×GğÀğ0Ğy
+@¸Ñu“?zãæ[í¿ÿü8§€à `É¤6¾4`ï› ßç n
+0¤Là P@è€š°‚_Šw€€U©:BÆ/~¸aü 5¯ µ _""`…Rc`WèÃî€ h€\†X   á
+·èCnP   †Xüµ ¸¢Ö¸F4  aLÀçÈHX ( Ñ¨G4à€èØ\àİÀ€Å’ñ@pE,2€S„äF4 MšLJªHŸPòÄ0eU.JUò¤Šè€+9r77•r–N	Npàò—À¬J@  ;¡OÑPÕ	QRS_`http://pagead2.googlesyndication.com/pagead/ads?client=ca-tribalfusion_3_728x90&format=728x90_new&url=http%3A//www.dynamicdrive.com/dynamicindex4/flyimage.htm&color_bg=FFFFFF&color_border=000000&color_line=000000&output=html&color_border=ffffff&color_bg=ffffff&color_text=003366&color_link=990000&color_url=009933&adsafe=high&random=1238488053933&hl=enO<html><head><style><!--
+.ch{cursor:pointer;cursor:hand}//-->  </style><script><!--
+function ss(w,id) {window.status = w;return true;}function st(a) {return true;}function cs(){window.status='';}function ha(a){  }function ca(a) {  window.open(document.getElementById(a).href);}function ga(o,e) {if (document.getElementById) {a=o.id.substring(1);p="";r="";g=e.target;if (g) {t=g.id;f=g.parentNode;if (f) {p=f.id;h=f.parentNode;if (h)r=h.id;}} else {h=e.srcElement;f=h.parentNode;if (f)p=f.id;t=h.id;}if (t==a||p==a||r==a)return true;window.open(document.getElementById(a).href);}}
+//-->
+</script></head><body bgcolor="#ffffff" text="#003366" link="#990000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0"><table width="728" height="90" cellspacing="1" cellpadding="6" border="0" bgcolor="#ffffff"><tbody><tr><td id="taw0" class="ch" width="728" height="100%" valign="center" bgcolor="#ffffff" onfocus="ss('go to www.opencube.com','aw0')" onmousedown="st('aw0')" onmouseover="ss('go to www.opencube.com','aw0')" onmouseout="cs()" onclick="ga(this,event)"><font style="font-size:16px" face="arial,sans-serif"><a id="aw0" target="_blank" href="/aclk?sa=l&amp;ai=BYEbl9tPRSb_SDoTqjQTSqujGA6jb7RW-h9GPCcCNtwHAqQcQARgBIISK-QE4AFDQ7Irp_P____8BYMne6IbIo5AZoAHbrLj_A7IBFHd3dy5keW5hbWljZHJpdmUuY29tugEKNzI4eDkwX25ld8gBAdoBNmh0dHA6Ly93d3cuZHluYW1pY2RyaXZlLmNvbS9keW5hbWljaW5kZXg0L2ZseWltYWdlLmh0bYACAagDAegDH-gDpgPoA9wF6APdBfUDAgQABPUDBAAAAJgEAA&amp;num=1&amp;sig=AGiWqtyRvtbG1_GYwJRKWq_LlvziXztelA&amp;client=ca-tribalfusion_3_728x90&amp;adurl=http://www.opencube.com" onfocus="ss('go to www.opencube.com','aw0')" onclick="ha('aw0')" onmousedown="st('aw0')" onmouseover="return ss('go to www.opencube.com','aw0')" onmouseout="cs()"><b>Drop Down Menu Software</b></a><br></font><font style="font-size:16px" face="arial,sans-serif">Professional custom menus from a robust, visual, HTML application.<br></font></td></tr></tbody></table></body></html>_google_ads_frame   ! 3 I T c  — © À ù ÿ	UsUtU†UU¥UÜZjZ…bİbæcg†gh}h†h³m%q½qÆqğvqÙâ€h…j H“³“ş””-˜–˜Å˜Î˜÷c®·à¢J¢S¢Š§§Ú§ã¨¬x²:²C²l¶Ú»¢»«»ÕÀEÉÉ$ÉNÍ½Õ"Õ+ÕUÙÄáœáá¡á¬ãê±             T              êÄ
