@@ -1,0 +1,307 @@
+<!--
+body 
+	{	margin:0px;	padding:0px;	min-width:780px;
+	background:#ffffff;;	}
+	/*	styles applied to the outerwrapping.	*/
+#outerwrapper	{	background:#c0c0c0;	margin:0px;	padding:0px 50px 0px 50px;
+	}
+	/*	styles applied to the innerwrapper with the text.	*/
+#innerwrapper	{	background-color:#ffffff;	margin:0px auto 0px auto;	padding:0px;	max-width:1080px;	border-left:1px solid #808080;	border-right:1px solid #808080;	}
+	/*	styles applied to the header bars section.	*/
+
+#titlebar
+	{	background:#c9f0ff url(blue.png);	margin: 0px;	padding:0px;	height:40px;	border-bottom:1px solid #808080; 	}
+	#titlebar a	{	border-width:0px;	margin:0px;	padding:0px;	}#sclink 
+	{	float:left;	margin:0px;	padding:2px 0px 2px 2px;	border-width:0px;
+	}
+	#algebra2go 
+	{	float:right;	margin:0px;	padding:0px;	border-width:0px;
+	}
+	#goldtop	{	background-color:#ffcc33;	margin:0px;	padding:0px;	height:5px;	border-bottom:1px solid #808080;	}#topspacer	{
+	border:0px;	margin:0px;	padding:0px;
+	float:left;	height:5px;	}
+	
+/*	styles applied to the title and problem set selection areas.	*/
+
+#choices
+	{
+	font-size:medium;	text-align:center;	}
+	
+#choices p
+	{
+	color:#990000;	font-size:3em;	margin:0px;	clear:both;	font-style:italic;	font-weight:bold;	}
+	
+#choices table
+	{
+	background:#c9f0ff url(blue.png);
+	border:1px solid #808080;
+	}
+#choices form
+	{
+	margin:1px 0px 1px 0px;	}
+	
+#choices label
+	{	padding:0px 5px 0px 5px;
+	font-size:small;	}
+		
+/*	styles applied to the quiztable.	*/
+
+#quiztable
+	{
+	border-width:0px;
+	margin:0px auto 0px auto;
+	padding:0px;
+	border-collapse:collapse;
+	}
+	
+#quiztable td
+	{
+	padding:50px 10px 30px 10px;
+	margin:0px;
+	}
+	
+#quiztable img
+	{
+	margin:0px;
+	}
+	
+/*	styles applied to Larry and instructions.	*/
+
+#instructions 
+	{	padding:0px;	margin:0px;
+	display:block;
+	}
+	div.lbubble
+	{	background:#fffffc url(cream.png);	position:relative;	float:left;	padding:10px;	margin:0px 0px 2em 0px;	border-top:1px solid #000000;	border-bottom:2px solid #000000;	border-left:1px solid #000000;	border-right:2px solid #000000;	font-family:"Arial","helvetica",sans-serif;	}
+	img.brc
+	{	position:absolute;	bottom:-2px;	right:-2px;	float:right;	padding:0px;	margin:0px;	}
+	img.blc
+	{	position:absolute;	bottom:-2px;	left:-1px;	float:left;	padding:0px;	margin:0px;	}
+	img.trc
+	{	position:absolute;	top:-1px;	right:-2px;	float:right;	padding:0px;	margin:0px;	}
+	img.tlc
+	{	position:absolute;	top:-1px;	left:-1px;	float:left;	padding:0px;	margin:0px;	}
+	img.larrytalk
+	{	position:absolute;	top:10px;	left:-20px;	float:left;	padding:0px;	margin:0px;	}
+	#larry 
+	{	padding:0px;	margin:0px;	float:left;	}
+	div.extender
+	{	clear:both;	font-family:"Arial","helvetica",sans-serif;	font-size:small;	}
+	/*	styles applied to the quiz questions.	*/
+
+div.showQuiz 
+	{	display:block;	margin:0px;	padding:30px 0px 0px 0px;	font-family:"Arial","helvetica",sans-serif;	font-size:medium;	}
+	div.showQuiz li 
+	{	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;	color:#666666;
+	padding:0px 0px 0px 20px;	}
+	div.showQuiz input.line
+	{	border-top:2px solid #ffffff;	border-left:2px solid #ffffff;	border-right:2px solid #ffffff;	border-bottom:2px solid #000000;	text-align:center;	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;
+	}
+	div.showQuiz input.box
+	{	border:2px solid #c9f0ff;	text-align:center;	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;	}
+	div.showQuiz input.expline
+	{	border-top:1px solid #ffffff;	border-bottom:1px solid #000000;	border-left:1px solid #ffffff;	border-right:1px solid #ffffff;
+	text-align:center;	font-family:"Arial","helvetica",sans-serif;	font-size:large;
+	vertical-align:35%;
+	margin-left:-5px;	}
+	div.showQuiz input.expbox
+	{	border:1px solid #c9f0ff;	text-align:center;	font-family:"Arial","helvetica",sans-serif;	font-size:large;
+	vertical-align:35%;	margin-left:-5px;	}
+
+div.showQuiz label
+	{
+	font-size:medium;
+	margin-right:40px;
+	}
+
+span.question 
+	{	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;	color:#000000;	padding:0px;	}
+span.extension 
+	{	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;	color:#000000;	margin:0px 0px 0px 20px;	}img.soloimage
+	{
+	display:block;
+	padding:40px;
+	}
+
+.correct 
+	{	color:#222222;	padding:0px 0px 0px 20px;	}
+	.incorrect 
+	{	color:#2222ee;	padding:0px 0px 0px 20px;	}
+	.summary 
+	{	color:#000000;	}
+	p.feedback
+	{
+	margin-left:40px;
+	}
+	
+.hide 
+	{	display:none;	}
+	
+/*	styles applied to the solutions sections.	*/
+
+div.totals
+	{
+	padding:50px 0px 0px 0px;
+	}
+	div.totals img 
+	{	padding:0px;	margin:0px;	float:right;	}
+	div.totals button 
+	{	padding:10px;	margin:15px 30px 0px 0px;	float:right;	}
+
+div.cbubble
+	{	background:#fffffc url(cream.png);	position:relative;	float:right;	padding:10px;	margin:0px 0px 0px 10px;	border-top:1px solid #000000;	border-left:1px solid #000000;	border-bottom:2px solid #000000;	border-right:2px solid #000000;	}
+	img.charlietalk
+	{	position:absolute;	top:10px;	right:-20px;	float:right;	padding:0px;	margin:0px;	}
+	/*	styles applied to the footer bar.	*/
+
+#goldbase	{	background:#ffcc33 url(gold.png);	margin:0px;	padding:0px;	height:5px;	border-top:1px solid #808080;	}
+	
+#basespacer	{	margin:0px;	padding:0px;	height:5px;
+	float:left;	}
+	
+#pagebase
+	{	background:#c9f0ff url(blue.png);	margin:0px;	border-top:1px solid #808080;	padding:10px 10px 10px 10px;	color:#000000;	font-size:small;	font-weight:bold;	height:1em;	}
+	#leftcredits
+	{	display:block;	float:left;	margin:0px;	font-weight:bold;	text-align:left;	}
+	#rightcredits
+	{	display:block;	float:right;	margin:0px;	font-weight:bold;	text-align:right;	}
+	#pagebase a
+	{	color:#000000;	font-weight:bold;	text-decoration:none;	font-size:small;	}
+	#pagebase a:hover
+	{	color:#000000;	text-decoration:underline;	}
+	/*	styles applied to the fractions.	*/
+
+table.fraction
+	{
+	padding:0px;
+	margin:0px;
+	text-align:center;
+	border-collapse:collapse;
+	display:inline-block;
+	vertical-align:middle;
+	}
+
+table.fraction tr td.numerator
+	{
+	vertical-align:bottom;
+	font-size:large;
+	}
+
+table.fraction tr td.numrad
+	{
+	vertical-align:bottom;
+	font-size:large;
+	border-top:2px solid #000000;
+	}
+
+table.fraction tr td.operator
+	{
+	vertical-align:middle;
+	font-size:x-large;
+	}
+
+table.fraction tr td.oprad
+	{
+	vertical-align:middle;
+	font-size:x-large;
+	border-top:2px solid #000000;
+	}
+
+table.fraction tr td.integer
+	{
+	vertical-align:middle;
+	font-size:x-large;
+	}
+
+table.fraction tr td.exponent
+	{
+	vertical-align:top;
+	font-size:medium;
+	}
+
+table.fraction tr td.grouping
+	{
+	vertical-align:middle;
+	font-size:1.5em;
+	}
+
+table.fraction tr td.smallrad
+	{
+	vertical-align:top;
+	font-size:2em;
+	text-align:right;
+	}
+
+table.fraction tr td.bigrad
+	{
+	vertical-align:top;
+	font-size:2.75em;
+	text-align:right;
+	}
+
+table.fraction tr td.denominator
+	{
+	vertical-align:top;
+	font-size:large;
+	}
+
+table.fraction tr td.leftabs
+	{
+	border-left:3px solid #000000;
+	}
+
+table.fraction tr td.rightabs
+	{
+	border-right:3px solid #000000;
+	}
+
+table.fraction tr td
+	{
+	padding:0px;
+	margin:0px;
+	color:#000000;
+	text-align:center;
+	font-family:"Arial","helvetica",sans-serif;	font-size:x-large;	}
+
+table.fraction hr
+	{
+	width:100%;
+	height:2px;
+	margin:0px;
+	border:0px;
+	padding:0px;
+	background-color:#000000;
+	color:#000000;
+	}
+
+table.fraction hr.bigbar
+	{
+	height:3px;
+	}
+
+table.quiztable
+	{
+	border-width:0px;
+	margin:0px auto 0px auto;
+	padding:0px;
+	border-collapse:collapse;
+	}
+	
+table.quiztable td
+	{
+	padding:50px 10px 30px 10px;
+	margin:0px;
+	}
+	
+table.quiztable img
+	{
+	margin:0px;
+	}
+
+div.lbubble table.fraction td
+	{
+	font-size:medium;
+	}
+
+
+-->

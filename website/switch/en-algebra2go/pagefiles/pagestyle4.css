@@ -1,0 +1,288 @@
+<!--/*	styles applied to the body of the page.	*/body	{	background:#ffffff;	margin:0px;	padding:0px;	min-width:780px;	}/*	styles applied to the outerwrapping of stripes.	*/#outerwrapper	{	background:#c0c0c0;	margin:0px;	padding:0px 50px 0px 50px;	}/*	styles applied to the innerwrapper with the text.	*/#innerwrapper	{	background-color:#ffffff;	margin:0px auto 0px auto;	padding:0px;	max-width:1080px;	border-left:1px solid #808080;	border-right:1px solid #808080;	}/*	styles applied to the maroon heading.	*/#pagetop	{	background:#990000 url(maroon.png);	margin: 0px;	padding:0px;	height:40px;	}#pagetop a	{	border-width:0px;	margin:0px;	padding:0px;	}#sclink	{	float:left;	margin:0px;	padding:2px 0px 2px 2px;	border-width:0px;	}#algebra2go	{	float:right;	margin:0px;	padding:2px 2px 2px 0px;	border-width:0px;	}/*	styles applied to the gold drop menus.	*/#drops	{	background-color:#ffcc33;	padding:0px 0px 0px 0px;	margin:0px;	font-family:"arial","helvetica",sans-serif;	font-size:x-small;	}#dropwrapper	{	margin:0px auto 0px auto;	padding:0px;	max-width:1082px;	}a.maindropmenu	{	display:block;	background-color:#ffcc33;	color:#000000;	padding:2px 0px 2px 0px;	margin:0px;	font-weight:bold;	letter-spacing:0px;	text-decoration:none;	white-space:nowrap;	width:100%;	}a.maindropmenu:hover	{	background:#990000 url(maroon.png);	color:#ffcc33;	}#drops table	{	margin:0px;	padding:0px;	width:100%;	}#drops table td	{	padding:0px;	border-right:1px solid #ffffff;	border-left:1px solid #ffffff;	text-align:center;	width:16%;	}#drops table td.leftend	{	width:18%;	border-left:0px solid #ffcc33;	}#drops table td.rightend	{	width:18%;	border-right:0px solid #ffcc33;	}#goldtop	{	background:#ffcc33 url(gold.png);	margin:0px;	padding:0px;	height:5px;	border-bottom:1px solid #808080;	}#goldtop img	{	margin:0px;	padding:0px;	}
+/*	styles applied to the section with the mountains.	*/#mountains	{	position:relative;	background:url(mountains.png) top center no-repeat;	border-bottom:1px solid #808080;	margin:0px;	padding:0px;	height:200px;	}#charlie	{	position:absolute;	bottom:-25px;	right:-50px;	margin:0px;	padding:0px;	float:right;	}#larry	{	position:absolute;	bottom:0px;	left:-50px;	margin:0px;	padding:0px;	float:left;	}#shadow	{	position:absolute;	bottom:0px;	width:100%;	margin:0px;	padding:0px 0px 0px 2px;	color:#000000;	text-align:center;	font-size:4.5em;	font-style:italic;	}#titlebar	{	position:absolute;	bottom:0px;	width:100%;	margin:0px;	padding:0px 0px 2px 0px;	color:#ffffff;	text-align:center;	font-size:4.5em;	font-style:italic;	}span.twostyle	{	color:#c9f0ff;
+	padding-left:7px;	}
+	
+span.twoshadow	{
+	padding-left:7px;	}/*	styles applied to the navigation list.	*/#navhome	{	background:url(navhome.png) top left repeat-y;	}#navigation	{	background:url(navleft.png) top left repeat-y;	position:relative;	left:40px;	top:35px;	float:left;	margin:0px;	width:170px;	padding:20px 40px 30px 1px;	font-size:x-small;	font-weight:bold;	text-align:center;
+	}#navtop	{	position:absolute;	top:0px;	left:0px;	margin:0px;	padding:0px;
+	}#navbase	{	position:absolute;	bottom:0px;	left:0px;	margin:0px;	padding:0px;	}#navbase2	{	position:absolute;	bottom:0px;	left:0px;	margin:0px;	padding:0px;	}#navbase3	{	position:absolute;	bottom:-219px;	left:0px;	margin:0px;	padding:0px;	}#navigation a	{	display:block;	padding:5px 0px 5px 0px;	border:none;	color:#990000;	font-family:"arial","helvetica",sans-serif;	text-decoration:none;	margin:0px;	width:160px;	}#navigation a:hover	{	color:#ffcc33;	background:#990000;	}#navigation a.current	{	display:block;	padding:5px 0px 5px 0px;	border:none;	color:#990000;	font-family:"arial","helvetica",sans-serif;	text-decoration:none;	margin:0px;	width:160px;	}#navigation a.current:hover	{	color:#ffcc33;	background:#990000;	}
+			
+#navigation a.subtopic	{	display:block;	padding:5px 0px 5px 0px;
+	border:none;	color:#000000;	font-family:"arial","helvetica",sans-serif;	text-decoration:none;	margin:0px;	width:160px;
+	}#navigation a.subtopic:hover	{	color:#ffcc33;	}#navigation a.home
+{
+	text-align:center;
+	font-size:medium;
+	padding:5px 0px 5px 0px;
+	width:160px;
+}
+
+p.category
+{
+	display:block;	margin:25px 0px 5px 0px;	padding:0px;
+	border:none;	color:#000000;
+	font-family:"arial","helvetica",sans-serif;
+	font-size:small;	text-decoration:underline;	width:160px;
+}
+ 
+ 
+ /*	styles applied to the text at the top of the page.	*/#uppercontent	{	margin:0px 30px 0px 240px;	padding:35px 10px 0px 0px;	font-size:medium;	}#uppercontent h1	{	color:#505050;	font-size:2em;	font-weight:400;	margin:0px 0px 10px 0px;	padding:0px;	}#uppercontent h2	{	color:#000000;	font-size:1.5em;	font-weight:400;	margin:0px;	padding:50px 0px 10px 0px;	clear:right;	}#uppercontent a	{	color:#990000;	text-decoration:underline;	}#uppercontent a.big	{
+	display:block;	color:#000000;	font-size:1.5em;	font-weight:400;	padding:0px;	margin:30px 0px 10px 0px;
+	text-decoration:none;	clear:right;	}#uppercontent a:hover	{	color:#ffcc33;	text-decoration:none;	background-color:#990000;	}#uppercontent p	{	line-height:150%;	margin:0px;	padding:0px 0px 0px 20px;	font-family:"arial","helvetica",sans-serif;	text-align:left;	}#uppercontent p.intro	{	padding:0px;	}span.maroonstyle	{	color:#990000;	}span.togo	{	font-style:italic;	font-weight:bold;	}#uppercontent img	{	margin:0px 0px 40px 50px;	padding:0px;	border-width:0px;	float:right;	}#extender	{	line-height:0%;	padding:0px;	margin:0px;	font-size:xx-small;	clear:both;	}div.upperbase	{	background:url(middle.png) bottom left repeat-x;	margin:0px;	padding:0px;	height:30px;	border-left:1px solid #808080;	}/*	styles applied to the scenes of prof. perez and charlie.	*/div.scene	{	position:relative;	background:#ffffff url(scene.png) bottom left repeat-x;	margin:0px 33px 0px 40px;	padding:0px 0px 0px 0px;	height:200px;	}div.scene img	{	margin:0px;	padding:0px;	border:0px;	}div.scenetop	{	position:relative;	background:#ffffff url(scene.png) bottom left repeat-x;	margin:0px 33px 0px 40px;	padding:0px 0px 0px 0px;	height:180px;	}div.scenebase	{	background:#ffffff url(scene.png) top left repeat-x;	margin:0px 33px 0px 40px;	padding:0px;	height:60px;	}
+
+	
+/*	styles applied to the body of the page.	*/
+
+#s01Larry
+	{	position:absolute;	bottom:0px;	left:50px;	}#s01Charlie
+	{	position:absolute;	bottom:0px;	left:150px;	}#s01Summer
+	{	position:absolute;	bottom:0px;	right:150px;	}#s02Larry
+	{	position:absolute;	bottom:0px;	right:50px;	}#s02Charlie
+	{	position:absolute;	bottom:0px;	right:350px;	}#s02Bob
+	{	position:absolute;	bottom:0px;	left:50px;	}#s03Martha
+	{	position:absolute;	bottom:0px;	right:100px;	}#s03Larry
+	{	position:absolute;	bottom:0px;	left:150px;	}#s03Charlie
+	{	position:absolute;	bottom:0px;	left:250px;	}#s04Charlie
+	{	position:absolute;	bottom:0px;	right:150px;	}#s04John
+	{	position:absolute;	bottom:0px;	right:450px;	}#s04Larry
+	{	position:absolute;	bottom:0px;	right:50px;	}#s05Larry
+	{	position:absolute;	bottom:0px;	left:150px;	}#s05Charlie
+	{	position:absolute;	bottom:0px;	left:50px;	}#s05Carol
+	{	position:absolute;	bottom:0px;	right:100px;	}#s06Charlie
+	{	position:absolute;	bottom:0px;	right:300px;	}#s06Larry
+	{	position:absolute;	bottom:0px;	right:100px;	}#s06Patrick
+	{	position:absolute;	bottom:0px;	right:200px;	}#s07Larry
+	{	position:absolute;	bottom:0px;	left:100px;	}#s07Sue
+	{	position:absolute;	bottom:0px;	left:100px;	}#s07Charlie
+	{	position:absolute;	bottom:0px;	left:450px;	}#s08Charlie
+	{	position:absolute;	bottom:0px;	left:250px;	}#s08Larry
+	{	position:absolute;	bottom:0px;	left:50px;	}#s08Lisa
+	{	position:absolute;	bottom:0px;	left:450px;	}#s09Candice
+	{	position:absolute;	bottom:0px;	left:150px;	}
+	
+#s09Larry
+	{	position:absolute;	bottom:0px;	right:50px;	}#s09Charlie
+	{	position:absolute;	bottom:0px;	right:200px;	}/*	styles applied to the tables which head each section.	*/div.opening	{	background:url(opening.png);	margin:0px 33px 0px 40px;	padding:0px;
+	font-family:"arial","helvetica",sans-serif;	}table.header	{	width:100%;	margin:0px;	padding:0px;	font-size:small;	text-align:left;	font-family:"times",serif;	vertical-align:middle;	color:#000000;	font-size:2em;	font-weight:400;
+	}table.header a.arrow img	{	background:url(uparrow.png) top left no-repeat;	margin:0px 0px 0px 10px;	padding:0px;	border:0px;
+	float:right;	height:50px;	width:50px;	}
+	table.header a.arrow:hover img	{	background:url(uparrowneg.png) top left no-repeat;	}
+	
+table.header a.virtual img	{	background:url(virtual.png) top left no-repeat;	margin:0px 0px 0px 10px;	padding:0px;	border:0px;	float:right;	height:50px;	width:50px;	}
+	table.header a.virtual:hover img	{	background:url(virtualneg.png) top left no-repeat;	}
+	
+table.header a.framer img	{	background:url(framer.png) top left no-repeat;	margin:0px 0px 0px 10px;	padding:0px;	border:0px;	float:right;	height:50px;	width:50px;	}
+	table.header a.framer:hover img	{	background:url(framerneg.png) top left no-repeat;	}
+	
+table.header tr td
+	{	padding:0px 0px 30px 0px;
+	}
+
+table.header tr td.rightedge
+	{
+	background:url(rightedge.png) top right repeat-y;
+	width:20px;
+	}
+table.header tr td.leftedge
+	{
+	background:url(leftedge.png) top left repeat-y;
+	width:20px;
+	}
+
+/*	styles applied to the tables of resources.	*/div.materials	{	background:url(materials.png) top right repeat-y;	margin:0px 30px 0px 40px;	padding:0px 30px 0px 20px;
+	border-left:1px solid #f0f0f0;	font-family:"arial","helvetica",sans-serif;	}table.resources	{	width:100%;	margin:0px;	padding:10px 0px 0px 0px;	font-size:small;	text-align:center;	color:#000000;
+	}table.resources a	{	padding:8px;	display:block;	color:#990000;	text-decoration:underline;	}table.resources a:hover	{	background-color:#990000;	color:#ffcc33;	text-decoration:none;	}
+
+table.resources tr td	{	padding:0px;	text-align:center;	vertical-align:middle;	}table.resources tr.labels td	{
+	font-weight:bold;	font-size:70%;
+	color:#000000;
+	padding:5px;
+	vertical-align:bottom;
+	}
+	
+table.resources tr.labels td.topic
+	
+	{	padding-left:5px;
+	text-align:left;
+	font-size:small;
+	font-weight:bold;
+	width:36%;
+	}
+
+table.resources tr.labels td.spanner	{	border-bottom:1px solid #663300;	}/*table.resources tr.readiness td.topic
+	{
+	border:1px solid #663300;
+	text-align:center;
+	background:#eeeeee;
+	width:44%;
+	}*/
+
+table.resources tr.readiness td a, table.resources tr.review td a
+	{
+	border:1px solid #663300;
+	text-align:center;
+	margin:0px;
+	padding:5px;
+	width:200px;	background:url(review.png);
+	color:#990000;
+	font-weight:bold;	text-decoration:none;	}
+	
+table.resources tr.readiness td a
+	{
+	float:left;
+	}
+
+table.resources tr.review td a
+	{
+	float:right;
+	}
+	table.resources tr.readiness td a:hover, table.resources tr.review td a:hover
+	{
+	background:url(reviewneg.png);
+	color:#990000;
+	font-weight:bold;	text-decoration:none;	}
+
+table.resources tr.breaker td	{
+	border-top:1px solid #663300;
+	height:20px;
+	}
+
+table.resources tr.spacer td	{
+	height:20px;
+	}
+
+table.resources tr.array td
+	{
+	border-top:1px solid #663300;	border-left:1px solid #663300;
+	background:#ffffff;
+	}
+
+table.resources tr.array td.topic
+	{
+	padding-left:5px;
+	text-align:left;
+	background:#ffffff;
+	font-size:small;
+	font-weight:bold;
+	width:36%;
+	}
+
+table.resources tr.array td.subtopic
+	{
+	padding-left:25px;
+	text-align:left;
+	background:#ffffff;
+	width:36%;
+	}
+
+table.resources img
+	{
+	border:0px;
+	}
+
+
+table.resources tr.array td.tools a.img1, table.resources tr.array td.tools a.img2	{
+	display:inline;
+	float:right;
+	margin:5px 5px 5px 0px;
+	padding:0px;
+	}table.resources tr.array td.tools
+	{
+	border-left:0px;
+	text-align:right;
+	background:#ffffff;
+	width:8%;
+	}
+
+table.resources tr.array td.notes
+	{
+	background:#eeeeee;
+	width:8%;
+	}
+
+table.resources tr.array td.sheet
+	{
+	background:#ffffcc;
+	width:8%;
+	}
+
+table.resources tr.array td.wmv
+	{
+	background:#eeeeee;
+	width:8%;
+	}
+
+table.resources tr.array td.teachertube
+	{
+	background:#ffffcc;
+	width:8%;
+	}
+
+table.resources tr.array td.youtube
+	{
+	background:#eeeeee;
+	width:8%;
+	}
+
+table.resources tr.array td.problems
+	{
+	background:#ffffcc;
+	width:8%;
+	}
+
+table.resources tr.array td.quizzes
+	{
+	border-right:1px solid #000000;
+	background:#eeeeee;
+	width:8%;
+	}
+
+/*
+
+table.resources tr.section td
+	{
+	background-color:#ffffff;
+	font-size:large;
+	text-align:left;
+	padding:25px 0px 25px 5px;
+	font-family:"times",serif;
+	}
+table.resources tr.section a
+	{
+	display:inline;
+	padding:0px;
+	}
+*/
+
+/*	styles applied to the bottom of the page.	*/#goldbottom	{	background:#ffcc33 url(gold.png);	margin:0px;	padding:0px;	height:5px;	border-top:1px solid #808080;	}#pagebase	{	background:#990000 url(maroon.png);	margin:0px;	padding:0px;	color:#ffffff;	font-size:small;	font-weight:bold;
+	height:40px;
+	position:relative;
+	}#leftcredits	{	display:block;	float:left;	margin:12px 0px 0px 10px;	font-weight:bold;	text-align:left;	}
+
+#headshot
+	{
+	display:block;
+	float:right;
+	margin:0px;
+	}
+	#rightcredits	{	display:block;	float:right;	margin:8px 10px 0px 0px;	font-weight:bold;	text-align:right;	}#pagebase a	{	color:#ffffff;	font-weight:bold;	text-decoration:none;	font-size:small;	}#pagebase a:hover	{	color:#ffffff;	text-decoration:underline;	}a.team img
+{
+	background:url(team1.png) top left no-repeat;
+	margin:0px;
+	padding:0px;
+	border:0px;
+	position:absolute;
+	bottom:0px;
+	right:10px;
+	height:40px;
+	width:134px;
+}
+
+a.team:hover img
+{
+	background:url(team2.png) top left no-repeat;
+}
+
+/*	styles applied to many parts.	*/img.leftimg	{	float:left;	margin:0px;	padding:0px;	}img.rightimg	{	float:right;	margin:0px;	padding:0px;	}
+
+-->

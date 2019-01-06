@@ -1,0 +1,52 @@
+<html>
+
+<head>
+<title>video test</title>
+
+<script type="text/javascript">
+function playVideo(sourceId, targetId) {
+   if (typeof(sourceId)=='string') {sourceId=document.getElementById(sourceId);}
+   if (typeof(targetId)=='string') {targetId=document.getElementById(targetId);}
+   targetId.innerHTML=sourceId.innerHTML;
+   return false;
+}
+</script>
+
+</head>
+
+<body>
+
+
+<hr/>
+
+
+<div id='videoPlayback' style='width: 540px; height:386px; background-color: #800000;'></div>
+
+
+<div id='selectDemo1' style='display: none'>
+<OBJECT ID="MediaPlayer" WIDTH="540" HEIGHT="406" CLASSID="CLSID:22D6F312-B0F6-11D0-94AB-0080C74C7E95"
+STANDBY="Loading Windows Media Player components..." TYPE="application/x-oleobject">
+<PARAM NAME="FileName" VALUE="add1.wmv">
+<PARAM name="autostart" VALUE="true">
+<PARAM name="ShowControls" VALUE="true">
+<param name="ShowStatusBar" value="false">
+<PARAM name="ShowDisplay" VALUE="false">
+<EMBED TYPE="application/x-mplayer2" SRC="add1.wmv" NAME="MediaPlayer"
+WIDTH="540" HEIGHT="386" ShowControls="1" ShowStatusBar="0" ShowDisplay="0" autostart="1"></EMBED>
+</OBJECT>
+</div>
+
+<div id='selectDemo2' style='display: none'>
+
+<embed src="http://www.teachertube.com/skin-p/mediaplayer.swf" width="540" height="386" type="application/x-shockwave-flash" allowfullscreen="true" menu="false" flashvars="height=386&width=540&file=http://www.teachertube.com/flvideo/36674.flv&image=http://www.teachertube.com/thumb/36674.jpg&location=http://www.teachertube.com/skin-p/mediaplayer.swf&logo=http://www.teachertube.com/images/greylogo.swf&searchlink=http://teachertube.com/search_result.php%3Fsearch_id%3D&frontcolor=0xffffff&backcolor=0x000000&lightcolor=0xFF0000&screencolor=0xffffff&autostart=true&volume=80&overstretch=fit&link=http://www.teachertube.com/view_video.php?viewkey=f4c40c0b778b6eb7cb1b&linkfromdisplay=true&recommendations=http://www.teachertube.com/embedplaylist.php?chid=54"></embed>
+</div>
+
+<A HREF="#" onclick='return playVideo("selectDemo1","videoPlayback")'>WMV</A><BR>
+<A HREF="#" onclick='return playVideo("selectDemo2","videoPlayback")'>TeacherTube</q></A><BR>
+
+
+<hr/>
+
+
+</body>
+</html>

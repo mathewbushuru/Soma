@@ -1,0 +1,20 @@
+
+/*	styles applied for Internet Explorer 6.	*/
+#innerwrapper
+	{
+	/* For IE: simulate max-width with IE-proprietary expression() function: */
+	width: expression(document.body.clientWidth > 1000 ? "900px": "auto");
+	}
+	
+#charlie
+	{
+	filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true',src='pagefiles/charlie.png');
+	padding-top:210px;
+	}
+
+#larry 
+	{ 
+	filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(enabled='true', src='pagefiles/larry.png'); 
+	padding-top:200px; 
+	}
+

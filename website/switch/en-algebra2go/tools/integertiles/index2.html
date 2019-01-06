@@ -1,0 +1,418 @@
+<html><head><title>Number Line</title><style type="text/css">
+body {	background-color:#ffffff;	text-align:center;	padding:0px;	margin:0px auto 0px auto;	min-width:780px;	max-width:1512px;}
+table {	border:0px;	padding:0px;	margin:0px auto 0px auto;}
+td {	font-size:small;	text-align:center;	white-space:nowrap;}
+img {	border:0px;	padding:0px;	margin:0px;}
+td.mini {	width:20px;}
+td.end {	width:15px;}
+td.tile {	background:#ffffff;	height:40px;}
+td.negtile_1 {	background:#ffffff url(neg_1.png) center no-repeat;	height:40px;}
+td.postile_1 {	background:#ffffff url(pos_1.png) center no-repeat;	height:40px;}
+td.negtile_2 {	background:#ffffff url(neg_2.png) center no-repeat;	height:40px;}
+td.postile_2 {	background:#ffffff url(pos_2.png) center no-repeat;	height:40px;}
+td.negtile_3 {	background:#ffffff url(neg_3.png) center no-repeat;	height:40px;}
+td.postile_3 {	background:#ffffff url(pos_3.png) center no-repeat;	height:40px;}
+td.negtile_4 {	background:#ffffff url(neg_4.png) center no-repeat;	height:40px;}
+td.postile_4 {	background:#ffffff url(pos_4.png) center no-repeat;	height:40px;}
+td.negtile_5 {	background:#ffffff url(neg_5.png) center no-repeat;	height:40px;}
+td.postile_5 {	background:#ffffff url(pos_5.png) center no-repeat;	height:40px;}
+td.negtile_6 {	background:#ffffff url(neg_6.png) center no-repeat;	height:40px;}
+td.postile_6 {	background:#ffffff url(pos_6.png) center no-repeat;	height:40px;}
+td.left{	background:#ffffff url(left.png) left center no-repeat;}
+td.left img{	height:20px;	width:1px;}
+td.right{	background:#ffffff url(right.png) right center no-repeat;}
+td.right img{	height:20px;	width:1px;}
+td.mark{	background:#ffffff url(mark.png) center center no-repeat;}
+td.mark img{	height:24px;	width:1px;}
+td.dot_1{	background:#ffffff url(dot_1.png) center center no-repeat;}
+td.dot_1 img{	height:20px;	width:1px;}
+td.dot_2{	background:#ffffff url(dot_2.png) center center no-repeat;}
+td.dot_2 img{	height:20px;	width:1px;}
+td.clean{	background:#ffffff url(spacer.gif) center center no-repeat;}
+td.clean img{	height:20px;	width:1px;}
+td.leftwall_1{	background:#ffffff url(leftwall_1.png) left center no-repeat;}
+td.leftwall_1 img{	height:20px;	width:1px;}
+td.leftwall_2{	background:#ffffff url(leftwall_2.png) left center no-repeat;}
+td.leftwall_2 img{	height:20px;	width:1px;}
+td.rightwall_1{	background:#ffffff url(rightwall_1.png) right center no-repeat;}
+td.rightwall_1 img{	height:20px;	width:1px;}
+td.rightwall_2{	background:#ffffff url(rightwall_2.png) right center no-repeat;}
+td.rightwall_2 img{	height:20px;	width:1px;}
+td.leftend_1{	background:#ffffff url(leftend_1.png) left center no-repeat;}
+td.leftend_1 img{	height:20px;	width:1px;}
+td.leftend_2{	background:#ffffff url(leftend_2.png) left center no-repeat;}
+td.leftend_2 img{	height:20px;	width:1px;}
+td.rightend_1{	background:#ffffff url(rightend_1.png) right center no-repeat;}
+td.rightend_1 img{	height:20px;	width:1px;}
+td.rightend_2{	background:#ffffff url(rightend_2.png) right center no-repeat;}
+td.rightend_2 img{	height:20px;	width:1px;}
+td.rightarrow_1{	background:#ffffff url(rightarrow_1.png) right center no-repeat;}
+td.rightarrow_1 img{	height:20px;	width:1px;}
+td.rightarrow_2{	background:#ffffff url(rightarrow_2.png) right center no-repeat;}
+td.rightarrow_2 img{	height:20px;	width:1px;}
+td.leftarrow_1{	background:#ffffff url(leftarrow_1.png) left center no-repeat;}
+td.leftarrow_1 img{	height:20px;	width:1px;}
+td.leftarrow_2{	background:#ffffff url(leftarrow_2.png) left center no-repeat;}
+td.leftarrow_2 img{	height:20px;	width:1px;}
+td.bar_1{	background:#ffffff url(bar_1.png) center center no-repeat;}
+td.bar_1 img{	height:20px;	width:1px;}
+td.bar_2{	background:#ffffff url(bar_2.png) center center no-repeat;}
+td.bar_2 img{	height:20px;	width:1px;}
+#graphics td{	font-size:medium;	font-family:sans-serif;}
+div.equation{	font-size:xx-large;}
+div.equation input{	border:0px;	text-align:center;	font-size:xx-large;	font-family:"verdena", serif;}
+input.display1{	color:#ee2222;}
+input.display2{	color:#2222ee;}
+button.arrows{	border:0px;	margin:0px;	padding:0px;	height:50px;	width:50px;}
+button.nextone{	border:0px;	margin:0px 10px 0px 10px;	padding:0px;	height:50px;	width:100px;}
+.hide{	display:none;}
+
+#pagetop	{	background:#990000 url(maroon2.png) top left repeat-x;	margin: 0px;	padding:0px;	height:40px;	}
+
+#pagetop a.sclink
+{
+	float:left;
+	margin:0px;
+	padding:0px;
+	background:url(sclink.png) top left no-repeat;
+	border-width:0px;
+}
+
+#pagetop a.sclink:hover
+{
+	background:url(sclinkneg.png) top left no-repeat;
+}
+
+#pagetop a.sclink img
+{
+	width:372px;
+	height:40px;
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+}
+
+#pagetop a.a2glink
+{
+	float:right;
+	margin:0px;
+	padding:0px;
+	background:url(algebra2go.png) top left no-repeat;
+	border-width:0px;
+}
+
+#pagetop a.a2glink:hover
+{
+	background:url(algebra2goneg.png) top left no-repeat;
+}
+
+#pagetop a.a2glink img
+{
+	width:215px;
+	height:40px;
+	margin:0px;
+	padding:0px;
+	border-width:0px;
+}
+
+#goldtop
+{
+	background:#ffcc33 url(gold.png);
+	margin:0px;
+	padding:0px;
+	height:5px;
+	border-bottom:1px solid #808080;
+}
+
+#goldtop img
+{
+	margin:0px;
+	padding:0px;
+}
+
+</style>
+<script language="javascript" type="text/javascript">
+var dotLocation=11;var origin=11;var dotNumber=1;
+function moveLeft() {	if (dotLocation > 1) {		var level=dotNumber;
+		
+<!-- Move left when the current position is left of the first number. -->
+		if (dotLocation < origin) {			if (origin <= 11) {				level=1			}			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='bar_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='bar_'+dotNumber;			dotLocation=dotLocation-1;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftarrow_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+dotNumber;
+			if (dotNumber == 1) {
+				document.getElementById('addTile_'+level+'_'+dotLocation).className='negtile_'+dotNumber;
+				document.getElementById('subTile_'+level+'_'+dotLocation).className='negtile_'+dotNumber;
+			}
+			if (dotNumber == 2) {
+				if (dotLocation >= 11) {					document.getElementById('addTile_2_'+dotLocation).className='negtile_4';					document.getElementById('addTile_1_'+dotLocation).className='postile_3';					document.getElementById('subTile_1_'+dotLocation).className='postile_6';
+				}				if (dotLocation < 11) {					document.getElementById('addTile_'+level+'_'+dotLocation).className='negtile_'+dotNumber;
+					document.getElementById('subTile_'+level+'_'+dotLocation).className='negtile_'+dotNumber;
+					if (origin <= 11) {
+						document.getElementById('subTile_2_'+dotLocation).className='postile_6';
+						document.getElementById('subTile_1_'+dotLocation).className='negtile_2';
+					} else {
+						document.getElementById('subTile_1_'+dotLocation).className='postile_6';
+						document.getElementById('subTile_2_'+dotLocation).className='negtile_2';
+					}
+				}
+				if ((dotLocation > 1) && (dotLocation <= 11)) {
+					if (origin > 11) {
+						document.getElementById('subTile_1_'+(dotLocation-1)).className='postile_5';						document.getElementById('subTile_2_'+(dotLocation-1)).className='negtile_5';
+					} else {
+						document.getElementById('subTile_2_'+(dotLocation-1)).className='postile_5';						document.getElementById('subTile_1_'+(dotLocation-1)).className='negtile_5';
+					}
+				}
+			}		}		
+<!-- Move left when the current position is the first number. -->
+		if (dotLocation == origin) {			if (origin <= 11) {				level=1;				if (dotNumber == 1) {					document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_'+dotNumber				}			} else {				document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_'+dotNumber;			}			if (dotLocation == 11) {				document.getElementById('subTile_1_'+dotLocation).className='tile';				document.getElementById('subTile_2_'+dotLocation).className='tile';
+			}			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightend_'+dotNumber;			dotLocation=dotLocation-1;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftarrow_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+dotNumber;
+			if (dotNumber == 1) {				document.getElementById('addTile_1_'+dotLocation).className='negtile_1';
+				document.getElementById('subTile_1_'+dotLocation).className='negtile_1';
+			}			if (dotNumber == 2) {				if (dotLocation > 11) {					document.getElementById('addTile_2_'+dotLocation).className='negtile_4';					document.getElementById('addTile_1_'+dotLocation).className='postile_3';					document.getElementById('subTile_1_'+dotLocation).className='postile_6';
+					document.getElementById('subTile_1_'+(dotLocation+1)).className='tile';					document.getElementById('subTile_2_'+(dotLocation+1)).className='tile';
+				}				if (dotLocation < 11) {					document.getElementById('addTile_1_'+dotLocation).className='negtile_2';
+					document.getElementById('subTile_1_'+dotLocation).className='negtile_2';
+					document.getElementById('subTile_2_'+dotLocation).className='postile_6';
+				}				if ((dotLocation > 1) && (dotLocation <= 11)) {
+					if (origin > 11) {
+						document.getElementById('subTile_1_'+(dotLocation-1)).className='postile_5';						document.getElementById('subTile_2_'+(dotLocation-1)).className='negtile_5';
+					} else {
+						document.getElementById('subTile_2_'+(dotLocation-1)).className='postile_5';						document.getElementById('subTile_1_'+(dotLocation-1)).className='negtile_5';
+					}
+				}
+			}
+		}		
+<!-- Move left when the current position is one number to the right of the first number. -->
+		if (dotLocation == origin + 1) {			if (origin >= 11) {				level=1			}			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';			dotLocation=dotLocation-1;			if (level == 2) {				document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';				document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('addTile_'+level+'_'+dotLocation).className='tile';				document.getElementById('subTile_'+level+'_'+dotLocation).className='tile';				document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';			} else {				document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_1';				document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('addTile_'+level+'_'+dotLocation).className='tile';				document.getElementById('subTile_'+level+'_'+dotLocation).className='tile';				document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			}			if ((dotLocation < 11) && (dotNumber == 2)) {				document.getElementById('addTile_1_'+dotLocation).className='negtile_1';				document.getElementById('subTile_1_'+dotLocation).className='negtile_1';			}		}		
+<!-- Move left when the current position is more than one number to the right of the first number. -->
+		if (dotLocation > origin + 1) {			if (origin >= 11) {				level=1			}			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';			dotLocation=dotLocation-1;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('subTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightarrow_'+dotNumber;			if ((dotLocation < 11) && (dotNumber == 2)) {				document.getElementById('addTile_1_'+dotLocation).className='negtile_1';				document.getElementById('subTile_1_'+dotLocation).className='negtile_1';			}		}	}
+		
+<!-- Update the addition and subtraction equations. -->
+	if (dotNumber == 1) {		if (dotLocation-origin >= 0) {			document.getElementById('addFirstNum').value=dotLocation-origin;			document.getElementById('subFirstNum').value=dotLocation-origin;		} else {
+			document.getElementById('addFirstNum').value=dotLocation-origin;
+			document.getElementById('subFirstNum').value=dotLocation-origin;
+		}
+		document.getElementById('addTotal').value=dotLocation-11		document.getElementById('subTotal').value=dotLocation-11	} else {
+		if (origin-dotLocation >= 0) {			document.getElementById('addSecondNum').value='('+(dotLocation-origin)+')';	
+			document.getElementById('subSecondNum').value=origin-dotLocation;
+		} else {
+			document.getElementById('addSecondNum').value=dotLocation-origin;
+			document.getElementById('subSecondNum').value='('+(origin-dotLocation)+')';	
+		}		document.getElementById('addTotal').value=dotLocation-11		document.getElementById('subTotal').value=dotLocation-11	}}
+
+function moveRight() {	if (dotLocation < 21) {		var level=dotNumber;		
+<!-- Move right when the current position is right of the first number. -->
+		if (dotLocation > origin) {			if (origin >= 11) {				level=1
+			}			
+
+
+			if (dotNumber == 1) {
+				document.getElementById('addTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+				document.getElementById('subTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+			}
+			if (dotNumber == 2) {
+				if (dotLocation < 11) {					document.getElementById('addTile_2_'+dotLocation).className='negtile_4';					document.getElementById('addTile_1_'+dotLocation).className='postile_3';					document.getElementById('subTile_1_'+dotLocation).className='negtile_6';
+				}				if (dotLocation > 11) {					document.getElementById('addTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+					document.getElementById('subTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+					if (origin > 11) {
+						document.getElementById('subTile_2_'+dotLocation).className='postile_6';
+						document.getElementById('subTile_1_'+dotLocation).className='negtile_2';
+					} else {
+						document.getElementById('subTile_1_'+dotLocation).className='postile_6';
+						document.getElementById('subTile_2_'+dotLocation).className='negtile_2';
+					}
+				}
+				if ((dotLocation >= 11) && (dotLocation < 21)) {
+					if (origin < 11) {
+						document.getElementById('subTile_1_'+(dotLocation+1)).className='postile_5';						document.getElementById('subTile_2_'+(dotLocation+1)).className='negtile_5';
+					} else {
+						document.getElementById('subTile_2_'+(dotLocation+1)).className='postile_5';						document.getElementById('subTile_1_'+(dotLocation+1)).className='negtile_5';
+					}
+				}
+			}
+
+			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='bar_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='bar_'+dotNumber;			dotLocation=dotLocation+1;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightarrow_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_'+dotNumber;		}		
+<!-- Move right when the current position is the first number. -->
+		if (dotLocation == origin) {			if (origin >= 11) {				level=1;				if (dotNumber == 1) {					document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+dotNumber				}
+			} else {				document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+dotNumber;			}			if (dotNumber == 1) {
+				document.getElementById('addTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+				document.getElementById('subTile_'+level+'_'+dotLocation).className='postile_'+dotNumber;
+			}
+			if (dotNumber == 2) {
+				if (dotLocation < 11) {					document.getElementById('addTile_2_'+dotLocation).className='postile_4';					document.getElementById('addTile_1_'+dotLocation).className='negtile_3';					document.getElementById('subTile_1_'+dotLocation).className='negtile_6';					document.getElementById('subTile_2_'+(dotLocation-1)).className='tile';					document.getElementById('subTile_1_'+(dotLocation-1)).className='tile';				}				if (dotLocation >= 11) {					document.getElementById('addTile_1_'+dotLocation).className='postile_2';
+					document.getElementById('subTile_1_'+dotLocation).className='postile_2';
+					document.getElementById('subTile_2_'+dotLocation).className='negtile_6';
+					if (dotLocation < 20) {
+						document.getElementById('subTile_1_'+(dotLocation+1)).className='postile_5';
+						document.getElementById('subTile_2_'+(dotLocation+1)).className='negtile_5';
+					}
+				}			}			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftend_'+dotNumber;			dotLocation=dotLocation+1;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightarrow_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftwall_'+dotNumber;		}		
+<!-- Move right when the current position is one number to the left of the first number. -->
+		if (dotLocation == origin - 1) {			if (origin <= 11) {				level=1			}			if ((dotLocation >= 11) && (dotNumber == 2)) {				document.getElementById('addTile_1_'+dotLocation).className='postile_1';			}			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('subTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';			dotLocation=dotLocation+1;			if (level == 2) {				document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';				document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';			} else {				document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+level;				document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;				document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			}		}		
+<!-- Move right when the current position is more than one number to the left of the first number. -->
+		if (dotLocation < origin - 1) {			if (origin <= 11) {				level=1			}			if ((dotLocation >= 11) && (dotNumber == 2)) {				document.getElementById('addTile_1_'+dotLocation).className='postile_1';				document.getElementById('subTile_1_'+dotLocation).className='postile_1';			}			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='clean';			document.getElementById('lineMark'+dotLocation).className='mark';			document.getElementById('addTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('subTile_'+level+'_'+dotLocation).className='tile';			document.getElementById('addMark'+dotLocation).className='mark';			document.getElementById('subMark'+dotLocation).className='mark';			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='clean';			dotLocation=dotLocation+1;			document.getElementById('lineLeftTrail_'+level+'_'+dotLocation).className='rightwall_'+dotNumber;			document.getElementById('lineMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('addMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('subMark'+dotLocation).className='dot_'+dotNumber;			document.getElementById('lineRightTrail_'+level+'_'+dotLocation).className='leftarrow_'+dotNumber;		}	}		
+<!-- Update the addition and subtraction equations. -->
+	if (dotNumber == 1) {		if (dotLocation-origin >= 0) {			document.getElementById('addFirstNum').value=dotLocation-origin;			document.getElementById('subFirstNum').value=dotLocation-origin;		} else {
+			document.getElementById('addFirstNum').value=dotLocation-origin;
+			document.getElementById('subFirstNum').value=dotLocation-origin;
+		}
+		document.getElementById('addTotal').value=dotLocation-11		document.getElementById('subTotal').value=dotLocation-11	} else {		if (origin-dotLocation >= 0) {			document.getElementById('addSecondNum').value='('+(dotLocation-origin)+')';	
+			document.getElementById('subSecondNum').value=origin-dotLocation;
+		} else {
+			document.getElementById('addSecondNum').value=dotLocation-origin;
+			document.getElementById('subSecondNum').value='('+(origin-dotLocation)+')';	
+		}		document.getElementById('addTotal').value=dotLocation-11		document.getElementById('subTotal').value=dotLocation-11	}}
+	
+<!-- Start working with the second number. -->
+function nextLevel() {	document.getElementById('two').className='hide';	if (dotNumber == 1) {		dotNumber=2;
+		origin=dotLocation;		document.getElementById('lineMark'+dotLocation).className='dot_2';		document.getElementById('addMark'+dotLocation).className='dot_2';		document.getElementById('subMark'+dotLocation).className='dot_2';		if (dotLocation == 11) {			document.getElementById('lineLeftTrail_1_'+dotLocation).className='rightwall_1';			document.getElementById('lineRightTrail_1_'+dotLocation).className='leftwall_1';			document.getElementById('subTile_1_'+dotLocation).className='postile_5';			document.getElementById('subTile_2_'+dotLocation).className='negtile_5';			document.getElementById('subTile_1_'+(dotLocation-1)).className='negtile_5';			document.getElementById('subTile_2_'+(dotLocation-1)).className='postile_5';
+		}		if (dotLocation < 11) {
+			document.getElementById('subTile_2_'+(dotLocation-1)).className='postile_5';			document.getElementById('subTile_1_'+(dotLocation-1)).className='negtile_5';		}
+		if (dotLocation > 11) {
+			document.getElementById('subTile_1_'+dotLocation).className='postile_5';			document.getElementById('subTile_2_'+dotLocation).className='negtile_5';		}
+	}}
+
+<!-- Reset everything for the next problem. -->
+function clearAll() {	document.getElementById('two').className='nextone';	dotLocation=11;	dotNumber=1;	origin=11;	var i=1;	for (i=1; i<22; i++) {		document.getElementById('lineLeftTrail_2_'+i).className='clean';		document.getElementById('lineLeftTrail_1_'+i).className='clean';		document.getElementById('lineMark'+i).className='Mark';		document.getElementById('addMark'+i).className='Mark';		document.getElementById('subMark'+i).className='Mark';		document.getElementById('lineRightTrail_2_'+i).className='clean';		document.getElementById('lineRightTrail_1_'+i).className='clean';	}	document.getElementById('lineMark11').className='dot_1';	document.getElementById('addMark11').className='dot_1';	document.getElementById('subMark11').className='dot_1';	document.getElementById('two').disabled=false;	document.getElementById('addFirstNum').value=0;	document.getElementById('addSecondNum').value=0;	document.getElementById('addTotal').value=0
+	document.getElementById('subFirstNum').value=0;	document.getElementById('subSecondNum').value=0;	document.getElementById('subTotal').value=0
+	
+	for (i=1; i<21; i++) {
+		document.getElementById('addTile_1_'+i).className='tile';
+		document.getElementById('subTile_1_'+i).className='tile';
+		document.getElementById('addTile_2_'+i).className='tile';
+		document.getElementById('subTile_2_'+i).className='tile';
+	}}
+
+</script></head><body>
+
+<div class="equation"><input type="text" name="addFirst" size="4" id="addFirstNum" value="0" readonly="readonly" class="display1" /> + <input type="text" name="addSecond" size="4" id="addSecondNum" value="0" readonly="readonly" class="display2" /> = <input type="text" name="addAnswer" size="3" id="addTotal" value="0" readonly="readonly" /></div>
+
+<table cellpadding="0" cellspacing="0" id="graphics" border="0"><tr><td class="end"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="end"><img src="spacer.gif" /></td></tr>
+
+<tr>
+<td colspan="2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_1"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_3"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_4"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_5"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_6"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_7"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_8"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_9"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_10"><img src="spacer.gif" /></td>
+
+<td class="tile" colspan="2" id="addTile_2_11"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_12"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_13"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_14"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_15"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_16"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_17"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_18"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_19"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_2_20"><img src="spacer.gif" /></td>
+<td colspan="2"><img src="spacer.gif" /></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_1"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_3"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_4"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_5"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_6"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_7"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_8"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_9"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_10"><img src="spacer.gif" /></td>
+
+<td class="tile" colspan="2" id="addTile_1_11"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_12"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_13"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_14"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_15"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_16"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_17"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_18"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_19"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="addTile_1_20"><img src="spacer.gif" /></td>
+<td colspan="2"><img src="spacer.gif" /></td>
+</tr>
+
+<tr><td class="left"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark1"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark2"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark3"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark4"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark5"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark6"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark7"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark8"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark9"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark10"><img src="spacer.gif" /></td><td class="dot_1" colspan="2" id="addMark11"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark12"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark13"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark14"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark15"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark16"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark17"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark18"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark19"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark20"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="addMark21"><img src="spacer.gif" /></td><td class="right"><img src="spacer.gif" /></td></tr><tr><td class="empty"><img src="spacer.gif" /></td><td class="number" colspan="2">-10&nbsp;</td><td class="number" colspan="2">-9&nbsp;</td><td class="number" colspan="2">-8&nbsp;</td><td class="number" colspan="2">-7&nbsp;</td><td class="number" colspan="2">-6&nbsp;</td><td class="number" colspan="2">-5&nbsp;</td><td class="number" colspan="2">-4&nbsp;</td><td class="number" colspan="2">-3&nbsp;</td><td class="number" colspan="2">-2&nbsp;</td><td class="number" colspan="2">-1&nbsp;</td><td class="number" colspan="2">0</td><td class="number" colspan="2">+1&nbsp;</td><td class="number" colspan="2">+2&nbsp;</td><td class="number" colspan="2">+3&nbsp;</td><td class="number" colspan="2">+4&nbsp;</td><td class="number" colspan="2">+5&nbsp;</td><td class="number" colspan="2">+6&nbsp;</td><td class="number" colspan="2">+7&nbsp;</td><td class="number" colspan="2">+8&nbsp;</td><td class="number" colspan="2">+9&nbsp;</td><td class="number" colspan="2">+10&nbsp;</td><td class="empty"><img src="spacer.gif" /></td></tr></table>
+
+<br/>
+<br/>
+<br/>
+
+<div class="equation"><input type="text" name="subFirst" size="4" id="subFirstNum" value="0" readonly="readonly" class="display1" /> - <input type="text" name="subSecond" size="4" id="subSecondNum" value="0" readonly="readonly" class="display2" /> = <input type="text" name="subAnswer" size="3" id="subTotal" value="0" readonly="readonly" /></div>
+
+<table cellpadding="0" cellspacing="0" id="graphics" border="0"><tr><td class="end"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="end"><img src="spacer.gif" /></td></tr>
+
+<tr>
+<td colspan="2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_1"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_3"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_4"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_5"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_6"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_7"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_8"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_9"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_10"><img src="spacer.gif" /></td>
+
+<td class="tile" colspan="2" id="subTile_2_11"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_12"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_13"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_14"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_15"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_16"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_17"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_18"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_19"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_2_20"><img src="spacer.gif" /></td>
+<td colspan="2"><img src="spacer.gif" /></td>
+</tr>
+<tr>
+<td colspan="2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_1"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_2"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_3"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_4"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_5"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_6"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_7"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_8"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_9"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_10"><img src="spacer.gif" /></td>
+
+<td class="tile" colspan="2" id="subTile_1_11"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_12"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_13"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_14"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_15"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_16"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_17"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_18"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_19"><img src="spacer.gif" /></td>
+<td class="tile" colspan="2" id="subTile_1_20"><img src="spacer.gif" /></td>
+<td colspan="2"><img src="spacer.gif" /></td>
+</tr>
+
+<tr><td class="left"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark1"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark2"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark3"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark4"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark5"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark6"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark7"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark8"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark9"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark10"><img src="spacer.gif" /></td><td class="dot_1" colspan="2" id="subMark11"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark12"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark13"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark14"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark15"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark16"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark17"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark18"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark19"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark20"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="subMark21"><img src="spacer.gif" /></td><td class="right"><img src="spacer.gif" /></td></tr><tr><td class="empty"><img src="spacer.gif" /></td><td class="number" colspan="2">-10&nbsp;</td><td class="number" colspan="2">-9&nbsp;</td><td class="number" colspan="2">-8&nbsp;</td><td class="number" colspan="2">-7&nbsp;</td><td class="number" colspan="2">-6&nbsp;</td><td class="number" colspan="2">-5&nbsp;</td><td class="number" colspan="2">-4&nbsp;</td><td class="number" colspan="2">-3&nbsp;</td><td class="number" colspan="2">-2&nbsp;</td><td class="number" colspan="2">-1&nbsp;</td><td class="number" colspan="2">0</td><td class="number" colspan="2">+1&nbsp;</td><td class="number" colspan="2">+2&nbsp;</td><td class="number" colspan="2">+3&nbsp;</td><td class="number" colspan="2">+4&nbsp;</td><td class="number" colspan="2">+5&nbsp;</td><td class="number" colspan="2">+6&nbsp;</td><td class="number" colspan="2">+7&nbsp;</td><td class="number" colspan="2">+8&nbsp;</td><td class="number" colspan="2">+9&nbsp;</td><td class="number" colspan="2">+10&nbsp;</td><td class="empty"><img src="spacer.gif" /></td></tr></table>
+
+<br/>
+<br/>
+<br/>
+
+<table cellpadding="0" cellspacing="0" id="graphics" border="0"><tr><td class="end"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="mini"><img src="spacer.gif" /></td><td class="end"><img src="spacer.gif" /></td></tr>
+
+
+<tr><td><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_1"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_1"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_2"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_2"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_3"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_3"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_4"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_4"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_5"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_5"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_6"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_6"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_7"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_7"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_8"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_8"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_9"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_9"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_10"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_10"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_11"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_11"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_12"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_12"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_13"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_13"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_14"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_14"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_15"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_15"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_16"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_16"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_17"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_17"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_18"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_18"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_19"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_19"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_20"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_20"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_2_21"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_2_21"><img src="spacer.gif" /></td><td><img src="spacer.gif" /></td></tr><tr><td><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_1"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_1"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_2"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_2"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_3"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_3"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_4"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_4"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_5"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_5"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_6"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_6"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_7"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_7"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_8"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_8"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_9"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_9"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_10"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_10"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_11"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_11"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_12"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_12"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_13"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_13"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_14"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_14"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_15"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_15"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_16"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_16"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_17"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_17"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_18"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_18"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_19"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_19"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_20"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_20"><img src="spacer.gif" /></td><td class="clean" id="lineLeftTrail_1_21"><img src="spacer.gif" /></td><td class="clean" id="lineRightTrail_1_21"><img src="spacer.gif" /></td><td><img src="spacer.gif" /></td></tr><tr><td class="left"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark1"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark2"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark3"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark4"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark5"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark6"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark7"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark8"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark9"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark10"><img src="spacer.gif" /></td><td class="dot_1" colspan="2" id="lineMark11"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark12"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark13"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark14"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark15"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark16"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark17"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark18"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark19"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark20"><img src="spacer.gif" /></td><td class="mark" colspan="2" id="lineMark21"><img src="spacer.gif" /></td><td class="right"><img src="spacer.gif" /></td></tr><tr><td class="empty"><img src="spacer.gif" /></td><td class="number" colspan="2">-10&nbsp;</td><td class="number" colspan="2">-9&nbsp;</td><td class="number" colspan="2">-8&nbsp;</td><td class="number" colspan="2">-7&nbsp;</td><td class="number" colspan="2">-6&nbsp;</td><td class="number" colspan="2">-5&nbsp;</td><td class="number" colspan="2">-4&nbsp;</td><td class="number" colspan="2">-3&nbsp;</td><td class="number" colspan="2">-2&nbsp;</td><td class="number" colspan="2">-1&nbsp;</td><td class="number" colspan="2">0</td><td class="number" colspan="2">+1&nbsp;</td><td class="number" colspan="2">+2&nbsp;</td><td class="number" colspan="2">+3&nbsp;</td><td class="number" colspan="2">+4&nbsp;</td><td class="number" colspan="2">+5&nbsp;</td><td class="number" colspan="2">+6&nbsp;</td><td class="number" colspan="2">+7&nbsp;</td><td class="number" colspan="2">+8&nbsp;</td><td class="number" colspan="2">+9&nbsp;</td><td class="number" colspan="2">+10&nbsp;</td><td class="empty"><img src="spacer.gif" /></td></tr></table>
+
+<br/>
+<br/>
+<img onclick="moveLeft()" class="arrowtest" src="leftarrow.png" /><a><img onclick="nextLevel()" src="centerbutton.png" id="two" /></a><img onclick="moveRight()" class="arrowtest" src="rightarrow.png" /><br /><button type="button" name="clearAll" onclick="clearAll()">Reset</button>
+
+
+</body></html>
