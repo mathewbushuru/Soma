@@ -1,0 +1,19 @@
+body {background: white; color: black;}
+h1, h2, h3, h4, h5, h6 { text-align: center; }
+p { margin: 0; }
+p:first-letter { padding-left: 1em; }
+div.poem { margin-left: 8em; margin-top: .5em; margin-bottom: .5em; }
+div.blackletter { margin-left: 8em; margin-top: .5em; margin-bottom: .5em; font-style: italic;}
+div.line { margin: 0; padding: 0; }
+div.note { margin-bottom: .5em; }
+div.couplet div.line + div.line { margin-left: 1em; }
+div.stanza { margin-bottom: 1.12em; }
+div.refrain { margin-left: 1em; }
+div.bob { margin-left: 4em; }
+div.bq { margin-left: 8em; margin-right: 8em; margin-top: .5em; margin-bottom: .5em;}
+span:lang(la) {font-style: italic; }
+span.cite { font-style: italic; }
+a:link { color: black; text-decoration: none; font-size: small; }
+a:hover { color: red; }
+a:visited { color: gray; text-decoration: none; font-size: small; }
+div.synopsis a:link, a:visited { font-style: italic; font-size: medium; }

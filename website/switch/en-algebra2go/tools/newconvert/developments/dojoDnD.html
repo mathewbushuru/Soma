@@ -1,0 +1,110 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head><title>Abacus Tool</title>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A collection of free resources for learning algebra." />
+<meta name="keywords" content="prealgebra,algebra,videos,notes,worksheets,quizzes,math" />
+<meta name="author" content="Patrick Quigley" />
+
+<link rel="shortcut icon" href="../../pagefiles/favicon.ico" type="image/x-icon" />
+<link rel="icon" href="../../pagefiles/favicon.ico" type="image/x-icon" />
+
+<style type="text/css">
+  @import "featureexplorer/Dojo/Drag%20And%20Drop/dndDefault.css"
+  #moveable1 {
+    background: #fff;
+    border: 1px solid black;
+    padding:8px;
+  }
+  #handle1 {
+    background: #333;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  #moveable2 {
+    position: absolute;
+    background: #fff;
+    width:  200px;
+    height: 200px;
+    left: 100px;
+    top:  100px;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    border: 10px solid black;
+    cursor: pointer;
+    radius:8pt;
+    -moz-border-radius:8pt 8pt;
+  }
+  #moveable3 {
+    position: relative;
+    width: 150px;
+    height: 100px;
+    background: #ff8;
+    color: blue;
+    font-weight: bold;
+  }
+</style>
+
+
+<script type="text/javascript">
+  dojo.require("dojo.dnd.Mover");
+  dojo.require("dojo.dnd.Moveable");
+  dojo.require("dojo.dnd.move");
+  var m1, m2;
+  var initDND = function(){
+    m1 = new dojo.dnd.Moveable("moveable1", {handle: "handle1"});
+    m2 = new dojo.dnd.Moveable("moveable2");
+    m3 = new dojo.dnd.Moveable("moveable3");
+
+    dojo.subscribe("/dnd/move/start", function(mover){
+      console.debug("Start move", mover);
+    });
+    dojo.subscribe("/dnd/move/stop", function(mover){
+      console.debug("Stop move", mover);
+    });
+
+    dojo.connect(m1, "onMoveStart", function(mover){
+      console.debug("Start moving m1", mover);
+    });
+    dojo.connect(m1, "onMoveStop", function(mover){
+      console.debug("Stop moving m1", mover);
+    });
+  };
+  dojo.addOnLoad(initDND);
+</script>
+
+</head>
+
+<body>
+
+<h1>Dojo Moveable test</h1>
+<h2>1st run</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent erat. In malesuada ultricies velit. Vestibulum tempor odio vitae diam. Morbi arcu lectus, laoreet eget, nonummy at, elementum a, quam. Pellentesque ac lacus. Cras quis est. Etiam suscipit, quam at eleifend nonummy, elit nunc sollicitudin tellus, at mattis est ligula interdum urna. Vivamus id augue sed mi consectetuer dictum. Suspendisse dapibus elit non urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam gravida dapibus ante. Nam viverra ligula in neque. Nullam at metus. Aenean ipsum.</p>
+<p>Mauris vulputate elit a risus. Praesent pellentesque velit ac neque. Fusce ultrices augue vitae orci. Proin a ante. Nulla consectetuer arcu quis est. Suspendisse potenti. Aliquam erat volutpat. Morbi purus augue, eleifend eu, consectetuer sed, tristique ut, wisi. Cras ac tellus. Phasellus adipiscing, libero ac consequat volutpat, ligula purus mollis lectus, ac porttitor ipsum diam non urna. Donec lorem. Pellentesque diam tortor, posuere et, placerat vitae, iaculis et, sapien. Proin sodales vehicula purus. Quisque bibendum mi ac mauris. Quisque tellus. Morbi sagittis. Integer euismod rhoncus augue. Ut accumsan. Curabitur quis tellus sit amet odio ultricies tristique. Etiam malesuada.</p>
+<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec est. Cras semper nunc ut metus. Pellentesque blandit pede at erat. Quisque nonummy leo id metus. Donec mi mi, viverra id, adipiscing vitae, consectetuer ut, elit. In lectus augue, porttitor quis, viverra id, dignissim id, leo. Maecenas sapien. Nam adipiscing sem. Aenean ligula. Etiam vel velit. In mollis cursus dolor. Suspendisse ac nibh id leo tempor posuere. Aliquam sapien tellus, elementum non, aliquam sed, luctus eu, augue. Aliquam elementum leo nec enim. Donec ornare sagittis magna. Mauris ac tellus.</p>
+
+<table id="moveable1">
+  <tr><td id="handle1" colspan="2">You can drag the table using this handle.</td></tr>
+  <tr><td>1</td><td>Lorem ipsum dolor sit amet...</td></tr>
+  <tr><td>2</td><td>Mauris vulputate elit a risus...</td></tr>
+  <tr><td>3</td><td>Pellentesque habitant morbi tristique senectus...</td></tr>
+  <tr><td>4</td><td>Duis ac augue rhoncus neque...</td></tr>
+  <tr><td>5</td><td>Quisque egestas turpis. Sed id...</td></tr>
+</table>
+<h2>2nd run</h2>
+<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Praesent erat. In malesuada ultricies velit. Vestibulum tempor odio vitae diam. Morbi arcu lectus, laoreet eget, nonummy at, elementum a, quam. Pellentesque ac lacus. Cras quis est. Etiam suscipit, quam at eleifend nonummy, elit nunc sollicitudin tellus, at mattis est ligula interdum urna. Vivamus id augue sed mi consectetuer dictum. Suspendisse dapibus elit non urna. Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aliquam gravida dapibus ante. Nam viverra ligula in neque. Nullam at metus. Aenean ipsum.</p>
+
+<div id="moveable2">
+  <div>You can drag this whole object around.</div>
+  <div id="moveable3">You can move this paragraph. It is relatively positioned.</div>
+</div>
+
+</body>
+
+</html>

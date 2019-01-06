@@ -1,0 +1,89 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+	    <title>DEMO: Javascript drag handler</title>
+	    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		<link media="screen" type="text/css" rel="stylesheet" href="/demo/screen.css" />
+
+		<script type="text/javascript" src="/js/astrack.js"></script>
+		<script type="text/javascript" src="http://www.google-analytics.com/urchin.js"></script>
+		<script type="text/javascript">
+		_uacct = "UA-110911-6";
+		urchinTracker();
+		</script>
+
+
+		<script type="text/javascript" src="webtoolkit.drag.js"></script>
+	</head>
+	<body>
+
+		<div id="container">
+
+
+<div id="info">Start drag process...</div>
+<div id="dragable1" style="position: relative; width: 50px; height: 50px; background: silver; border: 1px dashed red;"></div>
+<div id="dragable2" style="position: relative; width: 60px; height: 60px; background: silver; border: 1px dashed red;"></div>
+<div id="dragable3" style="position: relative; width: 70px; height: 70px; background: silver; border: 1px dashed red;"></div>
+
+<script type="text/javascript">
+
+	function begin (element, x, y) {
+		var s = '#' + element.id + ' (begin drag)' + ' x:' + x + ', y:' + y;
+		updateInfo(s);
+	}
+
+	function drag (element, x, y) {
+		var s = '#' + element.id + ' (dragging)' + ' x:' + x + ', y:' + y;
+		updateInfo(s);
+	}
+
+	function end (element, x, y) {
+		var s = '#' + element.id + ' (end drag)' + ' x:' + x + ', y:' + y;
+		updateInfo(s);
+	}
+
+	function updateInfo(s) {
+		document.getElementById('info').innerHTML = s;
+	}
+
+	var dragable1 = DragHandler.attach(document.getElementById('dragable1'));
+	var dragable2 = DragHandler.attach(document.getElementById('dragable2'));
+	var dragable3 = DragHandler.attach(document.getElementById('dragable3'));
+
+	dragable1.dragBegin = begin;
+	dragable1.drag = drag;
+	dragable1.dragEnd = end;
+
+	dragable2.dragBegin = begin;
+	dragable2.drag = drag;
+	dragable2.dragEnd = end;
+
+	dragable3.dragBegin = begin;
+	dragable3.drag = drag;
+	dragable3.dragEnd = end;
+
+</script>
+
+			    <p><br /></p>
+			    <p><br /></p>
+
+				<p><a href="/javascript-drag-handler.html">Back to Javascript drag and drop hangler</a></p>
+
+<br>
+<br>
+
+<script type="text/javascript"><!--
+google_ad_client = "pub-0610667536622193";
+//webtoolkit 728x90 demo
+google_ad_slot = "4302892113";
+google_ad_width = 728;
+google_ad_height = 90;
+//--></script>
+<script type="text/javascript" src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script>
+<br>
+
+
+		</div>
+
+	</body>
+</html>

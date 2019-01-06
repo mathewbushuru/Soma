@@ -1,0 +1,394 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head><title>Abacus Tool</title>
+
+<meta http-equiv="content-type" content="text/html; charset=iso-8859-1" />
+<meta name="description" content="A collection of free resources for learning algebra." />
+<meta name="keywords" content="prealgebra,algebra,videos,notes,worksheets,quizzes,math" />
+<meta name="author" content="Patrick Quigley" />
+
+
+<style type="text/css">
+<!--
+
+body{	background:url(desk.png);	margin:0px;	padding:0px;	min-width:625px;}
+
+#introduction
+{
+	position:absolute;
+	top:10px;
+	left:10px;
+	height:348px;
+	width:625px;
+	border:10px inset #999999;
+	padding:0px;
+	display:none;
+}
+
+# abacus tr td.pole
+{
+	position:relative;
+	vertical-align:top;
+	text-align:right;
+}
+
+div.pole
+{
+	position:absolute;
+	width:90px;
+	height:337px;
+	background:#ffffff url(base16.png) bottom right no-repeat;
+}
+
+div.button
+{
+	height:60px;
+	text-align:right;
+	background:url(blue.png);
+}
+
+#abacus tr td div
+{
+	border:0px solid #00ff00;
+}
+
+#viewer tr td
+{
+	border:0px solid #00ff00;
+}
+
+img.disk
+{
+	position:relative;
+	bottom:0px;
+	right:-6px;
+}
+
+button.upButton
+{
+	width:60px;
+}
+
+button.downButton
+{
+	width:60px;
+}
+
+#instructions 
+	{	padding:0px;	margin:0px;
+	display:block;
+	}
+	div.lbubble
+	{	background:#fffffc url(cream.png);	position:relative;	float:left;	padding:10px;	margin:0px 0px 2em 0px;	border-top:1px solid #000000;	border-bottom:2px solid #000000;	border-left:1px solid #000000;	border-right:2px solid #000000;	font-family:"Arial","helvetica",sans-serif;	}
+	img.brc
+	{	position:absolute;	bottom:-2px;	right:-2px;	float:right;	padding:0px;	margin:0px;	}
+	img.blc
+	{	position:absolute;	bottom:-2px;	left:-1px;	float:left;	padding:0px;	margin:0px;	}
+	img.trc
+	{	position:absolute;	top:-1px;	right:-2px;	float:right;	padding:0px;	margin:0px;	}
+	img.tlc
+	{	position:absolute;	top:-1px;	left:-1px;	float:left;	padding:0px;	margin:0px;	}
+	img.larrytalk
+	{	position:absolute;	top:10px;	left:-20px;	float:left;	padding:0px;	margin:0px;	}
+	#larry 
+	{	padding:0px;	margin:0px;	float:left;	}
+	#moveable1 {
+	background: #fff;
+	border: 1px solid black;
+	padding:8px;
+}
+
+#handle1 {
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+#handle2 {
+	background: #333;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	border: 1px solid black;
+}
+
+#moveable2 {
+	background: #fff;
+	border: 1px solid black;
+	padding:8px;
+}
+
+-->
+</style>
+
+<!--[if lt IE 8]>
+
+<style type="text/css">
+img.disk
+{
+	position:absolute;
+}
+</style>
+
+<![endif]-->
+
+
+<script type="text/javascript" language="JavaScript" src="../js/dojotoolkit/dojo/dojo.js"></script>
+<script type="text/javascript" language="JavaScript" src="abacusJava2.js"></script>
+
+</head>
+
+<body>
+
+
+<!-- The MOVIE VIEWER begins here. -->
+
+<table cellpadding="0" cellspacing="0" id="viewer" style="position:absolute;left:10px;top:10px;">
+
+<tr id="viewerhandle">
+<td style="width:21px;height:20px;background:url(topleft2.png) top left no-repeat;"></td>
+<td style="background:url(top2.png) top left repeat-x;"></td>
+<td style="width:27px;height:20px;background:url(topright2.png) top right no-repeat;"></td></tr>
+
+<tr>
+<td style="background:url(left2.png) top left repeat-y;"></td>
+<td style="vertical-align:middle;height:30px;background:url(blue.png);">
+
+<select name="movieList" id="movieList" style="vertical-align:middle;">
+<option value="0">Choose a movie</option>
+<option value="1">Addition in base 10</option>
+<option value="2">Subtraction in base 10: Part I</option>
+<option value="3">Subtraction in base 10: Part II</option>
+<option value="4">Addition in other bases: Part I</option>
+<option value="5">Addition in other bases: Part II</option>
+<option value="6">Subtraction in other bases</option>
+</select>
+
+<button type="button" id="sub2" onclick="chooseMovie()" style="vertical-align:middle;">Submit</button></td>
+
+<td style="background:url(right2.png) top right repeat-y;"></td></tr>
+
+<tr>
+<td style="background:url(left2.png) top left repeat-y;"></td>
+
+<td style="background-color:#000000;width:480px;height:385px;">
+
+<div id="screen1" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/gaoPu15kweM&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/gaoPu15kweM&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</div>
+
+<div id="screen2" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/aDINxA_D3ZY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/aDINxA_D3ZY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</div>
+
+<div id="screen3" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/p4LikDqu4b0&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/p4LikDqu4b0&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</div>
+
+<div id="screen4" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/3ELmSKnlQUY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/3ELmSKnlQUY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</div>
+
+<div id="screen5" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/dcKLg4eIwQY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/dcKLg4eIwQY&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</div>
+
+<div id="screen6" style="display:none;">
+<object width="480" height="385">
+<param name="movie" value="http://www.youtube.com/v/d9v2g2ZWg38&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18"></param>
+<param name="allowFullScreen" value="true"></param>
+<param name="allowscriptaccess" value="always"></param>
+<embed src="http://www.youtube.com/v/d9v2g2ZWg38&hl=en&fs=1&rel=0&color1=0x006699&color2=0x54abd6&ap=%2526fmt%3D18" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="480" height="385"></embed>
+</object>
+</td>
+
+<td style="background:url(right2.png) top right repeat-y;"></td></tr>
+
+<tr>
+<td style="width:21px;height:28px;background:url(bottomleft2.png) top left no-repeat;"></td>
+<td style="vertical-align:top;background:url(bottom2.png) top left repeat-x;"></td>
+<td style="width:27px;height:28px;background:url(bottomright2.png) top right no-repeat;"></td></tr>
+
+</table>
+
+
+
+<!-- The MOVIE VIEWER ends here. -->
+
+
+<!-- The ABACUS begins here. -->
+
+<table cellpadding="0" cellspacing="0" id="abacus" style="position:absolute;left:10px;top:10px;">
+
+<!-- The FIRST ROW begins here. -->
+
+<tr id="abacushandle">
+<td style="width:21px;height:20px;background:url(topleft2.png) top left no-repeat;"></td>
+<td colspan="4" style="background:url(top2.png) top left repeat-x;"></td>
+<td style="width:27px;height:20px;background:url(topright2.png) top right no-repeat;"></td></tr>
+
+<!-- The SECOND ROW begins here. -->
+
+<tr>
+<td rowspan="4" style="background:url(left2.png) top left repeat-y;"></td>
+<td colspan="4" style="vertical-align:middle;height:80px;background:url(blue.png);">
+
+<select name="baseList" id="baseList" style="vertical-align:middle;">
+<option value="16">Base 16: Hexadecimal</option>
+<option value="10" selected="selected">Base 10: Decimal</option>
+<option value="8">Base 8: Octal</option>
+<option value="4">Base 4: Quaternary</option>
+<option value="2">Base 2: Binary</option>
+</select>
+
+<button type="button" id="subBase" onclick="chooseBase()" style="vertical-align:middle;">Submit</button>
+<br/>
+<select name="digitsList" id="digitsList" style="vertical-align:middle;">
+<option value="8">8 Digits</option>
+<option value="7">7 Digits</option>
+<option value="6" selected="selected">6 Digits</option>
+</select>
+
+<button type="button" id="subDigits" onclick="chooseDigits()" style="vertical-align:middle;">Submit</button>
+
+</td>
+
+<td rowspan="4" style="background:url(right2.png) top right repeat-y;"></td></tr>
+
+<!-- The THIRD ROW begins here. -->
+
+<tr>
+<td rowspan="2" id="leftedge" style="background:url(leftedge.png) top left repeat-y;width:10px;"></td>
+
+<td colspan="2" style="background:url(topborder.png) top left repeat-x;height:10px;"></td>
+
+<td rowspan="2" id="rightedge" style="background:url(rightedge.png) top right repeat-y;width:10px;"></td></tr>
+
+
+<!-- The FOURTH ROW begins here. -->
+
+<tr>
+
+<td id="poles" style="width:540px;height:337px;background:#ffff00;text-align:right;white-space:nowrap;">
+
+<div id="pole7" class="pole" style="top:110px;right:687px;display:none;">
+<img id="disk7" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole6" class="pole" style="top:110px;right:597px;display:none;">
+<img id="disk6" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole5" class="pole" style="top:110px;right:507px;display:inline-block;">
+<img id="disk5" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole4" class="pole" style="top:110px;right:417px;display:inline-block;">
+<img id="disk4" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole3" class="pole" style="top:110px;right:327px;display:inline-block;">
+<img id="disk3" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole2" class="pole" style="top:110px;right:237px;display:inline-block;">
+<img id="disk2" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole1" class="pole" style="top:110px;right:147px;display:inline-block;">
+<img id="disk1" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<div id="pole0" class="pole" style="top:110px;right:57px;display:inline-block;">
+<img id="disk0" src="disk2.png" style="position:absolute;right:0px;bottom:10px;" alt="" /></div>
+
+<td id="rightside" style="background:#ffffff url(rightside2.png);width:20px;"></td>
+
+</td>
+</tr>
+
+<!-- The FIFTH ROW begins here. -->
+
+<tr>
+<td style="background:url(blue.png);"></td>
+
+<td style="background:url(blue.png);">
+
+<div id="buttons7" style="display:none;height:60px;margin:0px;margin:0px;">
+<button type="button" id="upButton7" class="upButton" onclick="startUp(7)">+1</button><br/>
+<button type="button" id="downButton7" class="downButton" onclick="startDown(7)">-1</button></div>
+
+<div id="buttons6" style="display:none;height:60px;margin:0px;margin:0px;">
+<button type="button" id="upButton6" class="upButton" onclick="startUp(6)">+1</button><br/>
+<button type="button" id="downButton6" class="downButton" onclick="startDown(6)">-1</button></div>
+
+<div id="buttons5" style="display:inline-block;height:60px;margin:0px;margin:0px;">
+<button type="button" id="upButton5" class="upButton" onclick="startUp(5)">+1</button><br/>
+<button type="button" id="downButton5" class="downButton" onclick="startDown(5)">-1</button></div>
+
+<div id="buttons4" style="display:inline-block;height:60px;margin:0px;margin:0px;">
+<button type="button" id="upButton4" class="upButton" onclick="startUp(4)">+1</button><br/>
+<button type="button" id="downButton4" class="downButton" onclick="startDown(4)">-1</button></div>
+
+<div id="buttons3" style="display:inline-block;height:60px;margin:0px;">
+<button type="button" id="upButton3" class="upButton" onclick="startUp(3)">+1</button><br/>
+<button type="button" id="downButton3" class="downButton" onclick="startDown(3)">-1</button></div>
+
+<div id="buttons2" style="display:inline-block;height:60px;margin:0px;">
+<button type="button" id="upButton2" class="upButton" onclick="startUp(2)">+1</button><br/>
+<button type="button" id="downButton2" class="downButton" onclick="startDown(2)">-1</button></div>
+
+<div id="buttons1" style="display:inline-block;height:60px;margin:0px;">
+<button type="button" id="upButton1" class="upButton" onclick="startUp(1)">+1</button><br/>
+<button type="button" id="downButton1" class="downButton" onclick="startDown(1)">-1</button></div>
+
+<div id="buttons0" style="display:inline-block;height:60px;margin:0px;">
+<button type="button" id="upButton0" class="upButton" onclick="startUp(0)">+1</button><br/>
+<button type="button" id="downButton0" class="downButton" onclick="startDown(0)">-1</button></div>
+</td>
+
+
+<td colspan="2" style="background:url(blue.png);"></td></tr>
+
+<!-- The SIXTH ROW begins here. -->
+
+<tr>
+<td style="width:21px;height:28px;background:url(bottomleft2.png) top left no-repeat;"></td>
+<td colspan="4" style="vertical-align:top;background:url(bottom2.png) top left repeat-x;"></td>
+<td style="width:27px;height:28px;background:url(bottomright2.png) top right no-repeat;"></td></tr>
+
+</table>
+
+
+
+<!-- The ABACUS ends here. -->
+
+
+
+
+</body>
+
+</html>
